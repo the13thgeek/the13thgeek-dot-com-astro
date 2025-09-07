@@ -1,0 +1,124 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+section#hero {
+    padding: 0;
+    height: auto;
+    padding: 60px 0;
+    background-color: $swatch-1;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    @include respond(md) {
+        height: 80vh;
+    }
+
+    .intro {
+        margin-left: 15%;
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+        mix-blend-mode: difference;
+        text-wrap: balance;
+        font-weight: 800;
+
+        @include respond(md) {
+            font-size: 4em;
+        }
+        @include respond(lg) {
+            font-size: 5em;
+        }
+    }
+
+    p {
+        font-size: 2em;
+        font-weight: 100;
+        letter-spacing: -1px;
+
+        span.highlight {
+            font-weight: 600;
+        }
+
+        @include respond(md) {
+            font-size: 3em;
+        }
+        
+    }
+
+    .prog-tag {
+        color: #666;
+    }
+
+    .struct {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .counter {
+        color: $swatch-2;
+    }
+
+    .contents {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .photo {
+        display: none;
+        background-image: url(/assets/home/hero-profile-photo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include respond(md) {
+            position: relative;
+            display: block;
+            flex: 2;
+            background-color: $swatch-2;
+            aspect-ratio: 3 / 4;
+            z-index: 0;
+            overflow: hidden;
+            clip-path: polygon(35% 0, 90% 0, 65% 100%, 5% 100%);
+            filter: saturate(0%);
+            transition: all 1s;
+            max-height: 80%;
+        }
+        
+    }
+
+    .split-line {
+        display: inline;
+
+        @include respond(xl) {
+            display: block;
+        }
+    }
+
+    .call-to-action {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 60px;
+        display: flex;
+        gap: 10px;
+
+        @include respond(md) {
+            flex-direction: row;
+            gap: 20px;
+        }
+
+    }
+}

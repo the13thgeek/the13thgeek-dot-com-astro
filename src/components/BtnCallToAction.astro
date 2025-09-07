@@ -1,0 +1,16 @@
+---
+import './BtnCallToAction.scss';
+import Icon from './Icon.astro';
+
+interface BtnCallToActionProps {
+    text?: string;
+    href?: string;
+    type?: 'primary' | 'secondary';
+    icon?: string;
+}
+
+const { text = 'Click here', href = '#', type = 'primary', icon = 'caret-right' }: BtnCallToActionProps = Astro.props;
+---
+
+
+<a href={href} class={'cta '+type}>{text} <Icon id={icon} width='22' height='22' decorative /></a>

@@ -12,6 +12,7 @@ body {
     color: #efefef;
     font-family: $global-font-family, sans-serif;
     background-color: $swatch-1;
+    font-size: 16px;
 }
 
 a {
@@ -44,6 +45,18 @@ section, footer {
     @include respond(lg) {
         padding: $spacing-lg 0;
     }
+}
+
+.counter {
+  color: inherit;
+  font-family: 'Doto', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1rem;
+
+  @include respond(md) {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
 }
 
 .struct {

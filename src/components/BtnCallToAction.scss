@@ -1,0 +1,42 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+a {
+    &.cta {
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        text-decoration: none;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 12px 30px;
+        border-radius: 8px;
+        border-bottom: #444 solid 3px;
+
+        &.primary {
+            color: #000;
+            @include boxgradient($deg: 0deg, $color1: $swatch-2, $color2: $swatch-3);
+
+        }
+        &.secondary {
+            color: #eee;
+            border: #eee solid 1px;
+        }
+
+        svg {
+          color: inherit;
+          transition: all 0.3s;
+          margin-left: 5px;
+        }
+
+        &:hover {
+            svg {
+              transform: translateX(10px);
+            }
+        }
+    }
+
+
+    
+    
+}
