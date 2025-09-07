@@ -1,0 +1,14 @@
+---
+import './Footer.scss';
+const siteVersion = import.meta.env.VITE_SITE_VERSION;
+
+---
+
+<footer class="global">
+    <div class="struct">
+        <img class='footer-logo' src="/assets/global/header-logo-default.png" alt="Logo" />
+        <p>Copyright© 2011 &mdash; {(new Date().getFullYear())}<br />
+        <b>Aldreich Aguilar // @the13thgeek</b></p>
+        <p><i>v{siteVersion}</i></p>
+    </div>
+</footer>

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Donkey Kong",
+        "type": "gorilla"
+    },
+    {
+        "name": "Diddy Kong",
+        "type": "spider monkey"
+    },
+    {
+        "name": "King K. Rool",
+        "type": "crocodile"
+    },
+    {
+        "name": "Cranky Kong",
+        "type": "gorilla"
+    },
+    {
+        "name": "Funky Kong",
+        "type": "gorilla"
+    }
+]

@@ -1,0 +1,71 @@
+@use 'imports' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: $default-bg-color;
+    color: #efefef;
+    font-family: $global-font-family, sans-serif;
+    background-color: $swatch-1;
+}
+
+a {
+    color: yellow;
+}
+
+h1 {
+  font-size: $font-size-xl;
+
+  @include respond(md) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+    font-size: $font-size-xl;
+    
+    @include respond(md) {
+        font-size: 1.75rem;
+    }
+}
+
+section, footer {
+    padding: $spacing-sm 0;
+
+    @include respond(md) {
+        padding: $spacing-md 0;
+    }
+
+    @include respond(lg) {
+        padding: $spacing-lg 0;
+    }
+}
+
+.struct {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include respond(md) {
+    max-width: 750px;
+  }
+
+  @include respond(lg) {
+    max-width: 950px;
+  }
+
+  @include respond(xl) {
+    max-width: 1350px;
+  }
+}
+
+.highlight {    
+    @include textgradient($deg: 90deg, $color1: $swatch-2, $color2: $swatch-3);
+}

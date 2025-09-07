@@ -1,0 +1,57 @@
+---
+//import Link from "../components/Link.astro";
+import '../styles/global.scss';
+//const { title = "Default" } = Astro.props;
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+interface LayoutProps {
+	title?: string;
+	description?: string;
+	keywords?: string;
+	ogImage?: string;
+	path?: string;
+}
+
+const { 
+	title = "Default",
+	description = "The personal website of the13thgeek",
+	keywords = "the13thgeek, astro, blog, developer, software engineer, tech",
+	ogImage = "/og-image.png",
+	path = "/"
+}: LayoutProps = Astro.props;
+
+const siteURL = (import.meta.env.VITE_SITE_URL || Astro.site || 'https://the13thgeek.com').replace(/\/$/, '');
+const canonicalURL = siteURL + path;
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+		<link rel="canonical" href={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />	
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:image" content={Astro.site + ogImage} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={Astro.site + ogImage} />
+		<meta name="twitter:creator" content="@the13thgeek" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<Navbar />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,44 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+section#hero {
+    padding: 0;
+    height: 85vh;
+    background-color: $swatch-1;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    .intro {
+        margin-left: 15%;
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 80px;
+        line-height: 75px;
+        margin-bottom: 20px;
+        mix-blend-mode: difference;
+    }
+
+    p {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 100;
+        letter-spacing: -1px;
+
+        span.highlight {
+            font-weight: 600;
+        }
+
+        
+    }
+
+    .prog-tag {
+        color: #666;
+    }
+}

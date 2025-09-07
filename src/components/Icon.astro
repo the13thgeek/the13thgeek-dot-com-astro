@@ -1,0 +1,22 @@
+---
+interface Props {
+  id: string;
+  class?: string;
+  decorative?: boolean;
+  width?: string;
+  height?: string;
+}
+
+const { id, class: className, decorative = false, width = "24", height = "24" } = Astro.props;
+const ariaAttrs = decorative ? { "aria-hidden": "true", role: "presentation" } : {};
+---
+
+<svg
+  class={className}
+  width={width}
+  height={height}
+  aria-hidden={decorative ? "true" : undefined}
+  role={decorative ? "presentation" : undefined}
+>
+  <use href={`/assets/global/icons.svg?id=3#${id}`}></use>
+</svg>

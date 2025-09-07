@@ -1,0 +1,34 @@
+/* Fonts */
+$global-font-family: 'Raleway';
+$global-font-jp: 'Noto Sans JP', sans-serif;
+$global-font-base: 16px;
+
+/* Global colours */
+$swatch-1: #1a1a1a;
+$swatch-2: #ffc300;
+$swatch-3: #fe0;
+
+// Font sizes
+$font-size-sm: 0.875rem; // 14px
+$font-size-md: 1rem;     // 16px
+$font-size-lg: 1.25rem;  // 20px
+$font-size-xl: 2rem;     // 32px
+
+// Breakpoints
+$breakpoints: (
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1440px
+);
+
+// Spacing scale (optional, for padding/margins)
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 3rem;
+$spacing-xl: 4rem;
+
+$default-bg-color: #333;
+$navbar-bg-color: #000;
+$footer-bg-color: #000;
