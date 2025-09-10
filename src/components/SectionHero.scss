@@ -83,17 +83,32 @@ section#hero {
         background-position: center;
         background-repeat: no-repeat;
 
+        .tile {
+            background-color: $swatch-2;
+            transition: transform 0.5s;
+
+            &.effector {
+                transform: translateX(100%) scaleX(0.0001);
+            }
+        }
+
         @include respond(md) {
             position: relative;
-            display: block;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(13, 1fr);
+            gap: 0;
             flex: 2;
             background-color: $swatch-2;
             aspect-ratio: 3 / 4;
             z-index: 0;
             overflow: hidden;
-            clip-path: polygon(35% 0, 90% 0, 65% 100%, 5% 100%);
-            filter: saturate(0%);
-            transition: all 1s;
+            //clip-path: polygon(35% 0, 90% 0, 65% 100%, 5% 100%);
+            clip-path: polygon(30% 0%, 95% 0%, 70% 100%, 0% 100%);
+            -webkit-clip-path: polygon(30% 0%, 95% 0%, 70% 100%, 0% 100%);
+            
+            //filter: saturate(0%);
+            //transition: all 1s;
             max-height: 80%;
         }
         

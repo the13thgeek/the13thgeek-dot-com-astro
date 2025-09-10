@@ -2,6 +2,13 @@
 import './SectionHero.scss';
 import './BtnCallToAction.astro';
 import BtnCallToAction from './BtnCallToAction.astro';
+
+const peekSize = 130;
+const peekTiles = Array.from({ length: peekSize });
+
+const randOpacity = (min: number, max: number) => {
+    return (Math.random() * (max-min) + min).toFixed(2);
+};
 ---
 
 <section class="hero" id="hero">
@@ -15,6 +22,24 @@ import BtnCallToAction from './BtnCallToAction.astro';
                 <BtnCallToAction text="Connect" href="#connect" type="secondary" icon="caret-right" />
             </div>
         </div>
-        <div class="photo"></div>
+        <div class="photo">
+            {peekTiles.map(() => (
+                <div class="tile" style={`opacity: ${randOpacity(0.7, 0.95)}`}></div>
+            ))}
+        </div>
     </div>
 </section>
+
+<script>
+    const tiles = document.querySelectorAll('.tile');
+
+    tiles.forEach(tile => {
+        tile.addEventListener('mouseenter', () => {
+            if(tile.classList.contains('effector')) return;
+            tile.classList.add('effector');
+            setTimeout(() => {
+                tile.classList.remove('effector');
+            }, 3000);
+        });
+    });
+</script>
