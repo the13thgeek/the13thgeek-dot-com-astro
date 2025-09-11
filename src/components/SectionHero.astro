@@ -12,6 +12,10 @@ const randOpacity = (min: number, max: number) => {
 ---
 
 <section class="hero" id="hero">
+    <div class="deco">
+        <div class="layer layer-1"></div>
+        <div class="layer layer-2"></div>
+    </div>
     <div class="struct">
         <div class="contents">
             <span class="counter">01 &gt;</span>
@@ -32,6 +36,16 @@ const randOpacity = (min: number, max: number) => {
 
 <script>
     const tiles = document.querySelectorAll('.tile');
+    const deco = document.querySelector('.deco');
+    const layer1 = document.querySelector('.layer-1');
+    const layer2 = document.querySelector('.layer-2');
+    let maxShift1 = getMaxShift(layer1);
+    let maxShift2 = getMaxShift(layer2);
+    let isInside = false;
+
+    function getMaxShift(layer: number) {
+        return (layer.offsetWidth - window.innerWidth) / 2;
+    }
 
     tiles.forEach(tile => {
         tile.addEventListener('mouseenter', () => {
@@ -39,7 +53,32 @@ const randOpacity = (min: number, max: number) => {
             tile.classList.add('effector');
             setTimeout(() => {
                 tile.classList.remove('effector');
-            }, 3000);
+            }, 3500);
         });
     });
+
+    deco.addEventListener('mouseenter', () => isInside = true);
+    deco.addEventListener('mouseleave', () => isInside = false);
+
+    deco?.addEventListener('mousemove', (e) => {
+        if(!isInside) return;
+
+        const rect = deco.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const percent = x / rect.width;
+        const centered = percent - 0.5;
+        let offset1 = centered * maxShift1 * 0.1;
+        let offset2 = centered * maxShift2 * 0.2;
+
+        offset1 = Math.max(-maxShift1, Math.min(maxShift1, offset1));
+        offset2 = Math.max(-maxShift2, Math.min(maxShift2, offset2));
+
+        layer1.style.transform = `translateX(${offset1}px)`;
+        layer2.style.transform = `translateX(${offset2}px)`;
+    });
+    window.addEventListener('resize', () => {
+        maxShift1 = getMaxShift(layer1);
+        maxShift2 = getMaxShift(layer2);
+    });
+    
 </script>
