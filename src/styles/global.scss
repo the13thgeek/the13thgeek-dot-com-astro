@@ -8,10 +8,9 @@
 
 body {
     height: 100vh;
-    background: $default-bg-color;
+    background-color: $default-bg-color;
     color: #efefef;
     font-family: $global-font-family, sans-serif;
-    background-color: $swatch-1;
     font-size: 16px;
 }
 
@@ -28,6 +27,7 @@ h1 {
 }
 
 h2 {
+    position: relative;
     font-size: $font-size-xl;
     
     @include respond(md) {
@@ -77,6 +77,10 @@ section, footer {
   @include respond(xl) {
     max-width: 1350px;
   }
+}
+
+.struct-fullwidth {
+  width: 100%;
 }
 
 .highlight {    

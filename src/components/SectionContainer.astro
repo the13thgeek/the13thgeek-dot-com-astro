@@ -1,0 +1,37 @@
+---
+import './SectionContainer.scss';
+
+interface SectionContainerProps {
+    sectionNumber?: number;
+    sectionTitle?: string;
+    contentWidth?: boolean;
+    className?: string;
+}
+
+const {
+    sectionNumber = 1,
+    sectionTitle = "Section",
+    contentWidth = true,
+    className = ""
+}: SectionContainerProps = Astro.props;
+---
+
+<section class={className !== "" ? 'section-generic ' + className : 'section-generic'}>
+    <div class={ contentWidth === true ? 'struct' : 'struct-width' }>
+        <h2 style={ `--section-num: "${sectionNumber}"` }>{sectionTitle}</h2>
+        <slot />
+    </div>
+</section>
+
+<style lang="scss">
+    h2::before {
+        content: var(--section-num);
+        display: inline-block;
+        transform: rotate(-90deg);
+        margin-right: 0.5rem;
+        font-weight: bold;
+        opacity: 0.3;
+        position: absolute;
+        left: -1.5rem;
+    }
+</style>

@@ -3,6 +3,8 @@ import GlobalLayout from '../layouts/GlobalLayout.astro';
 import Card from '../components/Card';
 import SectionHomeAbout from '../components/SectionHomeAbout.astro';
 import SectionHero from '../components/SectionHero.astro';
+import SectionHero2 from '../components/SectionHero2.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
 <GlobalLayout 
@@ -10,7 +12,12 @@ import SectionHero from '../components/SectionHero.astro';
 	path="/" 
 	description="Welcome to the personal website of the13thgeek, a developer and tech enthusiast."
 	keywords="the13thgeek, astro, blog, developer, software engineer, tech">
-	<SectionHero />
+	
+    <SectionHero2 />
+
+    <SectionContainer sectionTitle="Work" sectionNumber="01" className="test">
+        Hello
+    </SectionContainer>
 	
 	<div class="struct">
 		<h1>Astro?!</h1>
