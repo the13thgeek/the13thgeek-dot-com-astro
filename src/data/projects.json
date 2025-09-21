@@ -1,0 +1,99 @@
+[
+  {
+    "id": "themainframe",
+    "title": "theMainframe™",
+    "description": "The Mainframe is a Twitch-integrated website where viewers can log in with their Twitch accounts to track their stats, levels (EXP), and leaderboards while engaging in interactive features. The platform enhances Twitch interactivity by rewarding participation and fostering a fun, gamified community experience.",
+    "type": "wip",
+    "url": "https://mainframe.the13thgeek.com",
+    "gridClass": "wide-item",
+    "stack": [
+      { "name": "Node.js", "icon": "node-js" },
+      { "name": "MySQL", "icon": "mysql" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "Twitch API", "icon": "twitch" },
+      { "name": "React", "icon": "react" },
+      { "name": "SASS", "icon": "sass" }
+    ]
+  },
+  {
+    "id": "the13thgeek",
+    "title": "the13thgeek.com",
+    "description": "the13thgeek.com is my personal website and blog where I share my thoughts, projects, and experiences in technology, programming, and geek culture. It's a platform for me to connect with like-minded individuals and showcase my work.",
+    "type": "wip",
+    "url": "https://the13thgeek.com",
+    "gridClass": "tall-item",
+    "stack": [
+      { "name": "Astro", "icon": "astro" },
+      { "name": "React", "icon": "react" },
+      { "name": "Sanity.io", "icon": "sanity" },
+      { "name": "SASS", "icon": "sass" },
+      { "name": "JavaScript", "icon": "javascript" },
+      { "name": "HTML5", "icon": "html5" }
+    ]
+  },
+  {
+    "id": "pmc-planner",
+    "title": "PMC Planner",
+    "description": "A tool for Power Morphicon attendees to access schedules, replacing the official JPEG slideshow with a searchable list. It saw high traffic, and I'm expanding it with new features for future events!",
+    "type": "wip",
+    "url": "https://pmc.the13thgeek.com",
+    "gridClass": "wide-item",
+    "stack": [
+      { "name": "Sanity.io", "icon": "sanity" },
+      { "name": "React", "icon": "react" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "SASS", "icon": "sass" }
+    ]
+  },
+  {
+    "id": "artis-reit-corporate",
+    "title": "ARTIS REIT Corporate",
+    "description": "A corporate website for ARTIS Real Estate Investment Trust, showcasing their portfolio, investor relations, and company information. Led a major revamp to improve load speed, readability, and accessibility without alienating users. Converted the site from a table-based layout to Bootstrap, integrating AJAX for better search functionality.",
+    "type": "archived",
+    "url": "https://artisreit.com",
+    "gridClass": "tall-item",
+    "stack": [
+      { "name": "PHP", "icon": "php" },
+      { "name": "MySQL", "icon": "mysql" },
+      { "name": "WordPress", "icon": "wordpress" },
+      { "name": "Bootstrap", "icon": "bootstrap" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "JavaScript", "icon": "javascript" },
+      { "name": "jQuery", "icon": "jquery" },
+      { "name": "Bootstrap", "icon": "bootstrap" }
+    ]
+  },
+  {
+    "id": "300-main",
+    "title": "300 Main",
+    "description": "A website for a residential skyscraper in Winnipeg, , Canada.",
+    "type": "archived",
+    "notes": "The site has changed since I last worked on it. Archived link has been provided.",
+    "url": "https://web.archive.org/web/20210906014213/https://300main.ca/",
+    "gridClass": "regular-1",
+    "stack": [
+      { "name": "PHP", "icon": "php" },
+      { "name": "jQuery", "icon": "jquery" },
+      { "name": "skrollr.js", "icon": "skrollr" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "Bootstrap", "icon": "bootstrap" },
+      { "name": "SASS", "icon": "sass" }
+    ]
+  },
+  {
+    "id": "300-main-kiosk",
+    "title": "300 Main Interactive Kiosk",
+    "description": "An interactive kiosk application for the 300 Main residential skyscraper in Winnipeg, Canada. Developed an HTML5-based kiosk app for a residential tower using a LEAP Motion sensor for interactive controls. It displayed building renders and historical content via a touchless interface.",
+    "type": "archived",
+    "notes": "The kiosk is no longer in use as of April 2022.",
+    "url": null,
+    "gridClass": "small-item",
+    "stack": [
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS3", "icon": "css3" },
+      { "name": "JavaScript", "icon": "javascript" },
+      { "name": "jQuery", "icon": "jquery" },
+      { "name": "LEAP Motion", "icon": "leap-motion" }
+    ]
+  }
+]

@@ -1,20 +1,7 @@
 section.section-generic {
     color: #333;
 
-    h2 {
-        margin-bottom: 2rem;
-
-        &::before {
-            font-family: 'Doto', sans-serif;
-            font-weight: 800;
-            display: inline-block;
-            transform: rotate(-90deg);
-            margin-right: 0.5rem;
-            font-weight: bold;
-            opacity: 0.8;
-            position: absolute;
-            left: -2rem;
-            top: 5px;
-        }
+    &.no-top-margin {
+        padding-top: 0;
     }
 }

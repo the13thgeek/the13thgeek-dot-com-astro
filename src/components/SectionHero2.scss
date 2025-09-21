@@ -71,83 +71,12 @@
             }
         }
         .type-a {
-            border-bottom: #999 2px dotted;
+            border-bottom: #666 1px dotted;
             @include respond(lg) {
                 border-bottom: none;
-                border-right: #999 2px dotted;
+                border-right: #666 1px dotted;
             }
         }
-
-        /* 
-        .main-card {
-            grid-column: 1;
-            grid-row: 1;
-            background-color: #1a1a1a;
-            height: 100%;
-            display: grid;
-            grid-template-columns: 1fr;
-            align-items: center;
-            padding: 2rem;
-            border-radius: $border-sm;
-
-            @include respond(md) {
-                grid-column: 1 / span 2;
-                grid-template-columns: 1fr 1fr;
-                border-radius: $border-md;
-            }
-            @include respond(lg) {
-                border-radius: $border-lg;
-            }
-
-        }
-
-        .definitions-a {
-            grid-row: 2;
-            grid-column: 1;
-            display: flex;
-            align-items: center;
-            padding: 2rem;
-            color: #212121;
-            background-color: $swatch-2;
-
-            @include respond(md) {
-                border-bottom: #ccc 1px dotted;
-            }
-
-            @include respond(lg) {
-                grid-row: 2;
-                grid-column: 1;
-                border-bottom-left-radius: $border-lg;
-                border-right: #ccc 1px dotted;
-            }
-        }
-        .definitions-b {
-            grid-row: 3;
-            grid-column: 1;
-            display: flex;
-            align-items: center;
-            padding: 2rem;
-            color: #212121;
-            background-color: #ddd;
-            border-bottom-left-radius: $border-sm;
-            border-bottom-right-radius: $border-sm;
-
-            @include respond(md) {
-                border-bottom-left-radius: $border-md;
-                border-bottom-right-radius: $border-md;
-                border-top: #ccc 1px dotted;
-            }
-
-            @include respond(lg) {
-                grid-row: 2;
-                grid-column: 2;
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: $border-lg;
-                border-left: #ccc 1px dotted;
-            }
-        }
-
-        */ 
     }
 
     .hero-connect {
