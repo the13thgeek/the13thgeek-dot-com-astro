@@ -5,7 +5,9 @@ import SectionHomeAbout from '../components/SectionHomeAbout.astro';
 import SectionHero from '../components/SectionHero.astro';
 import SectionHero2 from '../components/SectionHero2.astro';
 import SectionContainer from '../components/SectionContainer.astro';
-import ProjectsGrid from '../components/ProjectsGrid.astro';
+import ProjectsGrid from '../components/ProjectsGrid.tsx';
+
+
 
 
 
@@ -21,7 +23,8 @@ import ProjectsGrid from '../components/ProjectsGrid.astro';
 
     <SectionContainer noTopMargin sectionTitle="Work" sectionNumber="2" className="test">
         <p>Hello</p>
-				<ProjectsGrid />
+				<!-- <ProjectsGrid /> -->
+				 <ProjectsGrid client:load />
     </SectionContainer>
 	
 	<div class="struct">

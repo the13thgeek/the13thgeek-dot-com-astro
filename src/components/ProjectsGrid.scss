@@ -20,6 +20,88 @@
   }
 }
 
+ul.projects {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  border-radius: $border-sm;
+
+  @include respond(md) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-radius: $border-md;
+  }
+
+  @include respond(lg) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: $border-lg;
+  }
+
+  .project-item {
+    background: #ffffff;
+    border-radius: 16px;
+
+    &.themainframe {
+      @include respond(md) {
+        grid-row: 1 / span 3;
+        grid-column: 1 / span 2;        
+      }
+    }
+    &.artis-reit-corporate{
+      @include respond(md) {
+        grid-row: 1 / span 2;
+        grid-column: 3 / span 2;
+      }
+    }
+    &.pmc-planner {
+      @include respond(md) {
+        grid-row: 3 / span 3;
+        grid-column: 3 / span 2;
+      }
+      @include respond(lg) {
+        grid-row: 1 / span 3;
+        grid-column: 5 / span 2;
+      }
+    }
+    &.the13thgeek {
+      @include respond(md) {
+        grid-row: 4 / span 2;
+        grid-column: 1 / span 2;
+      }
+      @include respond(lg) {
+        grid-row: 3 / span 3;
+        grid-column: 3 / span 2;
+      }
+    }
+    &.s300-main {
+      @include respond(md) {
+        grid-row: 6 / span 2;
+        grid-column: 1 / span 2;
+      }
+      @include respond(lg) {
+        grid-row: 4 / span 2;
+        grid-column: 1 / span 2;
+      }
+    }
+    &.s300-main-kiosk {
+      @include respond(md) {
+        grid-row: 6 / span 2;
+        grid-column: 3 / span 2;
+      }
+      @include respond(lg) {
+        grid-row: 4 / span 2;
+        grid-column: 5 / span 2;
+      }
+    }
+    
+  }
+}
+
+/*
 .project-item {
   background: #ffffff;
   border-radius: 16px;
@@ -52,83 +134,84 @@
 }
 
 .featured-item,
+.wide-item {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.tall-item,
+.regular-1,
+.regular-2,
+.small-item {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+// Override for larger screens
+@include respond(md) {
+  .featured-item {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+  
   .wide-item {
-    grid-column: span 2;
+    grid-column: span 4;
     grid-row: span 1;
   }
-
-  .tall-item,
+  
+  .tall-item {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
   .regular-1,
   .regular-2,
   .small-item {
-    grid-column: span 1;
-    grid-row: span 1;
+    grid-column: span 2;
   }
+}
 
-  // Override for larger screens
-  @include respond(md) {
-    .featured-item {
-      grid-column: span 4;
-      grid-row: span 2;
-    }
-    
-    .wide-item {
-      grid-column: span 4;
-      grid-row: span 1;
-    }
-    
-    .tall-item {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-    
-    .regular-1,
-    .regular-2,
-    .small-item {
-      grid-column: span 2;
-    }
-  }
-
-  @include respond(lg) {
-    .tall-item {
-      grid-row: span 3; // Extra height on desktop
-    }
-    
-    .regular-2 {
-      grid-column: span 3; // Wider on desktop
-    }
-  }
-
-  // Special styling for different grid classes
-  .featured-item {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-
-    .card-content {
-      h3, p {
-        color: white;
-      }
-    }
-  }
-
-  .wide-item {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    color: white;
-
-    .card-content {
-      h3, p {
-        color: white;
-      }
-    }
-  }
-
+@include respond(lg) {
   .tall-item {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    color: white;
+    grid-row: span 3; // Extra height on desktop
+  }
+  
+  .regular-2 {
+    grid-column: span 3; // Wider on desktop
+  }
+}
 
-    .card-content {
-      h3, p {
-        color: white;
-      }
+// Special styling for different grid classes
+.featured-item {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+
+  .card-content {
+    h3, p {
+      color: white;
     }
   }
+}
+
+.wide-item {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+
+  .card-content {
+    h3, p {
+      color: white;
+    }
+  }
+}
+
+.tall-item {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+
+  .card-content {
+    h3, p {
+      color: white;
+    }
+  }
+}
+*/

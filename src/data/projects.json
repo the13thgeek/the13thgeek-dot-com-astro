@@ -64,7 +64,7 @@
     ]
   },
   {
-    "id": "300-main",
+    "id": "s300-main",
     "title": "300 Main",
     "description": "A website for a residential skyscraper in Winnipeg, , Canada.",
     "type": "archived",
@@ -81,7 +81,7 @@
     ]
   },
   {
-    "id": "300-main-kiosk",
+    "id": "s300-main-kiosk",
     "title": "300 Main Interactive Kiosk",
     "description": "An interactive kiosk application for the 300 Main residential skyscraper in Winnipeg, Canada. Developed an HTML5-based kiosk app for a residential tower using a LEAP Motion sensor for interactive controls. It displayed building renders and historical content via a touchless interface.",
     "type": "archived",
