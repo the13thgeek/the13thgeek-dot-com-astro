@@ -27,18 +27,18 @@ ul.projects {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  border-radius: $border-sm;
+  border-radius: $border-radius-sm;
 
   @include respond(md) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    border-radius: $border-md;
+    border-radius: $border-radius-md;
   }
 
   @include respond(lg) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    border-radius: $border-lg;
+    border-radius: $border-radius-lg;
   }
 
   .project-item {

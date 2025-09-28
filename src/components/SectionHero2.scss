@@ -29,16 +29,16 @@
             background-color: #1a1a1a;
             color: #fff;
             padding: 20px;
-            border-radius: $border-sm;
+            border-radius: $border-radius-sm;
             display: flex;
             align-items: center;
 
             @include respond(md) {
-                border-radius: $border-md;
+                border-radius: $border-radius-md;
                 min-height: 40vh;
             }
             @include respond(lg) {
-                border-radius: $border-lg;
+                border-radius: $border-radius-lg;
             }
         }
 
@@ -59,14 +59,14 @@
             display: flex;
             align-items: center;
             padding: 20px;
-            border-radius: $border-sm;
+            border-radius: $border-radius-sm;
 
             @include respond(md) {
-                border-radius: $border-md;
+                border-radius: $border-radius-md;
                 padding: 30px;
             }
             @include respond(lg) {
-                border-radius: $border-lg;
+                border-radius: $border-radius-lg;
                 padding: 40px;
             }
         }

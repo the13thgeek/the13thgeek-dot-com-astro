@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /* Fonts */
 $global-font-family: 'Raleway';
 $global-font-jp: 'Noto Sans JP', sans-serif;
@@ -7,33 +9,33 @@ $global-font-base: 16px;
 $swatch-1: #1a1a1a;
 $swatch-2: #ffc300;
 $swatch-3: #fe0;
+$base-size: 1rem;
+$ratio: 1.618;
 
 // Font sizes
-$font-size-sm: 0.875rem; // 14px
-$font-size-md: 1rem;     // 16px
-$font-size-lg: 1.25rem;  // 20px
-$font-size-xl: 2rem;     // 32px
+// $font-size-sm: 0.875rem; // 14px
+// $font-size-md: 1rem;     // 16px
+// $font-size-lg: 1.25rem;  // 20px
+// $font-size-xl: 2rem;     // 32px
+$size-0: math.div($base-size, $ratio);
+$size-1: $base-size;
+$size-2: $base-size * $ratio;
+$size-3: $base-size * ($ratio * $ratio);
 
 // Breakpoints
 $breakpoints: (
-  md: 768px,
-  lg: 992px,
-  xl: 1280px,
-  xxl: 1440px
+  md: 48rem,
+  lg: 62rem,
+  xl: 80rem,
+  xxl: 90rem
 );
 
-// Spacing scale (optional, for padding/margins)
-$spacing-xs: 0.5rem;
-$spacing-sm: 1rem;
-$spacing-md: 2rem;
-$spacing-lg: 3rem;
-$spacing-xl: 4rem;
 
 $default-bg-color: #f4f4f4;
 $navbar-bg-color: #000;
 $footer-bg-color: #000;
 
 // border-radius
-$border-sm: 10px;
-$border-md: 15px;
-$border-lg: 25px;
+$border-radius-sm: 10px;
+$border-radius-md: 15px;
+$border-radius-lg: 25px;
