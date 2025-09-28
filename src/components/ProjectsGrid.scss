@@ -43,7 +43,7 @@ ul.projects {
 
   .project-item {
     background: #ffffff;
-    border-radius: 16px;
+    @include tile(true);
 
     &.themainframe {
       @include respond(md) {

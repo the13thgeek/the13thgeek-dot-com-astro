@@ -19,6 +19,12 @@ body {
     line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 a {
     color: yellow;
 }
@@ -34,10 +40,11 @@ h1 {
   font-size: $size-3;
 }
 h2 {
-  font-size: $size-2;
+  font-size: $size-3;
 }
 h3 {
-  font-size: $size-1 * 1.25;
+  font-size: $size-2;
+  //font-size: $size-1 * 1.25;
 }
 
 section, footer {

@@ -12,7 +12,7 @@ interface SectionContainerProps {
 
 const {
     sectionNumber = 1,
-    sectionTitle = "Section",
+    sectionTitle = '',
     contentWidth = true,
     className = "",
     noTopMargin = false,
@@ -21,7 +21,9 @@ const {
 
 <section class={`section-generic ${className} ${noTopMargin ? 'no-top-margin' : ''}`}>
     <div class={ contentWidth === true ? 'struct' : 'struct-width' }>
-        <SectionHeading headingType="h2" sectionNumber={sectionNumber} sectionTitle={sectionTitle} />
+        {sectionTitle !== '' && (
+            <SectionHeading headingType="h2" sectionNumber={sectionNumber} sectionTitle={sectionTitle} />
+        )}
         <slot />
     </div>
 </section>

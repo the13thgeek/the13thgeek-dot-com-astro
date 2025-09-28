@@ -82,8 +82,9 @@
     .hero-connect {
         grid-row: 2;
         grid-column: 1;
-        background-color: #eee;
+        background-color: #000;
         color: #000;
+        @include tile(true);
 
         @include respond(md) {
             grid-row: 1;
@@ -92,8 +93,9 @@
     }
 
     .hero-visual {
-        background-color: #bbb;
+        background-color: $swatch-3;
         display: none;
+        @include tile();
 
         @include respond(md) {
             display: block;

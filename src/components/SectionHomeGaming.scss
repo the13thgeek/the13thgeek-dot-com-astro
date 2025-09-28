@@ -1,0 +1,53 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.gaming-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @include respond(md) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include respond(lg) {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    h2 {
+        margin-left: 0.75em;
+    }
+
+    .image {
+        background-color: #09f;
+        color: #fff;
+        min-height: 200px;
+        @include pictureBox();
+        @include tile();
+
+        @include respond(md) {
+            min-height: 400px;
+        }
+        @include respond(lg) {
+            min-height: 500px;
+        }
+    }
+
+    a.gamedata {
+        background-color: #fff;
+        color: inherit;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1em;
+        @include tile(true);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .cta-link {
+        margin-top: auto;
+    }
+}

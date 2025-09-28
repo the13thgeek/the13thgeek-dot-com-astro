@@ -12,6 +12,12 @@
     background: linear-gradient($deg,$color1,$color2);
 }
 
+@mixin pictureBox() {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @mixin respond($size) {
   $breakpoints: map.get($breakpoints, $size);
   @if $breakpoints {
@@ -21,4 +27,27 @@
   } @else {
     @warn "No value found for breakpoint: #{$size}";
   }
+}
+
+@mixin tile($applyPadding: false) {
+    border-radius: $border-radius-sm;
+    overflow: hidden;
+
+    @include respond(md) {
+        border-radius: $border-radius-md;
+    }
+    @include respond(lg) {
+        border-radius: $border-radius-lg;
+    }
+
+    @if $applyPadding {
+        padding: $size-1;
+
+        @include respond(md) {
+            padding: $size-2;
+        }
+        @include respond(lg) {
+            padding: $size-3;
+        }
+    }
 }

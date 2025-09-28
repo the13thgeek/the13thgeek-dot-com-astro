@@ -1,7 +1,11 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
 section.section-generic {
     color: #333;
 
     &.no-top-margin {
         padding-top: 0;
     }
+
 }

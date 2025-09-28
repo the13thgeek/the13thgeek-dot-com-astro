@@ -1,0 +1,43 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import './SectionHomeBlog.scss';
+const wp_url = import.meta.env.VITE_BLOG_WP_URL;
+
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};
+
+let latest_post = null;
+let next_post = null;
+
+try {
+    const response = await fetch(wp_url);
+    const posts = await response.json();
+    latest_post = posts[3];
+    next_post = posts[4];
+} catch (error) {
+    console.error('Error fetching latest blog post:', error);
+}
+---
+<div class="blog-row">
+    <div class="preview" style={{backgroundImage: latest_post ? `url(${latest_post.jetpack_featured_media_url})` : 'none'}}></div>
+    <a class="contents" href={`/field-notes/${latest_post.id+'-'+latest_post.slug}`} aria-labelledby={`postid-${latest_post.id}-h3`} aria-describedby={`postid-${latest_post.id}-p`}>
+        <SectionHeading headingType="h2" sectionTitle="Field Notes" sectionNumber="3" />
+        {latest_post ? (
+            <h3 id={`postid-${latest_post.id}-h3`}>{latest_post.title.rendered}</h3>
+            <div id={`postid-${latest_post.id}-p`} class="excerpt" set:html={latest_post.excerpt.rendered}></div>
+            <p class="post-date" set:html={`posted `+formatDate(latest_post.date)}></p>
+        ) : (
+            <p>No posts found.</p>
+        )}
+    </a>
+    <a href="/field-notes" class="cta-link"  style={{backgroundImage: next_post ? `url(${next_post.jetpack_featured_media_url})` : 'none'}}>
+        <div class="filter"></div>
+        <p>More entries &rarr;</p>
+    </a>
+</div>

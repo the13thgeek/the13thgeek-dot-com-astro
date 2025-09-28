@@ -6,9 +6,8 @@ import SectionHero from '../components/SectionHero.astro';
 import SectionHero2 from '../components/SectionHero2.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import ProjectsGrid from '../components/ProjectsGrid.tsx';
-
-
-
+import SectionHomeBlog from '../components/SectionHomeBlog.astro';
+import SectionHomeGaming from '../components/SectionHomeGaming.astro';
 
 
 ---
@@ -23,10 +22,18 @@ import ProjectsGrid from '../components/ProjectsGrid.tsx';
 
     <SectionContainer noTopMargin sectionTitle="Work" sectionNumber="2" className="test">
         <p>Hello</p>
-				<!-- <ProjectsGrid /> -->
-				 <ProjectsGrid client:load />
+			<!-- <ProjectsGrid /> -->
+			<ProjectsGrid client:load />
     </SectionContainer>
-	
+
+	<SectionContainer noTopMargin className="blog">
+		<SectionHomeBlog />
+	</SectionContainer>
+
+	<SectionContainer noTopMargin className="gaming">
+		<SectionHomeGaming />
+	</SectionContainer>
+
 	<div class="struct">
 		<h1>Astro?!</h1>
 		<Card client:only="react" />
@@ -36,8 +43,9 @@ import ProjectsGrid from '../components/ProjectsGrid.tsx';
 	
 </GlobalLayout>
 
-<style lang="scss">
+<!-- <style lang="scss">
 
+/*
 .bento {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
@@ -56,6 +64,6 @@ import ProjectsGrid from '../components/ProjectsGrid.tsx';
     justify-content: center;
     font-weight: bold;
 	}
-}
+} */
 
-</style>
+</style> -->
