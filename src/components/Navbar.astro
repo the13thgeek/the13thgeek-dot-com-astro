@@ -30,7 +30,7 @@ const { pathname } = Astro.url;
                 <li><a class={pathname === '/twitch' ? 'active' : ''} href="/twitch">Twitch</a></li>
             </ul>
         </nav>
-        <a class="link-connect" href="/#connect">Connect</a>
+        <!-- <a class="link-connect" href="/#connect">Connect</a> -->
     </div>
 </header>
 
@@ -38,7 +38,7 @@ const { pathname } = Astro.url;
   document.addEventListener("DOMContentLoaded", () => {
     const menuToggleOn = document.querySelector("#menu-open");
     const menuToggleOff = document.querySelector("#menu-close");
-    const nav = document.querySelector("nav");
+    const nav = document.querySelector("nav.main-nav");
 
     menuToggleOn?.addEventListener("click", () => {
       nav.classList.add("open");

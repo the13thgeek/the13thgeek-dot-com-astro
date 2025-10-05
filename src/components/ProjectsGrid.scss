@@ -42,8 +42,22 @@ ul.projects {
   }
 
   .project-item {
+    position: relative;
     background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+    padding-bottom: 0 !important;
     @include tile(true);
+
+    img.thumbnail {
+      margin-top: auto;
+    }
+
+    h3 {
+      margin: 0;
+    }
 
     &.themainframe {
       @include respond(md) {

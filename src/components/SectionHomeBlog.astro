@@ -1,28 +1,15 @@
 ---
 import SectionHeading from './SectionHeading.astro';
 import './SectionHomeBlog.scss';
-const wp_url = import.meta.env.VITE_BLOG_WP_URL;
+import { formatDate } from '../lib/common';
+import { PostService } from '../lib/PostService';
 
-const formatDate = (dateString: string) => {
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-};
+const postService = new PostService();
+const posts = await postService.getLatest(5);
+const latest_post = posts[2] ?? null;
+const next_post = posts[3] ?? null;
 
-let latest_post = null;
-let next_post = null;
 
-try {
-    const response = await fetch(wp_url);
-    const posts = await response.json();
-    latest_post = posts[3];
-    next_post = posts[4];
-} catch (error) {
-    console.error('Error fetching latest blog post:', error);
-}
 ---
 <div class="blog-row">
     <div class="preview" style={{backgroundImage: latest_post ? `url(${latest_post.jetpack_featured_media_url})` : 'none'}}></div>

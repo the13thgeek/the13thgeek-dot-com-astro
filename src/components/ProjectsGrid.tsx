@@ -39,6 +39,9 @@ export default function ProjectsGrid() {
             onClick={() => setSelected(project)}
           >
             <h3>{project.title}</h3>
+            <p>{project.description}</p>
+
+            <img src="https://placehold.co/640x500" className="thumbnail" />
           </li>
         ))}
       </ul>

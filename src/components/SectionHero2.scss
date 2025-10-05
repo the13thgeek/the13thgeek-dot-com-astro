@@ -23,7 +23,7 @@
 
         @include respond(md) {
             grid-row: 1 / span 2;
-        }
+        }    
 
         .main-card {
             background-color: #1a1a1a;
@@ -31,7 +31,46 @@
             padding: 20px;
             border-radius: $border-radius-sm;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            min-height: 30vh; 
+
+            h1 {
+                font-size: 2.5rem;
+                margin: 0;
+                mix-blend-mode: difference;
+                text-wrap: balance;
+                font-weight: 800;
+
+                @include respond(md) {
+                    font-size: 3rem;
+                }
+                @include respond(lg) {
+                    font-size: 4rem;
+                }
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-weight: 100;
+                letter-spacing: -1px;
+
+                span.highlight {
+                    font-weight: 600;
+                }
+
+                @include respond(md) {
+                    font-size: 2.5rem;
+                    line-height: 3rem;
+                }
+                
+            }
+
+            .prog-tag {
+                color: #666;
+            }
 
             @include respond(md) {
                 border-radius: $border-radius-md;
@@ -39,6 +78,7 @@
             }
             @include respond(lg) {
                 border-radius: $border-radius-lg;
+                min-height: 50vh;
             }
         }
 
@@ -46,6 +86,7 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 0;
+
 
             @include respond(lg) {
                 grid-template-columns: 1fr 1fr;
@@ -57,9 +98,60 @@
             background-color: $swatch-2;
             color: #333;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            gap: 0;
             padding: 20px;
             border-radius: $border-radius-sm;
+
+            h3 {
+                margin: 0;
+                position: relative;
+                z-index: 1;
+                font-size: 2rem;
+                margin-bottom: 25px;
+                background-color: #fff;
+                display: inline-block;
+                padding: 1px 10px 1px 8px;
+                clip-path: polygon(6% 0, 100% 0, 94% 100%, 2% 100%);
+                -webkit-clip-path: polygon(6% 0, 100% 0, 94% 100%, 2% 100%);
+                margin-left: -15px;
+                margin-right: -5px;
+                transform: rotate(-4deg);
+
+                @include respond(md) {
+                    font-size: 3rem;
+                }
+            }
+            .ipa {
+                position: relative;
+                z-index: 2;
+                font-weight: 400;
+                font-family: serif;
+                font-size: 23px;
+                margin: -30px 0 0 50px;
+                transform: rotate(-4deg);
+                top: -7px;
+            }
+            .type {
+                font-weight: 600;
+                font-style: italic;
+                margin-bottom: 5px;
+            }
+            ol {
+                counter-reset: def-counter;
+                li {
+                    counter-increment: def-counter;
+                    padding-left: 8px;
+                    &::marker {
+                        content: counter(def-counter) ".";
+                        font-weight: 600;
+                        position: absolute;
+                        left: -1.3rem;
+                    }
+                }
+            }
 
             @include respond(md) {
                 border-radius: $border-radius-md;
@@ -77,13 +169,19 @@
                 border-right: #666 1px dotted;
             }
         }
+        .type-b {
+            h3 {
+                color: #fff;
+                background-color: #000;
+            }
+        }
     }
 
     .hero-connect {
         grid-row: 2;
         grid-column: 1;
         background-color: #000;
-        color: #000;
+        color: #fff;
         @include tile(true);
 
         @include respond(md) {

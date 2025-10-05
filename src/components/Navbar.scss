@@ -34,33 +34,35 @@ header.main {
     }
 
     a {
-        &.link-connect {
-            @include boxgradient($deg: 90deg, $color1: $swatch-2, $color2: $swatch-3);
-            padding: 6px 30px;
-            border-radius: 50px;
-            font-size: 1em;
-            line-height: 18px;    
-            cursor: pointer;
-            transition: all 0.5s;
-            color: #000;
-            text-decoration: none;
-            font-weight: 800;
-            text-transform: uppercase;
-            display: none;
+        // &.link-connect {
+        //     @include boxgradient($deg: 90deg, $color1: $swatch-2, $color2: $swatch-3);
+        //     padding: 6px 30px;
+        //     border-radius: 50px;
+        //     font-size: 1em;
+        //     line-height: 18px;    
+        //     cursor: pointer;
+        //     transition: all 0.5s;
+        //     color: #000;
+        //     text-decoration: none;
+        //     font-weight: 800;
+        //     text-transform: uppercase;
+        //     display: none;
             
-            &:hover {
-                background: #fff;
-            }
+        //     &:hover {
+        //         background: #fff;
+        //     }
 
-            @include respond(md) {
-                display: block;
-            }
+        //     @include respond(md) {
+        //         display: block;
+        //     }
 
-        }
+        // }
     }
 
     @include respond(md) {
+        margin-top: 1rem;
         justify-content: space-between;
+        background: transparent;
 
         #menu-open {
             display: none;
@@ -79,7 +81,6 @@ nav.main-nav {
     right: 0;
     height: 100vh;
     width: 250px;
-    background: #000;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     display: flex;
@@ -87,6 +88,7 @@ nav.main-nav {
     padding: 1rem;
     gap: 1.5rem;
     z-index: 1000;
+    background-color: #000;
 
     ul {
         display: flex;
@@ -101,8 +103,8 @@ nav.main-nav {
                 display: block;
                 text-decoration: none;
                 color: #ddd;
-                font-size: 0.75em;
-                font-weight: 400;
+                font-size: 0.8rem;
+                font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 padding: 10px 15px 7px;
@@ -131,10 +133,25 @@ nav.main-nav {
                         border-right: 10px solid transparent;
                         border-top: 10px solid #eee;
                     }
+
+                    @include respond(md) {
+                        background-color: $swatch-2;
+                        &::after {
+                            border-top: 10px solid $swatch-2;
+                        }
+                    }
                 }
 
                 &:hover {
                     color: #fff;
+                }
+
+                @include respond(md) {
+                    color: #333;
+
+                    &:hover {
+                        color: #000;
+                    }
                 }
             }
 
@@ -163,6 +180,7 @@ nav.main-nav {
     }
 
     @include respond(md) {
+        background-color: transparent;
         position: static;
         height: auto;
         width: auto;
