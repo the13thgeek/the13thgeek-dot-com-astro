@@ -8,7 +8,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-@mixin boxgradient($deg:90,$color1:#cf0,$color2:#fc9) {
+@mixin boxgradient($deg:0deg,$color1:#cf0,$color2:#fc9) {
     background: linear-gradient($deg,$color1,$color2);
 }
 
@@ -31,6 +31,7 @@
 
 @mixin tile($applyPadding: false) {
     border-radius: $border-radius-sm;
+    position: relative;
     overflow: hidden;
 
     @include respond(md) {

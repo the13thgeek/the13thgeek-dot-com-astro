@@ -1,6 +1,5 @@
 ---
 import GlobalLayout from '../layouts/GlobalLayout.astro';
-import Card from '../components/Card';
 import SectionHomeAbout from '../components/SectionHomeAbout.astro';
 import SectionHero from '../components/SectionHero.astro';
 import SectionHero2 from '../components/SectionHero2.astro';
@@ -33,13 +32,6 @@ import SectionHomeGaming from '../components/SectionHomeGaming.astro';
 	<SectionContainer noTopMargin className="gaming">
 		<SectionHomeGaming />
 	</SectionContainer>
-
-	<div class="struct">
-		<h1>Astro?!</h1>
-		<Card client:only="react" />
-		<p>{Astro.site}</p>
-	</div>
-	
 	
 </GlobalLayout>
 

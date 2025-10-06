@@ -1,5 +1,13 @@
 ---
+import SectionHeading from './SectionHeading.astro';
 import './SectionHero2.scss';
+
+const peekSize = 30;
+const peekTiles = Array.from({ length: peekSize });
+
+const randOpacity = (min: number, max: number) => {
+    return (Math.random() * (max-min) + min).toFixed(2);
+};
 
 ---
 
@@ -7,7 +15,9 @@ import './SectionHero2.scss';
     <div class="struct">
         <div class="hero-card">
             <div class="main-card">
-                <h1>Hello, <span class="split-line">I'm <span class="prog-tag">&#123;</span><span class="highlight">#Name</span><span class="prog-tag">&#125;</span>.</span></h1>
+                <SectionHeading headingType="h1" sectionNumber="1" sectionTitle="">
+                    Hello, <span class="split-line">I'm <span class="prog-tag">&#123;</span><span class="highlight">#Name</span><span class="prog-tag">&#125;</span>.</span>
+                </SectionHeading>
                 <p>I'm a web experience creator, also known as <span class="highlight">@the13thgeek</span>!</p>
             </div>
             <div class="definitions">
@@ -38,6 +48,25 @@ import './SectionHero2.scss';
                 <use xlink:href="/assets/global/common.svg?id=123#connect"></use>
             </svg>
         </div>
-        <div class="hero-visual">E</div>
+        <div class="hero-visual">
+            { peekTiles.map(() => {
+                const delay = Math.random() * 8;
+            return (
+                <div class="tile" style={`opacity: ${randOpacity(0.7, 0.9)}; animation: sparkle 2s ease-in-out ${delay}s infinite`}></div>
+            )})}
+        </div>
     </div>
 </section>
+
+<script>
+    const tiles = document.querySelectorAll('.tile');
+    tiles.forEach(tile => {
+        tile.addEventListener('mouseenter', () => {
+            if(tile.classList.contains('effector')) return;
+            tile.classList.add('effector');
+            setTimeout(() => {
+                tile.classList.remove('effector');
+            }, 3500);
+        });
+    });
+</script>

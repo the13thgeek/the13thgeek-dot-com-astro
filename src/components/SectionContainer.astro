@@ -22,7 +22,7 @@ const {
 <section class={`section-generic ${className} ${noTopMargin ? 'no-top-margin' : ''}`}>
     <div class={ contentWidth === true ? 'struct' : 'struct-width' }>
         {sectionTitle !== '' && (
-            <SectionHeading headingType="h2" sectionNumber={sectionNumber} sectionTitle={sectionTitle} />
+            <SectionHeading headingType="h2" sectionNumber={sectionNumber}>{sectionTitle}</SectionHeading>
         )}
         <slot />
     </div>

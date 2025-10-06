@@ -4,19 +4,17 @@ import './SectionHeading.scss';
 interface SectionHeadingProps {
     headingType?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
     sectionNumber?: number;
-    sectionTitle?: string;
 }
 
 const {
     headingType = "h1",
     sectionNumber = 1,
-    sectionTitle = "Section",
 }: SectionHeadingProps = Astro.props;
 
 const HeadingTag = headingType;
 
 ---
-<HeadingTag style={ `--section-num: "${sectionNumber < 10 ? '0'+sectionNumber : sectionNumber  }"` }>{sectionTitle}</HeadingTag>
+<HeadingTag style={ `--section-num: "${sectionNumber < 10 ? '0'+sectionNumber : sectionNumber  }"` }><slot /></HeadingTag>
 
 <style lang="scss">
     h1,h2,h3,h4,h5,h6 {

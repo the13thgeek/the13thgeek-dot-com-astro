@@ -10,7 +10,8 @@ header.main {
         align-items: center;
 
         @include respond(md) {
-            justify-content: space-between;
+            justify-content: start;
+            gap: 40px;
         }
     }
 

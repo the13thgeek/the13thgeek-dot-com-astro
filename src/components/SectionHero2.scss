@@ -1,6 +1,18 @@
 @use '../styles/variables'  as *;
 @use '../styles/mixins' as *;
 
+@keyframes sparkle {
+    0% {
+        background-color: $swatch-2;
+    }
+    20% {
+        background-color: #fff;
+    }
+    50% {
+        background-color: $swatch-2;
+    }
+}
+
 .hero-grid {
     .struct {
         display: grid;
@@ -51,11 +63,21 @@
                 }
             }
 
+            .split-line {
+                display: inline;
+
+                @include respond(xl) {
+                    display: block;
+                }
+            }
+
             p {
                 font-size: 1.5rem;
                 line-height: 2rem;
                 font-weight: 100;
                 letter-spacing: -1px;
+                padding-left: 1.6em;
+                padding-right: 1rem;
 
                 span.highlight {
                     font-weight: 600;
@@ -78,7 +100,7 @@
             }
             @include respond(lg) {
                 border-radius: $border-radius-lg;
-                min-height: 50vh;
+                min-height: 60vh;
             }
         }
 
@@ -180,7 +202,7 @@
     .hero-connect {
         grid-row: 2;
         grid-column: 1;
-        background-color: #000;
+        @include boxgradient(0deg,$swatch-3,$swatch-2);
         color: #fff;
         @include tile(true);
 
@@ -191,12 +213,24 @@
     }
 
     .hero-visual {
-        background-color: $swatch-3;
+        //background-color: $swatch-3;
         display: none;
         @include tile();
+        @include pictureBox;
+        background-image: url('/assets/home/hero-profile-photo.jpg');
+
+        .tile {
+            background-color: $swatch-2;
+            transition: all 0.5s;
+
+            &.effector {
+                transform: scaleX(0.0001);
+            }
+        }
 
         @include respond(md) {
-            display: block;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             grid-row: 2;
             grid-column: 2;
             min-height: 10vh;
