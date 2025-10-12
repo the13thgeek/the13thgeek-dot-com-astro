@@ -8,6 +8,7 @@ interface SectionContainerProps {
     contentWidth?: boolean;
     className?: string;
     noTopMargin?: boolean;
+    isStyled?: boolean;
 }
 
 const {
@@ -16,13 +17,14 @@ const {
     contentWidth = true,
     className = "",
     noTopMargin = false,
+    isStyled = true,
 }: SectionContainerProps = Astro.props;
 ---
 
 <section class={`section-generic ${className} ${noTopMargin ? 'no-top-margin' : ''}`}>
     <div class={ contentWidth === true ? 'struct' : 'struct-width' }>
         {sectionTitle !== '' && (
-            <SectionHeading headingType="h2" sectionNumber={sectionNumber}>{sectionTitle}</SectionHeading>
+            <SectionHeading isStyled={isStyled} headingType="h2" sectionNumber={sectionNumber}>{sectionTitle}</SectionHeading>
         )}
         <slot />
     </div>

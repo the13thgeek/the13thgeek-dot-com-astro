@@ -6,6 +6,7 @@ import SectionHero2 from '../components/SectionHero2.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import ProjectsGrid from '../components/ProjectsGrid.tsx';
 import SectionHomeBlog from '../components/SectionHomeBlog.astro';
+import SectionHomeBlog2 from '../components/SectionHomeBlog2.astro';
 import SectionHomeGaming from '../components/SectionHomeGaming.astro';
 
 
@@ -20,16 +21,19 @@ import SectionHomeGaming from '../components/SectionHomeGaming.astro';
     <SectionHero2 />
 
     <SectionContainer noTopMargin sectionTitle="Work" sectionNumber="2" className="test">
-        <p>Hello</p>
 			<!-- <ProjectsGrid /> -->
 			<ProjectsGrid client:load />
     </SectionContainer>
 
-	<SectionContainer noTopMargin className="blog">
+	<!-- <SectionContainer noTopMargin sectionTitle="Field Notes" sectionNumber="3" className="blog">
 		<SectionHomeBlog />
+	</SectionContainer> -->
+
+	<SectionContainer noTopMargin sectionTitle="Field Notes" sectionNumber="3" className="blog">
+		<SectionHomeBlog2 />
 	</SectionContainer>
 
-	<SectionContainer noTopMargin className="gaming">
+	<SectionContainer noTopMargin sectionTitle="Gaming" sectionNumber="4" className="gaming">
 		<SectionHomeGaming />
 	</SectionContainer>
 	

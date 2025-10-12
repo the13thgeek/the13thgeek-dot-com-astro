@@ -29,6 +29,10 @@ a {
     color: yellow;
 }
 
+svg {
+  color: inherit;
+}
+
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     margin-bottom: 0.5em;
@@ -87,7 +91,7 @@ section, footer {
   }
 
   @include respond(xl) {
-    max-width: 1350px;
+    max-width: 1500px;
   }
 }
 

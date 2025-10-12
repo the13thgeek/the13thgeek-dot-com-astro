@@ -1,0 +1,67 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.blog-list {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .blog-more {
+        @include tile();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $swatch-3;
+        color: #000;
+    }
+    .preview {
+        @include pictureBox();
+        @include tile();
+        height: 350px;
+        transition: all 0.2s;
+    }
+
+    a.blog-entry {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        &:hover {
+            text-decoration: none;
+
+            .preview {
+                opacity: 0.8;
+            }
+        }
+    }
+    h3, p {
+        margin: 0 $border-radius-sm;
+
+        @include respond(md) {
+            margin: 0 $border-radius-sm;
+        }
+        @include respond(lg) {
+            margin: 0 $border-radius-lg;
+        }
+    }
+
+    h3 {
+        padding: 0;
+    }
+    p {
+        &.post-date {
+            font-size: 0.75rem;
+            color: #666;
+        }
+    }
+
+    @include respond(md) {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    @include respond(xl) {
+        grid-template-columns: 2fr 2fr 2fr 1fr;
+    }
+
+}

@@ -1,11 +1,14 @@
-<svg width="0" height="0" class="hidden">
-  <symbol id="caret-right" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+<svg width="0" height="0" class="hidden" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="caret-right" fill="currentColor" viewBox="0 0 256 256">
     <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
   </symbol>
-  <symbol id="menu" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+  <symbol id="menu" fill="currentColor" viewBox="0 0 256 256">
     <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
   </symbol>
-  <symbol id="close" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+  <symbol id="close"  fill="currentColor" viewBox="0 0 256 256">
     <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+  </symbol>
+  <symbol id="connect" fill="currentColor" viewBox="0 0 256 256">
+    <path d="M231.4,44.34s0,.1,0,.15l-58.2,191.94a15.88,15.88,0,0,1-14,11.51q-.69.06-1.38.06a15.86,15.86,0,0,1-14.42-9.15L107,164.15a4,4,0,0,1,.77-4.58l57.92-57.92a8,8,0,0,0-11.31-11.31L96.43,148.26a4,4,0,0,1-4.58.77L17.08,112.64a16,16,0,0,1,2.49-29.8l191.94-58.2.15,0A16,16,0,0,1,231.4,44.34Z"></path>
   </symbol>
 </svg>

@@ -1,5 +1,5 @@
 ---
-import SectionHeading from './SectionHeading.astro';
+//import SectionHeading from './SectionHeading.astro';
 import './SectionHomeBlog.scss';
 import { formatDate } from '../lib/common';
 import { PostService } from '../lib/PostService';
@@ -14,7 +14,7 @@ const next_post = posts[3] ?? null;
 <div class="blog-row">
     <div class="preview" style={{backgroundImage: latest_post ? `url(${latest_post.jetpack_featured_media_url})` : 'none'}}></div>
     <a class="contents" href={`/field-notes/${latest_post.id+'-'+latest_post.slug}`} aria-labelledby={`postid-${latest_post.id}-h3`} aria-describedby={`postid-${latest_post.id}-p`}>
-        <SectionHeading headingType="h2" sectionNumber="3">Field Notes</SectionHeading>
+        <!-- <SectionHeading headingType="h2" sectionNumber="3">Field Notes</SectionHeading> -->
         {latest_post ? (
             <h3 id={`postid-${latest_post.id}-h3`}>{latest_post.title.rendered}</h3>
             <div id={`postid-${latest_post.id}-p`} class="excerpt" set:html={latest_post.excerpt.rendered}></div>
