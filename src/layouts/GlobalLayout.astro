@@ -7,6 +7,7 @@ import Footer from '../components/Footer.astro';
 
 interface LayoutProps {
 	title?: string;
+	section?: string;
 	description?: string;
 	keywords?: string;
 	ogImage?: string;
@@ -15,6 +16,7 @@ interface LayoutProps {
 
 const { 
 	title = "Default",
+	section = "home",
 	description = "The personal website of the13thgeek",
 	keywords = "the13thgeek, astro, blog, developer, software engineer, tech",
 	ogImage = "/og-image.png",
@@ -47,7 +49,7 @@ const canonicalURL = siteURL + path;
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Doto:wght,ROND@600,100&family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body data-section={section}>
 		<Navbar />
 		<main>
 			<slot />

@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%;
       height: 10px;
       z-index: -1;
-      background-color: $swatch-2;
+      background-color: var(--accent);
       position: absolute;
       bottom: 6px;
       right: 0;

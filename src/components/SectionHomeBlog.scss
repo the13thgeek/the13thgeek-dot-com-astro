@@ -10,8 +10,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $swatch-3;
-        color: #000;
+        background-color: var(--accent);
+        color: #fff;
     }
     .preview {
         @include pictureBox();
@@ -47,6 +47,7 @@
     }
 
     h3 {
+        color: var(--deep);
         padding: 0;
     }
     p {

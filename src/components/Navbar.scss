@@ -18,7 +18,27 @@ header.main {
     .logo {
         margin: 5px 0;
         width: 130px;
+        height: 50px;
         display: flex;
+
+        .g1 {
+            fill: #fff;
+        }
+        .g2 {
+            fill: #000;
+        }
+        .g3 {
+            fill: var(--accent);
+        }
+        
+        @include respond(md) {
+            width: 160px;
+            height: 60px;
+
+            .g1, .g2 {
+                fill: #333;
+            }
+        }
     }
 
     #menu-open {
@@ -68,11 +88,6 @@ header.main {
         #menu-open {
             display: none;
         }
-
-        .logo {
-            margin: 5px 0;
-            width: 100px;
-        }
     }
 }
 
@@ -116,7 +131,7 @@ nav.main-nav {
                     position: relative;
                     background-color: #eee;
                     font-weight: 800;
-                    color: #000;
+                    color: #fff;
 
                     &:hover {
                         color: #666;
@@ -136,9 +151,9 @@ nav.main-nav {
                     }
 
                     @include respond(md) {
-                        background-color: $swatch-2;
+                        background-color: var(--accent);
                         &::after {
-                            border-top: 10px solid $swatch-2;
+                            border-top: 10px solid var(--accent);
                         }
                     }
                 }
@@ -216,4 +231,9 @@ nav.main-nav {
         }
     }
     */
+}
+
+// overrides
+body[data-section="home"] nav.main-nav ul li a.active {
+    color: #333;
 }

@@ -1,0 +1,33 @@
+// src/styles/_themes.scss
+
+$sections: (
+	home: (
+		accent: #ffc300,
+		deep: #332200,
+		light: #fff2b8,
+	),
+	profile: (
+		accent: #e63946,
+		deep: #660b10,
+		light: #ffccd1,
+	),
+	blog: (
+		accent: #2ecc71,
+		deep: #116644,
+		light: #d4f4e0,
+	),
+	twitch: (
+		accent: #9146ff,
+		deep: #3b0066,
+		light: #e6dbff,
+	),
+);
+
+// Generate CSS variables based on data-section attribute
+@each $name, $colors in $sections {
+	body[data-section="#{$name}"] {
+		--accent: #{map-get($colors, accent)};
+		--deep: #{map-get($colors, deep)};
+		--light: #{map-get($colors, light)};
+	}
+}
