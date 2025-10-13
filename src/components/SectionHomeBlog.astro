@@ -1,30 +1,25 @@
 ---
-//import SectionHeading from './SectionHeading.astro';
 import './SectionHomeBlog.scss';
 import { formatDate } from '../lib/common';
 import { PostService } from '../lib/PostService';
+import Icon from './Icon.astro';
 
 const postService = new PostService();
-const posts = await postService.getLatest(5);
-const latest_post = posts[2] ?? null;
-const next_post = posts[3] ?? null;
+const posts = await postService.getLatest(3);
 
 
 ---
-<div class="blog-row">
-    <div class="preview" style={{backgroundImage: latest_post ? `url(${latest_post.jetpack_featured_media_url})` : 'none'}}></div>
-    <a class="contents" href={`/field-notes/${latest_post.id+'-'+latest_post.slug}`} aria-labelledby={`postid-${latest_post.id}-h3`} aria-describedby={`postid-${latest_post.id}-p`}>
-        <!-- <SectionHeading headingType="h2" sectionNumber="3">Field Notes</SectionHeading> -->
-        {latest_post ? (
-            <h3 id={`postid-${latest_post.id}-h3`}>{latest_post.title.rendered}</h3>
-            <div id={`postid-${latest_post.id}-p`} class="excerpt" set:html={latest_post.excerpt.rendered}></div>
-            <p class="post-date" set:html={`posted `+formatDate(latest_post.date)}></p>
-        ) : (
-            <p>No posts found.</p>
-        )}
-    </a>
-    <a href="/field-notes" class="cta-link"  style={{backgroundImage: next_post ? `url(${next_post.jetpack_featured_media_url})` : 'none'}}>
-        <div class="filter"></div>
-        <p>More entries &rarr;</p>
+<div class="blog-list">
+    {posts.map((post) => (
+        <a class="blog-entry" href={`/field-notes/${post.id+'-'+post.slug}`} aria-labelledby={`postid-${post.id}-h3`} aria-describedby={`postid-${post.id}-p`}>
+            <div class="preview" style={{backgroundImage: post ? `url(${post.jetpack_featured_media_url})` : 'none'}}></div>
+            <h3 id={`postid-${post.id}-h3`}>{post.title.rendered}</h3>
+            <div id={`postid-${post.id}-p`} class="excerpt" set:html={post.excerpt.rendered}></div>
+            <p class="post-date" set:html={`posted `+formatDate(post.date)}></p>
+        </a>
+    ))}
+    <a href="#" class="blog-more">
+        <p>More</p>
+        <Icon id='caret-right' width='40' height='40' />
     </a>
 </div>

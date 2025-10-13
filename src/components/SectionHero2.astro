@@ -44,12 +44,10 @@ const randOpacity = (min: number, max: number) => {
                 </div>
             </div>
         </div>
-        <div class="hero-connect">
-            <Icon id="connect" />
-            <!-- <svg class="icon">
-                <use xlink:href="/assets/global/common.svg?id=123#connect"></use>
-            </svg> -->
-        </div>
+        <button class="hero-connect">
+            <Icon class="icon-connect" id="connect" />
+            <p><strong>Connect</strong><br>with me</p>
+        </button>
         <div class="hero-visual">
             { peekTiles.map(() => {
                 const delay = Math.random() * 8;

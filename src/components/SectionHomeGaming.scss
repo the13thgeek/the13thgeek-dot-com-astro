@@ -15,10 +15,12 @@
 
     h3 {
         padding: 0;
+        margin: 0;
     }
 
     .image {
         background-color: #09f;
+        background-image: url('/assets/home/gaming-default.jpg');
         color: #fff;
         min-height: 200px;
         @include pictureBox();

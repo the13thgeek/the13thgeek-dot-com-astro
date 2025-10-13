@@ -3,6 +3,7 @@ import './SectionContainer.scss';
 import SectionHeading from './SectionHeading.astro';
 
 interface SectionContainerProps {
+    sectionId?: string;
     sectionNumber?: number;
     sectionTitle?: string;
     contentWidth?: boolean;
@@ -12,6 +13,7 @@ interface SectionContainerProps {
 }
 
 const {
+    sectionId = '',
     sectionNumber = 1,
     sectionTitle = '',
     contentWidth = true,
@@ -21,7 +23,7 @@ const {
 }: SectionContainerProps = Astro.props;
 ---
 
-<section class={`section-generic ${className} ${noTopMargin ? 'no-top-margin' : ''}`}>
+<section id={sectionId} class={`section-generic ${className} ${noTopMargin ? 'no-top-margin' : ''}`}>
     <div class={ contentWidth === true ? 'struct' : 'struct-width' }>
         {sectionTitle !== '' && (
             <SectionHeading isStyled={isStyled} headingType="h2" sectionNumber={sectionNumber}>{sectionTitle}</SectionHeading>
