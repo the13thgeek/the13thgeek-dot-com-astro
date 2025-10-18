@@ -15,32 +15,6 @@ header.main {
         }
     }
 
-    .logo {
-        margin: 5px 0;
-        width: 130px;
-        height: 50px;
-        display: flex;
-
-        .g1 {
-            fill: #fff;
-        }
-        .g2 {
-            fill: #000;
-        }
-        .g3 {
-            fill: var(--accent);
-        }
-        
-        @include respond(md) {
-            width: 160px;
-            height: 60px;
-
-            .g1, .g2 {
-                fill: #333;
-            }
-        }
-    }
-
     #menu-open {
         background: none;
         border: none;
@@ -52,32 +26,6 @@ header.main {
         position: absolute;
         top: 15px;
         right: 20px
-    }
-
-    a {
-        // &.link-connect {
-        //     @include boxgradient($deg: 90deg, $color1: $swatch-2, $color2: $swatch-3);
-        //     padding: 6px 30px;
-        //     border-radius: 50px;
-        //     font-size: 1em;
-        //     line-height: 18px;    
-        //     cursor: pointer;
-        //     transition: all 0.5s;
-        //     color: #000;
-        //     text-decoration: none;
-        //     font-weight: 800;
-        //     text-transform: uppercase;
-        //     display: none;
-            
-        //     &:hover {
-        //         background: #fff;
-        //     }
-
-        //     @include respond(md) {
-        //         display: block;
-        //     }
-
-        // }
     }
 
     @include respond(md) {

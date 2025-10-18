@@ -1,0 +1,36 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+#site-logo {
+    margin: 5px 0;
+    width: 130px;
+    height: 50px;
+    display: flex;
+
+    .g1 {
+        fill: #fff;
+    }
+    .g2 {
+        fill: #fff;
+    }
+    .g3 {
+        fill: var(--accent);
+    }
+    
+    @include respond(md) {
+        width: 160px;
+        height: 60px;
+
+        .g1 {
+            fill: #333;
+        }
+    }
+}
+
+body[data-section="home"] {
+    #site-logo {
+        .g2 {
+            fill: #333;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 ---
+import HeadingCard from './HeadingCard.astro';
 import Icon from './Icon.astro';
 import SectionHeading from './SectionHeading.astro';
 import './SectionHero2.scss';
@@ -15,12 +16,12 @@ const randOpacity = (min: number, max: number) => {
 <section class="hero-grid">
     <div class="struct">
         <div class="hero-card">
-            <div class="main-card">
+            <HeadingCard extraClass="main-card">
                 <SectionHeading isStyled={false} headingType="h1" sectionNumber="1" sectionTitle="">
                     Hello, <span class="split-line">I'm <span class="prog-tag">&#123;</span><span class="highlight">#Name</span><span class="prog-tag">&#125;</span>.</span>
                 </SectionHeading>
                 <p>I'm a web experience creator, also known as <span class="highlight">@the13thgeek</span>!</p>
-            </div>
+            </HeadingCard>
             <div class="definitions">
                 <div class="type-a">
                     <h3>#Name</h3>

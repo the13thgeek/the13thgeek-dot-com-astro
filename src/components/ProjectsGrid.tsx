@@ -13,6 +13,7 @@ interface ProjectItem {
   description: string;
   type: string;
   url: string | null;
+  img: string | null;
   gridClass: string;
   stack: ProjectStackItem[];
   notes?: string;
@@ -41,7 +42,7 @@ export default function ProjectsGrid() {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
 
-            <img src="https://placehold.co/640x500" className="thumbnail" />
+            <img src={`/assets/home/${project.img}`} className="thumbnail" />
           </li>
         ))}
       </ul>

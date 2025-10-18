@@ -16,7 +16,7 @@ const {
 const HeadingTag = headingType;
 
 ---
-<HeadingTag class={ isStyled === true ? `styled` : `` } style={ `--section-num: "${sectionNumber < 10 ? '0'+sectionNumber : sectionNumber  }"` }><slot /></HeadingTag>
+<HeadingTag class={ (isStyled === true ? `styled` : ``) + (sectionNumber >= 100 ? ` extended` : ``) } style={ `--section-num: "${sectionNumber < 10 ? '0'+sectionNumber : sectionNumber  }"` }><slot /></HeadingTag>
 
 <style lang="scss">
     h1,h2,h3,h4,h5,h6 {

@@ -1,0 +1,15 @@
+---
+import './HeadingCard.scss';
+
+interface HeadingCardProps {
+    extraClass?: string;
+}
+
+const {
+    extraClass = "",
+}: HeadingCardProps = Astro.props;
+
+---
+<div class={`heading-card` + (extraClass ? ` ${extraClass}` : ``)}>
+    <slot />
+</div>

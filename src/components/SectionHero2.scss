@@ -47,12 +47,11 @@
             background-color: #1a1a1a;
             color: #fff;
             padding: 20px;
-            border-radius: $border-radius-sm;
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: center;
-            min-height: 30vh; 
+            min-height: 30vh;
 
             h1 {
                 font-size: 2.5rem;
@@ -60,6 +59,7 @@
                 mix-blend-mode: difference;
                 text-wrap: balance;
                 font-weight: 800;
+                color: #fff;
 
                 span.highlight {
                     @include textgradient(90deg,var(--accent),var(--light));
@@ -107,11 +107,9 @@
             }
 
             @include respond(md) {
-                border-radius: $border-radius-md;
                 min-height: 40vh;
             }
             @include respond(lg) {
-                border-radius: $border-radius-lg;
                 min-height: 60vh;
             }
         }

@@ -35,4 +35,9 @@ h1, h2, h3, h4, h5, h6 {
       left: -1.15em;
       top: 7px;
   }
+
+  &.extended::before {
+      left: -1.4em;
+      top: 22px;
+  }
 }

@@ -1,0 +1,37 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.heading-card {
+    background-color: var(--accent);
+    color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    @include tile(true);
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        margin: 0 0 0 1em;
+        &::before {
+            color: var(--light);
+        }
+    }
+    p.subtitle {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        padding-left: 1.7em;
+        color: var(--light);
+    }
+}
+
+body[data-section="home"],
+body[data-section="field-notes"],
+body[data-section="projects"] {
+    .heading-card {
+        h1 {
+            color: #333;
+        }
+    }
+}

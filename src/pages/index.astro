@@ -13,16 +13,21 @@ import SectionHomeGaming from '../components/SectionHomeGaming.astro';
 
 <GlobalLayout 
 	title="the13thgeek&trade;" 
-	path="/"
+	path="/" 
 	section="home"
 	description="Welcome to the personal website of the13thgeek, a developer and tech enthusiast."
 	keywords="the13thgeek, astro, blog, developer, software engineer, tech">
 	
     <SectionHero2 />
 
-    <SectionContainer noTopMargin sectionId="work" sectionTitle="Work" sectionNumber="2" className="test">
+    <SectionContainer noTopMargin sectionTitle="Projects" sectionNumber="2" className="test">
+			<!-- <ProjectsGrid /> -->
 			<ProjectsGrid client:load />
     </SectionContainer>
+
+	<!-- <SectionContainer noTopMargin sectionTitle="Field Notes" sectionNumber="3" className="blog">
+		<SectionHomeBlog />
+	</SectionContainer> -->
 
 	<SectionContainer noTopMargin sectionTitle="Field Notes" sectionNumber="3" className="blog">
 		<SectionHomeBlog />
