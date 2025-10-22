@@ -1,0 +1,91 @@
+---
+import GlobalLayout from '../../layouts/GlobalLayout.astro';
+import HeadingCard from '../../components/HeadingCard.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import SectionContainer from '../../components/SectionContainer.astro';
+import he from 'he';
+
+import type { GetStaticPaths } from 'astro';
+
+interface Post {
+  id: number;
+  title: { rendered: string };
+  excerpt: { rendered: string };
+  content: { rendered: string };
+  date: string;
+  slug: string;
+  link: string;
+  _embedded?: {
+    'wp:featuredmedia'?: Array<{
+      source_url: string;
+      alt_text?: string;
+    }>;
+  };
+}
+
+export const getStaticPaths = (async () => {
+  const WP_API_URL = import.meta.env.VITE_BLOG_WP_URL;
+  
+  let allPosts: Post[] = [];
+  let currentPage = 1;
+  let totalPages = 1;
+  
+  while (currentPage <= totalPages) {
+    const response = await fetch(`${WP_API_URL}?_embed&per_page=100&page=${currentPage}`);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch posts: ${response.status}`);
+    }
+    
+    const posts: Post[] = await response.json();
+    totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '1');
+    allPosts = [...allPosts, ...posts];
+    currentPage++;
+  }
+  
+  return allPosts.map((post) => ({
+    params: { 
+      id: post.id.toString(),
+      slug: post.slug 
+    },
+    props: { post }
+  }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  post: Post;
+}
+
+const { post } = Astro.props;
+const featuredImageUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '';
+const featuredImageAlt = post._embedded?.['wp:featuredmedia']?.[0]?.alt_text || post.title.rendered;
+const decodedTitle = he.decode(post.title.rendered);
+---
+
+<GlobalLayout
+	title=`${decodedTitle} | Field Notes | the13thgeek&trade;`` 
+	section="field-notes"
+	path={Astro.url.pathname}>
+  <SectionContainer>	
+		<HeadingCard>
+			<SectionHeading isStyled={false} headingType="h1" sectionNumber="1" sectionTitle="">
+				{decodedTitle}
+			</SectionHeading>
+			<p class="subtitle">Field Note</p>
+		</HeadingCard>
+	</SectionContainer>
+	<SectionContainer>
+    <article>
+    <p>Published: {new Date(post.date).toLocaleDateString()}</p>
+    
+    {featuredImageUrl && (
+      <img 
+        src={featuredImageUrl} 
+        alt={featuredImageAlt}
+      />
+    )}
+    
+    <div set:html={post.content.rendered} />
+  </article>
+  </SectionContainer>
+</GlobalLayout>

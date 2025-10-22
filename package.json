@@ -13,8 +13,12 @@
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.8",
     "astro": "^5.14.6",
+    "he": "^1.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "sass": "^1.91.0"
+  },
+  "devDependencies": {
+    "@types/he": "^1.2.3"
   }
 }

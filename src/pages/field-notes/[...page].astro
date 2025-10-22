@@ -1,0 +1,95 @@
+---
+import GlobalLayout from '../../layouts/GlobalLayout.astro';
+import HeadingCard from '../../components/HeadingCard.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import SectionContainer from '../../components/SectionContainer.astro';
+
+import type { GetStaticPaths, Page } from 'astro';
+import he from 'he';
+
+interface Post {
+	id: number;
+	title: {
+		rendered: string;
+	};
+	excerpt: {
+		rendered: string;
+	};
+	content: {
+		rendered: string;
+	};
+	date: string;
+	slug: string;
+	link: string;
+	_embedded: {
+		'wp:featuredmedia'?: Array<{
+			source_url: string;
+		}>;
+	};
+}
+
+export const getStaticPaths = (async ({ paginate }) => {
+	const WP_API_URL = import.meta.env.VITE_BLOG_WP_URL;
+
+	let allPosts: Post[] = [];
+  let page = 1;
+  let totalPages = 1;
+  
+  while (page <= totalPages) {
+    const response = await fetch(`${WP_API_URL}?_embed&per_page=100&page=${page}`);
+    const posts: Post[] = await response.json();
+    totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '1');
+    allPosts = [...allPosts, ...posts];
+    page++;
+  }
+  
+  return paginate(allPosts, { pageSize: 5 });
+}) satisfies GetStaticPaths;
+
+interface Props {
+	page: Page<Post>;
+}
+
+const { page } = Astro.props;
+---
+
+<GlobalLayout
+	title=`Field Notes (Page ${page.currentPage}) | the13thgeek&trade;`` 
+	section="field-notes"
+	path={Astro.url.pathname}>
+	<SectionContainer>	
+		<HeadingCard>
+			<SectionHeading isStyled={false} headingType="h1" sectionNumber="1" sectionTitle="">
+				Field Notes
+			</SectionHeading>
+			<p class="subtitle">Writeups about stuff</p>
+		</HeadingCard>
+	</SectionContainer>
+	<SectionContainer>
+		<ul>
+    {page.data.map((post) => {
+      const featuredImageUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '';
+			const decodedTitle = he.decode(post.title.rendered);
+      
+      return (
+        <li>
+          <h2>{decodedTitle}</h2>
+          <p>Date: {new Date(post.date).toLocaleDateString()}</p>
+          <p>Slug: {post.slug}</p>
+          <div set:html={post.excerpt.rendered} />
+          {featuredImageUrl && <img src={featuredImageUrl} alt={post.title.rendered} />}
+          <a href={`/field-notes/${post.id}-${post.slug}`}>Read more</a>
+          <p>WP Permalink: {post.link}</p>
+        </li>
+      );
+    })}
+  </ul>
+
+	<div class="pagination">
+    {page.url.prev && <a href={page.url.prev}>← Previous</a>}
+    <span>Page {page.currentPage} of {page.lastPage}</span>
+    {page.url.next && <a href={page.url.next}>Next →</a>}
+  </div>
+		
+	</SectionContainer>
+</GlobalLayout>
