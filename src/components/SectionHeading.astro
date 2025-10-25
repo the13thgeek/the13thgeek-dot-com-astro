@@ -1,27 +1,33 @@
 ---
 import './SectionHeading.scss';
 
-interface SectionHeadingProps {
+interface Props {
     headingType?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
     sectionNumber?: number;
     isStyled?: boolean;
 }
 
 const {
-    headingType = "h1",
+    headingType = 'h1',
     sectionNumber = 1,
     isStyled = true,
-}: SectionHeadingProps = Astro.props;
+} = Astro.props;
 
 const HeadingTag = headingType;
-
+const formattedNumber = sectionNumber < 10 ? `0${sectionNumber}` : `${sectionNumber}`;
 ---
-<HeadingTag class={ (isStyled === true ? `styled` : ``) + (sectionNumber >= 100 ? ` extended` : ``) } style={ `--section-num: "${sectionNumber < 10 ? '0'+sectionNumber : sectionNumber  }"` }><slot /></HeadingTag>
+
+<HeadingTag 
+    class:list={[{ styled: isStyled, extended: sectionNumber >= 100 }]}
+    style={`--section-num: "${formattedNumber}"` as any}
+>
+    <slot />
+</HeadingTag>
 
 <style lang="scss">
-    h1,h2,h3,h4,h5,h6 {
-      &::before {
-          content: var(--section-num);
-      }
-    }    
+    h1, h2, h3, h4, h5, h6 {
+        &::before {
+            content: var(--section-num);
+        }
+    }
 </style>

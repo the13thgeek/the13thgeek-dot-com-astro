@@ -3,7 +3,13 @@ import Icon from './Icon.astro';
 import './Navbar.scss';
 import SiteLogo from './SiteLogo.astro';
 
-const { pathname } = Astro.url;
+const normalizedPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isCurrentPath = (path: string) => {
+  if (path === '/') {
+    return normalizedPath === '/';
+  }
+  return normalizedPath === path || normalizedPath.startsWith(path + '/');
+};
 ---
 
 <header class="main">
@@ -24,11 +30,11 @@ const { pathname } = Astro.url;
                     <Icon id="close" width="30" height="30" />
                     </button>
                 </li>
-                <li><a class={pathname === '/' ? 'active' : ''} href="/">Home</a></li>
-                <li><a class={pathname === '/about' ? 'active' : ''} href="/about">About</a></li>
-                <li><a class={pathname === '/projects' ? 'active' : ''} href="/projects">Projects</a></li>
-                <li><a class={pathname === '/field-notes' ? 'active' : ''} href="/field-notes">Field Notes</a></li>
-                <li><a class={pathname === '/twitch' ? 'active' : ''} href="/twitch">Twitch</a></li>
+                <li><a class={isCurrentPath('/') ? 'active' : ''} href="/">Home</a></li>
+                <li><a class={isCurrentPath('/about') ? 'active' : ''} href="/about">About</a></li>
+                <li><a class={isCurrentPath('/projects') ? 'active' : ''} href="/projects">Projects</a></li>
+                <li><a class={isCurrentPath('/field-notes') ? 'active' : ''} href="/field-notes">Field Notes</a></li>
+                <li><a class={isCurrentPath('/twitch') ? 'active' : ''} href="/twitch">Twitch</a></li>
             </ul>
         </nav>
         <!-- <a class="link-connect" href="/#connect">Connect</a> -->

@@ -8,4 +8,45 @@ section.section-generic {
         padding-top: 0;
     }
 
+    .heading-row {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+            text-transform: lowercase;
+            font-weight: 600;
+            margin-left: auto;
+
+            &::after {
+                content: '>>';
+                font-family: 'Doto', sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-left: 0.5rem;
+                transition: all 0.3s ease;
+                display: inline-flex;
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: var(--deep);
+                
+                &::after {
+                    transform: translateX(0.5rem);
+                    color: var(--accent);
+                }
+            }
+        }
+
+        @include respond(md) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
 }

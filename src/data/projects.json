@@ -7,6 +7,7 @@
     "url": "https://mainframe.the13thgeek.com",
     "img": "project-item-themainframe.jpg",
     "gridClass": "wide-item",
+    "isFeatured": true,
     "stack": [
       { "name": "Node.js", "icon": "node-js" },
       { "name": "MySQL", "icon": "mysql" },
@@ -24,6 +25,7 @@
     "url": "https://the13thgeek.com",
     "img": "project-item-the13thgeek.jpg",
     "gridClass": "tall-item",
+    "isFeatured": true,
     "stack": [
       { "name": "Astro", "icon": "astro" },
       { "name": "React", "icon": "react" },
@@ -41,6 +43,7 @@
     "url": "https://pmc.the13thgeek.com",
     "img": "project-item-pmcplanner.jpg",
     "gridClass": "wide-item",
+    "isFeatured": true,
     "stack": [
       { "name": "Sanity.io", "icon": "sanity" },
       { "name": "React", "icon": "react" },
@@ -56,6 +59,7 @@
     "url": "https://artisreit.com",
     "img": "project-item-artisreit.jpg",
     "gridClass": "tall-item",
+    "isFeatured": true,
     "stack": [
       { "name": "PHP", "icon": "php" },
       { "name": "MySQL", "icon": "mysql" },
@@ -76,6 +80,7 @@
     "url": "https://web.archive.org/web/20210906014213/https://300main.ca/",
     "img": "project-item-300main.jpg",
     "gridClass": "regular-1",
+    "isFeatured": false,
     "stack": [
       { "name": "PHP", "icon": "php" },
       { "name": "jQuery", "icon": "jquery" },
@@ -94,6 +99,7 @@
     "url": null,
     "img": "project-item-300mainkiosk.jpg",
     "gridClass": "small-item",
+    "isFeatured": false,
     "stack": [
       { "name": "HTML5", "icon": "html5" },
       { "name": "CSS3", "icon": "css3" },

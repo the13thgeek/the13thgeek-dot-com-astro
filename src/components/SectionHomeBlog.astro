@@ -18,8 +18,4 @@ const posts = await postService.getLatest(3);
             <p class="post-date" set:html={`posted `+formatDate(post.date)}></p>
         </a>
     ))}
-    <a href="#" class="blog-more">
-        <p>More</p>
-        <Icon id='caret-right' width='40' height='40' />
-    </a>
 </div>

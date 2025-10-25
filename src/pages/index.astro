@@ -7,6 +7,8 @@ import SectionContainer from '../components/SectionContainer.astro';
 import ProjectsGrid from '../components/ProjectsGrid.tsx';
 import SectionHomeBlog from '../components/SectionHomeBlog.astro';
 import SectionHomeGaming from '../components/SectionHomeGaming.astro';
+import ProjectsList from '../components/ProjectsList.astro';
+import SectionHeading from '../components/SectionHeading.astro';
 
 
 ---
@@ -20,20 +22,24 @@ import SectionHomeGaming from '../components/SectionHomeGaming.astro';
 	
     <SectionHero2 />
 
-    <SectionContainer noTopMargin sectionTitle="Projects" sectionNumber="2" className="test">
+    <SectionContainer noTopMargin ctaText='More projects' ctaHref='/projects/'>
+		<SectionHeading sectionNumber={2} headingType='h2' slot="heading">Projects</SectionHeading>
 			<!-- <ProjectsGrid /> -->
-			<ProjectsGrid client:load />
+			<!-- <ProjectsGrid client:load /> -->
+			 <ProjectsList></ProjectsList>
     </SectionContainer>
 
 	<!-- <SectionContainer noTopMargin sectionTitle="Field Notes" sectionNumber="3" className="blog">
 		<SectionHomeBlog />
 	</SectionContainer> -->
 
-	<SectionContainer noTopMargin sectionTitle="Field Notes" sectionNumber="3" className="blog">
+	<SectionContainer noTopMargin className="blog" ctaText='More entries' ctaHref='/field-notes/'>
+		<SectionHeading sectionNumber={3} headingType='h2' slot="heading">Field Notes</SectionHeading>
 		<SectionHomeBlog />
 	</SectionContainer>
 
-	<SectionContainer noTopMargin sectionTitle="Gaming" sectionNumber="4" className="gaming">
+	<SectionContainer noTopMargin className="gaming">
+		<SectionHeading sectionNumber={4} headingType='h2' slot="heading">Gaming</SectionHeading>
 		<SectionHomeGaming />
 	</SectionContainer>
 	

@@ -1,34 +1,41 @@
 ---
 import './SectionContainer.scss';
-import SectionHeading from './SectionHeading.astro';
 
-interface SectionContainerProps {
+interface Props {
     sectionId?: string;
-    sectionNumber?: number;
-    sectionTitle?: string;
+    ctaText?: string;
+    ctaHref?: string;
     contentWidth?: boolean;
     className?: string;
     noTopMargin?: boolean;
-    isStyled?: boolean;
 }
 
 const {
-    sectionId = '',
-    sectionNumber = 1,
-    sectionTitle = '',
+    sectionId,
+    ctaText,
+    ctaHref,
     contentWidth = true,
-    className = "",
+    className = '',
     noTopMargin = false,
-    isStyled = true,
-}: SectionContainerProps = Astro.props;
+} = Astro.props;
+
+const hasHeading = Astro.slots.has('heading');
+const showHeadingRow = hasHeading || (ctaText && ctaHref);
 ---
 
-<section id={sectionId} class={`section-generic ${className} ${noTopMargin ? 'no-top-margin' : ''}`}>
-    <div class={ contentWidth === true ? 'struct' : 'struct-width' }>
-        {sectionTitle !== '' && (
-            <SectionHeading isStyled={isStyled} headingType="h2" sectionNumber={sectionNumber}>{sectionTitle}</SectionHeading>
+<section 
+    id={sectionId} 
+    class:list={['section-generic', className, { 'no-top-margin': noTopMargin }]}
+>
+    <div class:list={[contentWidth ? 'struct' : 'struct-width']}>
+        {showHeadingRow && (
+            <div class="heading-row">
+                <slot name="heading" />
+                {ctaText && ctaHref && (
+                    <a href={ctaHref} class="cta-link">{ctaText}</a>
+                )}
+            </div>
         )}
         <slot />
     </div>
 </section>
-
