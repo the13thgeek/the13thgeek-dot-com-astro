@@ -1,0 +1,27 @@
+---
+import './ConnectCard.scss';
+import SectionHeading from './SectionHeading.astro';
+import Icon from './Icon.astro';
+---
+<div class="connect-card">
+  <SectionHeading isStyled sectionNumber={5} headingType='h2'>Let's Connect</SectionHeading>
+  <hr>
+  <a href="#" data-user="hello" data-domain="the13thgeek.com" class="email-link">[email protected]</a>
+  <ul class="socials">
+    <li><a rel="nofollow" aria-label="Github profile" target="_blank" href="https://github.com/the13thgeek/"><Icon id="github" decorative width="25" height="25" /></a></li>
+    <li><a rel="nofollow" aria-label="Twitch channel" target="_blank" href="https://twitch.tv/the13thgeek/"><Icon id="twitch" decorative width="25" height="25" /></a></li>
+    <li><a rel="nofollow" aria-label="X/formerly Twitter profile" target="_blank" href="https://twitter.com/the13thgeek/"><Icon id="xtwitter" decorative width="25" height="25" /></a></li>
+    <li><a rel="nofollow" aria-label="Instagram page" target="_blank" href="https://instagram.com/the13thgeek/"><Icon id="instagram" decorative width="25" height="25" /></a></li>
+    <li><a rel="nofollow" aria-label="LinkedIn profile" target="_blank" href="https://www.linkedin.com/in/aldreich-aguilar/"><Icon id="linkedin" decorative width="25" height="25" /></a></li>
+  </ul>
+</div>
+
+<script>
+  document.querySelectorAll('.email-link').forEach(link => {
+    const user = link.dataset.user;
+    const domain = link.dataset.domain;
+    const email = `${user}@${domain}`;
+    link.href = `mailto:${email}`;
+    link.textContent = email;
+  });
+</script>

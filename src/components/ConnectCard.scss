@@ -1,0 +1,68 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.connect-card {
+  background-color: var(--accent);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  @include tile(true);
+
+  h2{
+    &::before {
+      color: #fff;
+    }
+    &::after {
+      background-color: var(--light);
+    }
+  }
+  
+  hr {
+    border: none;
+    border-top: #333 1px solid;
+    width: 50px;
+    margin: 20px 0;
+  }
+
+  a {
+    color: #333;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      color: var(--deep);
+      text-decoration: underline;
+    }
+  }
+
+  ul.socials {
+    list-style: none;
+    margin: 1rem 0; 
+    padding: 0;
+    display: flex;
+    gap: 1.25rem;
+
+    a {
+      border: #eee 2px solid;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      align-items: center;
+      transition: all .5s;
+
+      &:hover {
+        border-color: #666;
+        text-decoration: none;
+      }
+    }
+  }
+}

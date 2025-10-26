@@ -9,6 +9,7 @@ import SectionHomeBlog from '../components/SectionHomeBlog.astro';
 import SectionHomeGaming from '../components/SectionHomeGaming.astro';
 import ProjectsList from '../components/ProjectsList.astro';
 import SectionHeading from '../components/SectionHeading.astro';
+import ConnectCard from '../components/ConnectCard.astro';
 
 
 ---
@@ -41,6 +42,10 @@ import SectionHeading from '../components/SectionHeading.astro';
 	<SectionContainer noTopMargin className="gaming">
 		<SectionHeading sectionNumber={4} headingType='h2' slot="heading">Gaming</SectionHeading>
 		<SectionHomeGaming />
+	</SectionContainer>
+
+	<SectionContainer noTopMargin className="connect">
+		<ConnectCard />
 	</SectionContainer>
 	
 </GlobalLayout>
