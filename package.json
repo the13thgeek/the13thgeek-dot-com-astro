@@ -6,7 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "migrate": "tsx scripts/migrate-wordpress.ts",
+    "download-images": "tsx scripts/download-images.ts",
+     "generate-excerpts": "tsx scripts/generate-excerpts.ts"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",
@@ -19,6 +22,11 @@
     "sass": "^1.91.0"
   },
   "devDependencies": {
-    "@types/he": "^1.2.3"
+    "@types/he": "^1.2.3",
+    "@types/turndown": "^5.0.6",
+    "@types/xml2js": "^0.4.14",
+    "tsx": "^4.20.6",
+    "turndown": "^7.2.2",
+    "xml2js": "^0.6.2"
   }
 }

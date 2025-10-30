@@ -3,6 +3,7 @@ import GlobalLayout from '../layouts/GlobalLayout.astro';
 import HeadingCard from '../components/HeadingCard.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import SectionContainer from '../components/SectionContainer.astro';
+import '../styles/about.scss';
 ---
 
 <GlobalLayout
@@ -11,10 +12,127 @@ import SectionContainer from '../components/SectionContainer.astro';
 	path={Astro.url.pathname}>
 	<SectionContainer>	
 		<HeadingCard>
-			<SectionHeading isStyled={false} headingType="h1" sectionNumber="1" sectionTitle="">
+			<SectionHeading isStyled={false} headingType="h1" sectionNumber={1}>
 				Profile
 			</SectionHeading>
-			<p class="subtitle">Lorem ipsum dolor sit amet</p>
+			<p class="subtitle">The story behind the screen</p>
 		</HeadingCard>
+	</SectionContainer>
+	<SectionContainer className='profile-body' noTopMargin>
+		<div class="contents">
+			<div class="heading">
+				<div class="photo">1</div>
+				<div class="name">
+					<h2>Aldreich <small>/ˈɔːldrɪtʃ/</small></h2>
+					<p><span>Aldreich is a Toronto-based developer who codes with creativity, and surprisingly not always glued to his screen.1 He likes poutine, binging NBC comedies and staring up at the CN Tower.</span></p>
+				</div>
+			</div>
+			<div class="intro">
+				<SectionHeading headingType='h2' sectionNumber={2}>Intro</SectionHeading>
+				<p>He likes video games too, though nothing makes him question his life choices more than a spiny shell in Mario Kart. He claims he's allergic to them but somehow always seems to attract them.</p>
+				<p>With over 10 years in web development, Aldreich has worked with design and consulting firms to redesign corporate websites and modernize legacy systems. He has a knack for creating interactive experiences and bringing mockups to life. He maintains an ever-growing "special set of skills" that include PHP, WordPress and a healthy dose of Javascript with React and AstroJS.</p>
+				<p>When he's not coding or fixing something, Aldreich dabbles in streaming his video games, travelling, action figure photography, cosplaying at comic cons and learning Japanese.2 He's currently upskilling in UX Design, Node.js and REST APIs, and applying what he's learned to his current projects.</p>
+				<p>Aldreich personally believes that web development is the art of trying to please everybody— and just like Barney Stinson, he'd say, "Challenge accepted!"</p>
+				<p class="footnote">1. (boldly) assuming video games don't count<br>2. He passed JLPT N5 level (Elementary), working towards N4</p>
+			</div>
+			<div class="background">
+				<SectionHeading headingType='h2' sectionNumber={3}>Background</SectionHeading>
+				<div class="data">
+					<div class="item">
+						<h3>work.history<span>(tech)</span></h3>
+						<hr class="sub-divider">
+						<p><b>YuJa Canada</b><br>
+						<span class="job-type f">F</span> Web Designer &amp; Developer<br>
+						Marketing<br><em>2025 (present)</em></p>
+						<p><b>Online Business Systems</b><br>
+						<span class="job-type f">F</span> Software Engineer<br>
+						Digital Transformation<br><em>2021 - 2024</em></p>
+						<p><b>Artis REIT</b><br>
+						<span class="job-type f">F</span> Full-Stack Web Developer
+						<br>Marketing &amp; Creative<br><em>2014 - 2021</em></p>
+						<p><b>Web Wizards, Inc</b><br>
+						<span class="job-type f">F</span> Web Developer<br>
+						<em>2011 - 2013</em></p>
+						<p><b>Tsukiden Global Solutions, Inc</b><br>
+						<span class="job-type f">F</span> Design Engineer II<br>
+						2nd Business Unit<br>
+						<em>2008 - 2011</em></p>
+						
+						<h3>work.history<span>(non-tech)</span></h3>
+						<hr class="sub-divider">
+						<p><b>Downtown Community Safety Partnership</b><br>
+						<span class="job-type p">P</span> CONNECT Team Member<br>
+						<em>2020 - 2022</em></p>
+						<p><b>Downtown Winnipeg BIZ</b><br>
+						<span class="job-type p">P</span> Downtown Watch Ambassador<br>
+						<em>2017 - 2020</em></p>
+						<p class="legend"><small><span class="job-type f">F</span> Full-time<br>
+						<span class="job-type p">P</span> Part-time</small></p>
+					</div>
+					<div class="item">
+						<h3>skills.tech<span>()</span></h3>
+						<hr class="sub-divider">
+						<p>HTML<br>
+						CSS/SASS<br>
+						JavaScript<br>
+						jQuery<br>
+						React<br>
+						AstroJS<br>
+						PHP<br>
+						NodeJS<br>
+						Express<br>
+						SQL/mySQL<br>
+						WordPress<br>
+						Git<br>
+						Figma<br>
+						Photoshop<br>
+						After Effects<br>
+						Microsoft Office</p>
+						
+						<h3>skills.people<span>()</span></h3>
+						<hr class="sub-divider">
+						<p>Attention to Detail
+						<br>Empathy
+						<br>Collaboration
+						<br>Communication
+						<br>Customer Service
+						<br>Problem-Solving</p>
+					</div>
+					<div class="item">
+						<h3>volunteer<span>()</span></h3>
+						<hr class="sub-divider">
+						<p><b>The Momentum Centre</b><br>
+						Board Member<br>
+						<em>2018 - 2022</em></p>
+						<p><b>Downtown Winnipeg BIZ</b><br>
+						Downtown Watch Volunteer/Customer Service Team<br>
+						<em>2014 - 2017</em></p>
+						<p><b>Bike Week Winnipeg</b><br>
+						Pit Stop Personnel<br>
+						<em>2014 - 2017</em></p>
+					</div>
+					<div class="item">
+						<h3>education<span>()</span></h3>
+						<hr class="sub-divider">
+						<p><b>Polytechnic University of the Philippines</b>
+						<br>Bachelor of Science, Information Technology<br>
+						<em>March 2008</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tag-cloud">
+			<ul>
+				<li>web dev</li>
+				<li>cosplayer</li>
+				<li>storyteller</li>
+				<li>moviegoer</li>
+				<li>avgeek</li>
+				<li>traveller</li>
+				<li>sitcom buff</li>
+				<li>gamer</li>
+				<li>cosplayer</li>
+			</ul>
+		</div>
 	</SectionContainer>
 </GlobalLayout>

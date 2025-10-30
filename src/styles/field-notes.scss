@@ -1,0 +1,55 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+body[data-section="field-notes"] {
+    a {
+        color: var(--deep);
+    }
+
+    .field-notes-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        @include respond(md) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include respond(lg) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3rem;
+        }
+
+        &>a {
+            @include pictureBox;
+            @include tile(false);
+            min-height: 500px;
+            position: relative;
+            overflow: visible;
+
+            &:hover {
+                .note-body {
+                    transform: translateY(-30px);
+                }
+            }
+        }
+        .note-body {
+            @include tile(true);
+            background-color: #fff;
+            width: 100%;
+            position: absolute;
+            bottom: -15px;
+            left: -15px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 0;
+            transition: transform 0.3s;
+
+            h3 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

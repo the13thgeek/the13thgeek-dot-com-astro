@@ -1,95 +1,214 @@
 ---
-import GlobalLayout from '../../layouts/GlobalLayout.astro';
-import HeadingCard from '../../components/HeadingCard.astro';
-import SectionHeading from '../../components/SectionHeading.astro';
-import SectionContainer from '../../components/SectionContainer.astro';
-
-import type { GetStaticPaths, Page } from 'astro';
-import he from 'he';
-
-interface Post {
-	id: number;
-	title: {
-		rendered: string;
-	};
-	excerpt: {
-		rendered: string;
-	};
-	content: {
-		rendered: string;
-	};
-	date: string;
-	slug: string;
-	link: string;
-	_embedded: {
-		'wp:featuredmedia'?: Array<{
-			source_url: string;
-		}>;
-	};
-}
+import { getCollection } from "astro:content";
+import type { GetStaticPaths, Page } from "astro";
+import GlobalLayout from "../../layouts/GlobalLayout.astro";
+import SectionContainer from "../../components/SectionContainer.astro";
+import SectionHeading from "../../components/SectionHeading.astro";
+import HeadingCard from "../../components/HeadingCard.astro";
+import "../../styles/field-notes.scss";
 
 export const getStaticPaths = (async ({ paginate }) => {
-	const WP_API_URL = import.meta.env.VITE_BLOG_WP_URL;
+    const allFieldNotes = await getCollection("field-notes");
+    const sortedFieldNotes = allFieldNotes.sort(
+        (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+    );
 
-	let allPosts: Post[] = [];
-  let page = 1;
-  let totalPages = 1;
-  
-  while (page <= totalPages) {
-    const response = await fetch(`${WP_API_URL}?_embed&per_page=100&page=${page}`);
-    const posts: Post[] = await response.json();
-    totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '1');
-    allPosts = [...allPosts, ...posts];
-    page++;
-  }
-  
-  return paginate(allPosts, { pageSize: 5 });
+    return paginate(sortedFieldNotes, { pageSize: 12 });
 }) satisfies GetStaticPaths;
 
-interface Props {
-	page: Page<Post>;
-}
+type Props = {
+    page: Page<any>;
+};
 
 const { page } = Astro.props;
+
+// Format date helper
+function formatDate(date: Date): string {
+    return new Intl.DateTimeFormat("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+    }).format(date);
+}
+
+// Page title and description
+const pageTitle =
+    page.currentPage === 1
+        ? "Field Notes • the13thgeek"
+        : `Field Notes (Page ${page.currentPage}) • the13thgeek`;
+
+const pageDescription =
+    page.currentPage === 1
+        ? "Thoughts, observations, and explorations from the13thgeek's digital journal"
+        : `Field notes archive - Page ${page.currentPage} of ${page.lastPage}`;
 ---
 
 <GlobalLayout
-	title=`Field Notes (Page ${page.currentPage}) | the13thgeek&trade;`` 
-	section="field-notes"
-	path={Astro.url.pathname}>
-	<SectionContainer>	
-		<HeadingCard>
-			<SectionHeading isStyled={false} headingType="h1" sectionNumber={1}>
-				Field Notes
-			</SectionHeading>
-			<p class="subtitle">Writeups about stuff</p>
-		</HeadingCard>
-	</SectionContainer>
-	<SectionContainer>
-		<ul>
-    {page.data.map((post) => {
-      const featuredImageUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '';
-			const decodedTitle = he.decode(post.title.rendered);
-      
-      return (
-        <li>
-          <h2>{decodedTitle}</h2>
-          <p>Date: {new Date(post.date).toLocaleDateString()}</p>
-          <p>Slug: {post.slug}</p>
-          <div set:html={post.excerpt.rendered} />
-          {featuredImageUrl && <img src={featuredImageUrl} alt={post.title.rendered} />}
-          <a href={`/field-notes/${post.id}-${post.slug}`}>Read more</a>
-          <p>WP Permalink: {post.link}</p>
-        </li>
-      );
-    })}
-  </ul>
+    title={pageTitle}
+    section="field-notes"
+    description={pageDescription}
+    keywords="field notes, blog, writing, thoughts, the13thgeek"
+    ogImage="/og-field-notes.png"
+    path={page.url.current}
+>
+    <SectionContainer>
+        <HeadingCard>
+            <SectionHeading isStyled={false} headingType="h1" sectionNumber={1}>
+                Field Notes
+            </SectionHeading>
+            <p class="subtitle">Writeups about stuff</p>
+        </HeadingCard>
+    </SectionContainer>
+    <SectionContainer>
+        <div class="field-notes-grid">
+            {  page.data.map((note) => (
+                <a href={`/field-notes/${note.slug}/`} style={`background-image: url(${note.data.featuredImage})`}>
+                    <div class="note-body">
+                        <h3>{note.data.title}</h3>
+                        <p>{note.data.excerpt}</p>
+                        <p>{note.data.categories}</p>
+                    </div>
+                </a>
+                // <article class="note-card">
+                //     {note.data.featuredImage && (
+                //         <a
+                //             href={`/field-notes/${note.slug}/`}
+                //             class="note-image"
+                //         >
+                //             <img
+                //                 src={note.data.featuredImage}
+                //                 alt={
+                //                     note.data.featuredImageAlt ||
+                //                     note.data.title
+                //                 }
+                //                 loading="lazy"
+                //             />
+                //         </a>
+                //     )}
+                //     <div class="note-body">
+                //         <time datetime={note.data.pubDate.toISOString()}>
+                //             {formatDate(note.data.pubDate)}
+                //         </time>
+                //         <h2>
+                //             <a href={`/field-notes/${note.slug}/`}>
+                //                 {note.data.title}
+                //             </a>
+                //         </h2>
+                //         {note.data.description && (
+                //             <p class="description">
+                //                 {note.data.description}
+                //             </p>
+                //         )}
+                //         {note.data.tags.length > 0 && (
+                //             <div class="tags">
+                //                 {note.data.tags.slice(0, 3).map((tag) => (
+                //                     <span class="tag">{tag}</span>
+                //                 ))}
+                //             </div>
+                //         )}
+                //     </div>
+                // </article>
+                ))
+            }
+        </div>
 
-	<div class="pagination">
-    {page.url.prev && <a href={page.url.prev}>← Previous</a>}
-    <span>Page {page.currentPage} of {page.lastPage}</span>
-    {page.url.next && <a href={page.url.next}>Next →</a>}
-  </div>
-		
-	</SectionContainer>
+        { page.lastPage > 1 && (
+            <nav class="pagination" aria-label="Pagination">
+                <div class="pagination-info">
+                    Page {page.currentPage} of {page.lastPage}
+                </div>
+                <div class="pagination-controls">
+                    {page.url.prev ? (
+                        <a
+                            href={page.url.prev}
+                            class="pagination-btn"
+                            rel="prev"
+                        >
+                            ← Previous
+                        </a>
+                    ) : (
+                        <span class="pagination-btn disabled">
+                            ← Previous
+                        </span>
+                    )}
+
+                    <div class="pagination-numbers">
+                        {Array.from({ length: page.lastPage }, (_, i) => {
+                            const pageNum = i + 1;
+                            const isCurrentPage =
+                                pageNum === page.currentPage;
+                            const distance = Math.abs(
+                                pageNum - page.currentPage,
+                            );
+                            const showPage =
+                                pageNum === 1 ||
+                                pageNum === page.lastPage ||
+                                distance < 3;
+
+                            // Show ellipsis before current range
+                            const showLeadingEllipsis =
+                                pageNum === 2 && page.currentPage > 4;
+                            // Show ellipsis after current range
+                            const showTrailingEllipsis =
+                                pageNum === page.lastPage - 1 &&
+                                page.currentPage < page.lastPage - 3;
+
+                            if (
+                                showLeadingEllipsis ||
+                                showTrailingEllipsis
+                            ) {
+                                return (
+                                    <span
+                                        key={`ellipsis-${pageNum}`}
+                                        class="pagination-ellipsis"
+                                    >
+                                        …
+                                    </span>
+                                );
+                            }
+
+                            if (!showPage) {
+                                return null;
+                            }
+
+                            const pageUrl =
+                                pageNum === 1
+                                    ? "/field-notes/"
+                                    : `/field-notes/${pageNum}/`;
+
+                            return isCurrentPage ? (
+                                <span
+                                    key={pageNum}
+                                    class="pagination-number current"
+                                    aria-current="page"
+                                >
+                                    {pageNum}
+                                </span>
+                            ) : (
+                                <a
+                                    key={pageNum}
+                                    href={pageUrl}
+                                    class="pagination-number"
+                                >
+                                    {pageNum}
+                                </a>
+                            );
+                        })}
+                    </div>
+
+                    {page.url.next ? (
+                        <a
+                            href={page.url.next}
+                            class="pagination-btn"
+                            rel="next"
+                        >
+                            Next →
+                        </a>
+                    ) : (
+                        <span class="pagination-btn disabled">Next →</span>
+                    )}
+                </div>
+            </nav>)
+        }
+    </SectionContainer>
 </GlobalLayout>
