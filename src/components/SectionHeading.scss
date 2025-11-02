@@ -8,6 +8,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: inline-block;
   padding: 0 5px;
+  color: inherit;
+  z-index: 0;
 
   &.styled {
     &::after {

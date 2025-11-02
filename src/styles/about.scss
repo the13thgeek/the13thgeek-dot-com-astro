@@ -28,6 +28,13 @@
         }
     }
 
+    sup {
+        position: relative;
+        bottom: 0;
+        font-size: 80%;
+        line-height: 5px;
+    }
+
     .heading {
         display: grid;
         grid-template-columns: 1fr;
@@ -107,7 +114,6 @@
 
         h2 {
             font-size: 2rem;
-            z-index: 0;
             &::after {
                 background-color: var(--light);
             }
@@ -145,7 +151,7 @@
             grid-template-columns: 1fr 1fr;
         }
         @include respond(lg) {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 3fr 2fr 2fr;
         }
 
         .item {
@@ -222,5 +228,120 @@
                 line-height: 2.8rem;
             }
         }
+    }
+}
+.profile-irl {
+    background-color: #212121;
+    color: #eee;
+
+    h3 {
+        margin: 0;
+        padding: 0;
+        color: var(--light);
+        font-size: 1.9rem;
+    }
+
+    .struct {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        &>div {
+            @include tile(true);
+        }
+
+        @include respond(md) {
+            grid-template-columns: 2fr 3fr;
+        }
+    }
+
+    .photo-block {
+        background-color: var(--accent);
+        height: 400px;
+
+        @include respond(md) {
+            height: auto;
+        }
+    }
+
+    .contents-block {
+        background-color: #333;
+    }
+
+    .heading-row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .tabs-list {
+        margin-left: auto;
+        background: #222;
+        padding: 0.7em 1em;
+        display: flex;
+        gap: 1em;
+        border-radius: 0.6em;
+    }
+
+    .tab-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        // padding: 2rem;
+        // background-color: white;
+    }
+
+    .tab-panel:not(.active) {
+        display: none;
+    }
+
+    button[role="tab"] {
+        background-color: transparent;
+        display: flex;
+        padding: 2px 5px;
+        border-radius: 3px;
+
+        img {
+            width: 30px;
+        }
+
+        &[aria-selected="true"] {
+            background-color: var(--light);
+        }
+    }
+
+    p.notice {
+        font-size: 0.8rem;
+        background-color: #600;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}
+.profile-branding {
+    .struct {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        &>div {
+            @include tile(true);
+        }
+
+        @include respond(md) {
+            grid-template-columns: 3fr 2fr;
+        }
+    }
+
+    .brand-content {
+        background-color: var(--deep);
+    }
+
+    h2, h3 {
+        color: #fff;
+    }
+    h2::after {
+        background-color: var(--accent);
     }
 }

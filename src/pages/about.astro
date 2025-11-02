@@ -24,14 +24,14 @@ import '../styles/about.scss';
 				<div class="photo">1</div>
 				<div class="name">
 					<h2>Aldreich <small>/ˈɔːldrɪtʃ/</small></h2>
-					<p><span>Aldreich is a Toronto-based developer who codes with creativity, and surprisingly not always glued to his screen.1 He likes poutine, binging NBC comedies and staring up at the CN Tower.</span></p>
+					<p><span>Aldreich is a Toronto-based developer who codes with creativity, and surprisingly not always glued to his screen.<sup>1</sup>  He likes poutine, binging NBC comedies and staring up at the CN Tower.</span></p>
 				</div>
 			</div>
 			<div class="intro">
 				<SectionHeading headingType='h2' sectionNumber={2}>Intro</SectionHeading>
 				<p>He likes video games too, though nothing makes him question his life choices more than a spiny shell in Mario Kart. He claims he's allergic to them but somehow always seems to attract them.</p>
 				<p>With over 10 years in web development, Aldreich has worked with design and consulting firms to redesign corporate websites and modernize legacy systems. He has a knack for creating interactive experiences and bringing mockups to life. He maintains an ever-growing "special set of skills" that include PHP, WordPress and a healthy dose of Javascript with React and AstroJS.</p>
-				<p>When he's not coding or fixing something, Aldreich dabbles in streaming his video games, travelling, action figure photography, cosplaying at comic cons and learning Japanese.2 He's currently upskilling in UX Design, Node.js and REST APIs, and applying what he's learned to his current projects.</p>
+				<p>When he's not coding or fixing something, Aldreich dabbles in streaming his video games, travelling, action figure photography, cosplaying at comic cons and learning Japanese.<sup>2</sup>  He's currently upskilling in UX Design, Node.js and REST APIs, and applying what he's learned to his current projects.</p>
 				<p>Aldreich personally believes that web development is the art of trying to please everybody— and just like Barney Stinson, he'd say, "Challenge accepted!"</p>
 				<p class="footnote">1. (boldly) assuming video games don't count<br>2. He passed JLPT N5 level (Elementary), working towards N4</p>
 			</div>
@@ -135,4 +135,103 @@ import '../styles/about.scss';
 			</ul>
 		</div>
 	</SectionContainer>
+	<SectionContainer className='profile-irl'>
+		<div class="photo-block"></div>
+		<div class="contents-block">
+			<div class="heading-row">
+				<SectionHeading headingType='h2' sectionNumber={4}>I.R.L.</SectionHeading>
+				<div class="tabs-list" role="tablist" aria-label="Select a language">
+					<button role="tab" aria-selected="true" aria-controls="panel-en" id="tab-en" class="lang-btn active"><img src="/assets/about/lang-en.png" alt="English (Canada)"></button>
+					<button role="tab" aria-selected="false" aria-controls="panel-jp" id="tab-jp" class="lang-btn"><img src="/assets/about/lang-jp.png" alt="Japanese"></button>
+					<button role="tab" aria-selected="false" aria-controls="panel-ph" id="tab-ph" class="lang-btn"><img src="/assets/about/lang-ph.png" alt="Tagalog"></button>
+				</div>
+			</div>
+			
+			<div role="tabpanel" id="panel-en" aria-labelledby="tab-en" class="tab-panel active">
+				<h3>Off the Grid</h3>
+				<p>When Aldreich is not busy crafting digital experiences, you'll often find him enjoying movies and video games on Twitch with his friends, doing casual cosplays at comic conventions, or just walking around exploring Toronto while listening to J-Pop and EDM. He makes time as well for running, (casual) photography, and exploring new places! His travels have taken him to the United States, Japan, Hong Kong, and Macau so far - and would love to visit more places!</p>
+				<p>He is currently learning Japanese, so you might spot the occasional Japanese post (with translations, of course!).</p>
+				<p>While not exactly a bookworm, he enjoys a good read! Some of his favourite authors include Kyle Higgins, Dan Brown and Suzanne Collins. He had just recently finished reading <em>Crash Test</em> and he's currently hooked on Dan Brown's latest release <em>The Secret of Secrets</em>.</p>
+			</div>
+			<div role="tabpanel" id="panel-jp" aria-labelledby="tab-jp" class="tab-panel" hidden>
+				<h3>オフラインの生活</h3>
+				<p class="notice"><b>警告:</b> 文法が間違っている可能性があります。</p>
+				<p>アルドリーッチはパソコンの前に忙しくないときは、友達と一緒に映画を見たり、Twitchでビデオゲームを楽しんだり、コミコンでコスプレをしたり、J-POPやEDMなどを聞きながらトロントを散歩してる事が多いです。また、時々ランニングや写真撮影、いろいろな新しい所を観光にも時間を割いています。今までアメリカ、日本、香港、マカオにいたことがあるんだけど、これはまだ冒険の始まりに過ぎません!</p>
+				<p>現在日本語を勉強しているので、このサイトで時々日本語で練習すると日本語の投稿が見られるかもしれません（訳するつもり、大丈夫なんです!）。</p>
+				<p>まだ本の虫にならないんですが、いい本を読むのが好きです。お気に入りの作家にはカイル・ヒギンズ、ダン・ブラウン、スザンヌ・コリンズなどがいます。最近「クラッシュ・テスト」を読み終え、現在はダン・ブラウンの新しいリリース「ザ・シクレット・オフ・シクレッツ」を読み込んでいます。</p>
+			</div>
+			<div role="tabpanel" id="panel-ph" aria-labelledby="tab-ph" class="tab-panel" hidden>
+				<h3>Buhay Off-screen</h3>
+				<p>Kapag wala si Aldreich sa harap ng computer, madalas siyang lumalabas at nanood ng pelikula o naglalaro ng video games sa Twitch kasama ang mga kaibigan, nagko-cosplay sa mga conventions or kaya naglalakad lang sa Toronto habang nakikinig ng J-Pop at EDM. Minsan tumatakbo din siya, kumukuha ng litrato at namamasyal sa iba't-ibang lugar. Nakapasyal na siya sa Amerika, bansang Hapon, Hong Kong at Macau— at madami pasyang lugar na gustong mapasyalan!</p>
+				<p>Kasalukuyan siyang nag-aaral ng wikang Hapon, kaya minsan ay mapapansin ninyong nagpa-practice ako dito (may translation naman, okey lang yan!)</p>
+				<p>Hindi pa naman siya masyadong nahuhumaling sa pagbabasa, pero may mga nagugustuhan naman siyang mga babasahin. Paborito niya ang mga gawa nila Kyle Higgins, Dan Brown at Suzanne Collins. Kakatapos niya lang basahin yung <em>Crash Test</em> at kasalukuyan niya ngayong binabasa yung bagong nobelang sinulat ni Dan Brown na pinamagatang <em>The Secret of Secrets</em>.</p>
+			</div>
+		</div>
+	</SectionContainer>
+	<SectionContainer className='profile-branding'>
+		<div class="brand-content">
+			<SectionHeading headingType='h2' sectionNumber={5}>Branding</SectionHeading>
+		</div>
+		<div class="brand-sample"></div>
+	</SectionContainer>
 </GlobalLayout>
+
+<script>
+  // Get all tabs and panels
+  const tabs = document.querySelectorAll('[role="tab"]');
+  const panels = document.querySelectorAll('[role="tabpanel"]');
+
+  // Switch to a specific tab
+  function switchTab(newTab) {
+    // Deactivate all tabs and panels
+    tabs.forEach(tab => {
+      tab.setAttribute('aria-selected', 'false');
+      tab.classList.remove('active');
+      tab.setAttribute('tabindex', '-1');
+    });
+
+    panels.forEach(panel => {
+      panel.classList.remove('active');
+      panel.setAttribute('hidden', '');
+    });
+
+    // Activate the selected tab and its panel
+    newTab.setAttribute('aria-selected', 'true');
+    newTab.classList.add('active');
+    newTab.setAttribute('tabindex', '0');
+    newTab.focus();
+
+    const panelId = newTab.getAttribute('aria-controls');
+    const panel = document.getElementById(panelId);
+    panel.classList.add('active');
+    panel.removeAttribute('hidden');
+  }
+
+  // Add click event listeners to tabs
+  tabs.forEach(tab => {
+    tab.addEventListener('click', (e) => {
+      switchTab(e.currentTarget);
+    });
+
+    // Keyboard navigation
+    tab.addEventListener('keydown', (e) => {
+      const index = Array.from(tabs).indexOf(e.currentTarget);
+      
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        const nextIndex = (index + 1) % tabs.length;
+        switchTab(tabs[nextIndex]);
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const prevIndex = (index - 1 + tabs.length) % tabs.length;
+        switchTab(tabs[prevIndex]);
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        switchTab(tabs[0]);
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        switchTab(tabs[tabs.length - 1]);
+      }
+    });
+  });
+</script>
