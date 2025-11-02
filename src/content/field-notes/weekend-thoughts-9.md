@@ -5,7 +5,7 @@ pubDate: 2021-07-19T05:14:00.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["cooking", "covid-19", "food", "friends", "new-york-comic-con", "travel"]
-featuredImage: "/images/field-notes/20210718_1540085401530227710321256.jpg"
+featuredImage: "/assets/field-notes/20210718_1540085401530227710321256.jpg"
 wpId: 796
 wpSlug: "weekend-thoughts-9"
 ---
@@ -16,7 +16,7 @@ With our local Covid-19 cases on a steady downward trend (knock on wood), my cit
 
 I learned to cook something new today - sushi pizza!
 
-![](/images/field-notes/20210718_1540085401530227710321256.jpg)
+![](/assets/field-notes/20210718_1540085401530227710321256.jpg)
 
 Version 1.0
 
@@ -26,7 +26,7 @@ It wasn't as difficult as I thought, it's pretty much identical as to how pork t
 
 After a few weeks of delay, I finally got my vaccination card in the mail! Woohoo I'm ready to live a normal life again! Now, where do we go next?
 
-![](/images/field-notes/20210718_2359187714135225981498979.jpg)
+![](/assets/field-notes/20210718_2359187714135225981498979.jpg)
 
 Ready to fly! ✈
 
@@ -34,7 +34,7 @@ Ready to fly! ✈
 
 New York Comic Con is a no-go this year, unfortunately 😢! While I'm Fan Verified, I was still not lucky enough. Despite waiting for almost two hours on the virtual queue, most of the passes were already sold out by the time it was my turn.
 
-![](/images/field-notes/smartselect_20210711-105131_chrome7344592815474540802.jpg)
+![](/assets/field-notes/smartselect_20210711-105131_chrome7344592815474540802.jpg)
 
 Sold Out
 

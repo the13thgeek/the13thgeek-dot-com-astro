@@ -5,12 +5,12 @@ pubDate: 2019-09-15T02:19:00.000Z
 author: "the13thgeek"
 categories: ["events", "journal"]
 tags: ["fitc", "tech-conference", "toronto", "web-dev", "web-unleashed-2019"]
-featuredImage: "/images/field-notes/fitc-web-unleashed-1.jpg"
+featuredImage: "/assets/field-notes/fitc-web-unleashed-1.jpg"
 wpId: 428
 wpSlug: "web-unleashed-2019"
 ---
 
-![](/images/field-notes/fitc-web-unleashed-1.jpg)
+![](/assets/field-notes/fitc-web-unleashed-1.jpg)
 
 Today wraps up my two-day conference at Web Unleashed. Information overload aside, the conference has presented a wide variety of topics ranging from how to network with people to building effective Web applications with the best practices. Here's some takeaways from a few of the sessions I've attended:
 
@@ -69,7 +69,7 @@ This is seriously one of my favourite topics! I've been hit by a ton on nostalgi
 *   Back then, `<script>` tags inside `<head>` were cool... at least not until Google said that it wasn't exactly a good idea a few years later!
 *   **_ALERT!!!_** Everyone's favourite debugging tool for JavaScript... until I realized I have inadvertently entered an infinite `alert()` loop and I had to Ctrl-Alt-Del my way out of the browser!
 *   I've seen these very user-friendly error messages way too many times and it used to scare the crap out of me!  
-    ![](/images/field-notes/javascript-error-dialog.jpg)
+    ![](/assets/field-notes/javascript-error-dialog.jpg)
 
 * * *
 

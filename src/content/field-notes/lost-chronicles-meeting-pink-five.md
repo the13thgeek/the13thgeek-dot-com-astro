@@ -5,14 +5,14 @@ pubDate: 2019-08-30T02:13:34.000Z
 author: "the13thgeek"
 categories: ["lost-chronicles"]
 tags: ["japan", "super-sentai", "travel"]
-featuredImage: "/images/field-notes/bioman-2.jpg"
+featuredImage: "/assets/field-notes/bioman-2.jpg"
 wpId: 341
 wpSlug: "lost-chronicles-meeting-pink-five"
 ---
 
 As a kid growing up, I've always watched those superhero TV series from Japan as they were popular in Southeast Asia as local channels would pick them up and air them on free TV. I've grown to the habit of watching _Voltes V_, _Bioman_ and _Space Sheriff Shaider_ during Saturdays and Bioman became an instant favourite, which influenced my hobbies up to this day.
 
-![](/images/field-notes/bioman-2.jpg)
+![](/assets/field-notes/bioman-2.jpg)
 
 Choudenshi Bioman
 
@@ -22,18 +22,18 @@ Thanks to an [article from the Tokusatsu Network](http://tokusatsunetwork.com/20
 
 The Tsukiji Outer Market is one of the most popular places for the locals to obtain and eat fresh seafood. I arrived just past 8:30 in the morning and while moving through the crowd is quite the chore, I somewhat enjoyed the experience. It's giving me a small taste of what the locals do here every day.
 
-*   ![](/images/field-notes/tsukiji-outer-1.jpg)
+*   ![](/assets/field-notes/tsukiji-outer-1.jpg)
     
-*   ![](/images/field-notes/tsukiji-outer-2.jpg)
+*   ![](/assets/field-notes/tsukiji-outer-2.jpg)
     
-*   ![](/images/field-notes/tsukiji-outer-3.jpg)
+*   ![](/assets/field-notes/tsukiji-outer-3.jpg)
     
-*   ![](/images/field-notes/tsukiji-outer-4.jpg)
+*   ![](/assets/field-notes/tsukiji-outer-4.jpg)
     
 
 I had to look up several information online as to what the name of the shop is, and then I realized that this might be a gamble as I'm not exactly sure whether she'd be in the shop the same day or not, but I might as well try.
 
-![](/images/field-notes/bioman-mook.jpg)
+![](/assets/field-notes/bioman-mook.jpg)
 
 Michiko Makino, Bioman's Pink Five Ranger
 
@@ -45,7 +45,7 @@ I froze for a few minutes there, as I was trying to confirm that it's actually h
 
 _"Excuse me, are you Miss Makino?"_ I asked nervously. She was all smiles when she said yes. Then I somehow managed to hold a conversation despite me struggling to construct and conjugate Japanese words from memory. I told her everything a five-year old me would say - that I love her show and watched it religiously every weekend, that she and Red One are my favourites and that it's one of the shows that made me love Japan and its language and culture. I kept pausing between a few sentences because of my beginner Japanese and kept apologizing for my limited Japanese. On the other hand, she said it was okay and she even mentioned that she's impressed that I could talk to her in Japanese and that I should keep it up. I think that was my cue to turn completely red and almost flatline. _Is Makino-san complimenting me?_ We talked for a few more minutes and then I finally managed to ask if I can get a photo with her. She happily obliged and ask one of her friends to take the photo for us!
 
-![](/images/field-notes/the13thgeek-michiko-makino.jpg)
+![](/assets/field-notes/the13thgeek-michiko-makino.jpg)
 
 Bioman pose!!
 
@@ -53,7 +53,7 @@ I think I was so awestruck that I did not realize that I did the Bioman pose inc
 
 The shop started becoming busier due to the influx of more people, so I thought I shouldn't take much more of her time in the shop, so before we parted, I asked her for one last favour: to sign the Bioman LP that I brought with me. Of course I was prepared for this!
 
-![](/images/field-notes/bioman-michiko-makino-autograph.jpg)
+![](/assets/field-notes/bioman-michiko-makino-autograph.jpg)
 
 Michiko Makino's autograph
 

@@ -249,9 +249,17 @@
         &>div {
             @include tile(true);
         }
+        .heading-row {
+            padding: 0;
+            margin: 0;
+        }
 
         @include respond(md) {
             grid-template-columns: 2fr 3fr;
+            
+            .heading-row {
+                grid-column: 1 / span 2;
+            }
         }
     }
 
@@ -276,12 +284,15 @@
     }
 
     .tabs-list {
-        margin-left: auto;
         background: #222;
         padding: 0.7em 1em;
         display: flex;
         gap: 1em;
         border-radius: 0.6em;
+
+        @include respond(md) {
+            margin-left: auto;
+        }
     }
 
     .tab-panel {
@@ -291,6 +302,12 @@
         gap: 1rem;
         // padding: 2rem;
         // background-color: white;
+
+        @include respond(md) {
+            p:last-child {
+                margin-bottom: 3rem;
+            }
+        }
     }
 
     .tab-panel:not(.active) {
@@ -314,7 +331,7 @@
 
     p.notice {
         font-size: 0.8rem;
-        background-color: #600;
+        background-color: var(--deep);
         padding: 5px 10px;
         border-radius: 5px;
     }
@@ -336,6 +353,20 @@
 
     .brand-content {
         background-color: var(--deep);
+        color: #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+
+        h2, h3 {
+            color: #fff;
+        }
+    }
+
+    .brand-sample {
+        @include tile();
+        background-color: #fff;
     }
 
     h2, h3 {
@@ -343,5 +374,16 @@
     }
     h2::after {
         background-color: var(--accent);
+    }
+}
+.profile-connect {
+    color: #eee;
+
+    h1, h2, h3 {
+        color: #fff;
+    }
+
+    h2::after {
+        background-color: var(--deep);
     }
 }

@@ -5,7 +5,7 @@ pubDate: 2023-01-02T07:43:00.000Z
 author: "the13thgeek"
 categories: ["journal", "thoughts"]
 tags: ["friends"]
-featuredImage: "/images/field-notes/nye22-23.jpg"
+featuredImage: "/assets/field-notes/nye22-23.jpg"
 wpId: 1053
 wpSlug: "starting-off-the-year-right"
 ---
@@ -48,7 +48,7 @@ I was planning to just stream and play some Splatoon and Mario Kart on Twitch\* 
 
 * * *
 
-![](/images/field-notes/nye22-23.jpg)
+![](/assets/field-notes/nye22-23.jpg)
 
 2022 vs 2023
 

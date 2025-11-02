@@ -5,14 +5,14 @@ pubDate: 2021-08-30T03:54:30.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["food", "friends", "power-rangers", "tech"]
-featuredImage: "/images/field-notes/20210829_174450329090400162784299.jpg"
+featuredImage: "/assets/field-notes/20210829_174450329090400162784299.jpg"
 wpId: 955
 wpSlug: "weekend-thoughts-11"
 ---
 
 I did some more eating today - it's the baptism party for my coworkers baby and they had a small gathering at a park in the city.
 
-![](/images/field-notes/20210829_174450329090400162784299.jpg)
+![](/assets/field-notes/20210829_174450329090400162784299.jpg)
 
 Considering I just had some poutine and rollesque ice cream last night, I think I've had my fill of sugar for the next few days.
 
@@ -30,7 +30,7 @@ Yesterday was August 28th, aka Power Rangers Day for us fans, as the very first 
 
 Several years later, not only I have 1 but 4 different Ranger costumes!
 
-![](/images/field-notes/img_20210828_095929_7817713916861584415369.jpg)
+![](/assets/field-notes/img_20210828_095929_7817713916861584415369.jpg)
 
 There's really just 4 in here, the other 2 are "variants" of Mighty Morphin' Red Ranger (bottom right).
 

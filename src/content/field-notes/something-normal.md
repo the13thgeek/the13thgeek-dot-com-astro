@@ -5,7 +5,7 @@ pubDate: 2021-07-26T04:05:00.000Z
 author: "the13thgeek"
 categories: ["events", "journal"]
 tags: ["birthday", "friends"]
-featuredImage: "/images/field-notes/20210725_0837154963893318701688961.jpg"
+featuredImage: "/assets/field-notes/20210725_0837154963893318701688961.jpg"
 wpId: 830
 wpSlug: "something-normal"
 ---
@@ -14,7 +14,7 @@ I'm usually a low-key person so even if today's my birthday I wasn't planning an
 
 First thing in the morning I got a few beeps from my Tamagotchi and I thought that it's just hungry and needs some feeding, but this came up.
 
-![](/images/field-notes/20210725_0837154963893318701688961.jpg)
+![](/assets/field-notes/20210725_0837154963893318701688961.jpg)
 
 It even played an 8-bit Happy Birthday tune!
 
@@ -34,7 +34,7 @@ It's a great experience - considering this was something I used to do a lot befo
 
 After the movie we drove to a fancy bakery and he got me this scrumptious Oreo cheesecake! 🥰 He knows me a little too well! 😁
 
-![](/images/field-notes/20210725_2323598001035462480352616.jpg)
+![](/assets/field-notes/20210725_2323598001035462480352616.jpg)
 
 I've been fighting the temptation all day to eat this as soon as I got it.
 
@@ -42,13 +42,13 @@ We've been driving around in his flashy convertible and I think that's the best 
 
 Later in the day some of my friends came out of the woodwork and called me to say they're picking me up and we're going somewhere. Surprise - it's a birthday patio dinner!
 
-![](/images/field-notes/20210725_2107396427302310998537353.jpg)
+![](/assets/field-notes/20210725_2107396427302310998537353.jpg)
 
 _We're all fully-vaccinated so we're good_!
 
 They got me a birthday cake to go with it as well!
 
-![](/images/field-notes/214331847_1023250438486986_8598852330937917692_n.jpg)
+![](/assets/field-notes/214331847_1023250438486986_8598852330937917692_n.jpg)
 
 I'm a happy camper!
 

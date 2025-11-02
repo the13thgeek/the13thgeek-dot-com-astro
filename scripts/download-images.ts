@@ -116,7 +116,7 @@ async function downloadImages() {
     try {
       const filename = sanitizeFilename(url);
       const outputPath = path.join(outputDir, filename);
-      const localPath = `/images/field-notes/${filename}`;
+      const localPath = `/assets/field-notes/${filename}`;
       
       // Skip if file already exists
       if (fs.existsSync(outputPath)) {
@@ -215,7 +215,7 @@ async function main() {
     console.log('\n🎉 All done! Your images are now local.');
     console.log('\nNext steps:');
     console.log('1. Review your field notes in src/content/field-notes/');
-    console.log('2. Check images in public/images/field-notes/');
+    console.log('2. Check images in public/assets/field-notes/');
     console.log('3. Start building your field notes listing page!');
     
   } catch (error) {

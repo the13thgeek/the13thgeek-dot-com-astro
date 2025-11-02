@@ -5,14 +5,14 @@ pubDate: 2020-02-21T23:47:00.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["rants"]
-featuredImage: "/images/field-notes/erqdnq5xyay5lw9.jpg"
+featuredImage: "/assets/field-notes/erqdnq5xyay5lw9.jpg"
 wpId: 777
 wpSlug: "missing-instagram-feature"
 ---
 
 Recently, I've been getting story shoutouts from many of my friends on Instagram, but for some reason I am unable to return the favour.
 
-![](/images/field-notes/erqdnq5xyay5lw9.jpg)
+![](/assets/field-notes/erqdnq5xyay5lw9.jpg)
 
 You saw that right. I would like to give my friends a spotlight on my own stories, but I am however missing the **Add Post to your Story** option. My friends have been sharing posts on their stories for about a year now so I thought the feature would eventually make it to my app.
 

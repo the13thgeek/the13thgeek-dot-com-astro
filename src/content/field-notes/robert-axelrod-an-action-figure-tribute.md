@@ -5,7 +5,7 @@ pubDate: 2019-09-23T02:49:48.000Z
 author: "the13thgeek"
 categories: ["toy-photography"]
 tags: ["action-figures", "diorama", "power-rangers", "toys"]
-featuredImage: "/images/field-notes/zedd.jpg"
+featuredImage: "/assets/field-notes/zedd.jpg"
 wpId: 461
 wpSlug: "robert-axelrod-an-action-figure-tribute"
 ---
@@ -14,7 +14,7 @@ I've heard the news of Mr. Axelrod's passing and I've always wanted to make a tr
 
 I've known Robert Axelrod as the main voice actor for Lord Zedd, one of the most well-known villains from the _Power Rangers_ franchise. Hasbro has released a **Lightning Collection** figure for Zedd, but it wasn't made easily available here in Canada. Fortunately, the US Amazon site was able to ship me one!
 
-![](/images/field-notes/zedd.jpg)
+![](/assets/field-notes/zedd.jpg)
 
 "A Worthy Opponent"
 
@@ -22,7 +22,7 @@ Hasbro's Lightning Collection figures have been very decent so far, obviously no
 
 ### The Setup
 
-![](/images/field-notes/zedd-bts.jpg)
+![](/assets/field-notes/zedd-bts.jpg)
 
 Behind the scenes
 

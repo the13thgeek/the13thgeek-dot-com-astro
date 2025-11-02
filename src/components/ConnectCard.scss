@@ -14,7 +14,7 @@
 
   h2{
     &::before {
-      color: #fff;
+      color: inherit;
     }
     &::after {
       background-color: var(--light);
@@ -29,7 +29,7 @@
   }
 
   a {
-    color: #333;
+    color: inherit;
     font-size: 2rem;
     text-decoration: none;
     font-weight: 600;

@@ -5,7 +5,7 @@ pubDate: 2019-09-10T04:23:05.000Z
 author: "the13thgeek"
 categories: ["toy-photography"]
 tags: ["diorama", "memes", "power-rangers", "s-h-figuarts", "toys"]
-featuredImage: "/images/field-notes/distracted-boyfriend.jpg"
+featuredImage: "/assets/field-notes/distracted-boyfriend.jpg"
 wpId: 396
 wpSlug: "life-imitates-action-figure-art-vol-1"
 ---
@@ -14,13 +14,13 @@ Sometimes, I would use memes as a source material for inspiration when posing di
 
 **The Source:**
 
-![](/images/field-notes/distracted-boyfriend.jpg)
+![](/assets/field-notes/distracted-boyfriend.jpg)
 
 Distracted Boyfriend
 
 **The Imitation:**
 
-![](/images/field-notes/distracted-ranger.jpg)
+![](/assets/field-notes/distracted-ranger.jpg)
 
 Distracted Ranger
 

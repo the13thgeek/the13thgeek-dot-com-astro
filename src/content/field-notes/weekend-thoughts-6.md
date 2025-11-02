@@ -5,7 +5,7 @@ pubDate: 2019-10-20T05:11:56.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["flashback", "nintendo-switch", "web-dev"]
-featuredImage: "/images/field-notes/facepalm.gif"
+featuredImage: "/assets/field-notes/facepalm.gif"
 wpId: 635
 wpSlug: "weekend-thoughts-6"
 ---
@@ -41,7 +41,7 @@ I'm pretty sure I'm not the only one who gets nightmares after seeing that! :P
 
 After a few minutes of digging around, I found the culprit - apparently I was using the wrong menu ID. All this time I was using `menu-l` (lowercase L) instead of `menu-1` (number 1)!
 
-![](/images/field-notes/facepalm.gif)
+![](/assets/field-notes/facepalm.gif)
 
 I loved working on a 4K screen resolution because I can see my page layout and my source codes all at the same time, but I guess it has its downsides! :P
 
@@ -49,7 +49,7 @@ I loved working on a 4K screen resolution because I can see my page layout and m
 
 I got my repaired Joy-Cons back from Nintendo, and while the drifting on the left stick is pretty much fixed and gone (for now, at least), I was introduced to an entirely new problem!
 
-![](/images/field-notes/joycondisconnects.jpg)
+![](/assets/field-notes/joycondisconnects.jpg)
 
 Every time I play local multiplayer Smash with friends, I'd always get this screen in the middle of the match, and I have to reconnect my Joy-Cons, and manually point the cursor to my character on the screen so I could get back on the match and next thing I know I'm out of stock lives.
 

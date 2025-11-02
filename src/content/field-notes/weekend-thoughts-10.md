@@ -5,7 +5,7 @@ pubDate: 2021-08-23T00:48:13.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["cool-stuff", "games", "tech"]
-featuredImage: "/images/field-notes/gw4c.jpg"
+featuredImage: "/assets/field-notes/gw4c.jpg"
 wpId: 879
 wpSlug: "weekend-thoughts-10"
 ---
@@ -28,7 +28,7 @@ Did anyone watch the latest Galaxy Unpacked event? While I'm disappointed that t
 
 I did however, set my eyes on the new Fold. It looks promising, and with the big screen and the (not-native) S-Pen support, it could very well be my next phone if ever I decide to upgrade in the future. The foldable tech is still too young and the under-display camera could still use another year to improve.
 
-![](/images/field-notes/gw4c.jpg)
+![](/assets/field-notes/gw4c.jpg)
 
 Galaxy Watch4 Classic
 
@@ -46,7 +46,7 @@ I've looked at smartphone armbands and I toyed with the idea of getting one but 
 
 I went to the mall earlier to see if they have some off-the-shelf armbands I could check - same problem, but within the same section I found these "running belts" and I had no idea they exist! I thought runners usually either go with armbands or fanny packs!
 
-![](/images/field-notes/20210822_1849074298417107103334212.jpg)
+![](/assets/field-notes/20210822_1849074298417107103334212.jpg)
 
 I tried to fit my Note 10+ in it and it worked! I tried wearing it at home and do a few quick laps in the hallway and it looks like the problem is solved! The other plus side is I can keep other things in it as well!
 

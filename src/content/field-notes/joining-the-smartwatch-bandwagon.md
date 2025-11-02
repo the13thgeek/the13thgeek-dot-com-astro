@@ -5,14 +5,14 @@ pubDate: 2021-08-28T03:55:20.000Z
 author: "the13thgeek"
 categories: ["cool-stuff", "journal"]
 tags: ["food", "tech"]
-featuredImage: "/images/field-notes/20210827_1318553129524305182197356.jpg"
+featuredImage: "/assets/field-notes/20210827_1318553129524305182197356.jpg"
 wpId: 924
 wpSlug: "joining-the-smartwatch-bandwagon"
 ---
 
 It's a chilly, rainy day today - perfect day for pho!
 
-![](/images/field-notes/20210827_1318553129524305182197356.jpg)
+![](/assets/field-notes/20210827_1318553129524305182197356.jpg)
 
 Meatballs and briskets pho for lunch!
 
@@ -26,7 +26,7 @@ Back in mid-August I preordered the 42mm version of the Galaxy Watch 4 Classic, 
 
 Apparently, I'm not the only one whose order got pushed back. After reading several Reddit threads, some people have suggested to check Best Buy and see if they have some in-store ones for pickup. I checked my local one and voila - they have a 46mm one available! I didn't waste any more second and I ordered one for store pickup! Within half an hour later, I got a confirmation saying they have secured the watch for me!
 
-![](/images/field-notes/20210827_2237323748626319605126639.jpg)
+![](/assets/field-notes/20210827_2237323748626319605126639.jpg)
 
 From 42mm to 46mm!!
 
@@ -34,7 +34,7 @@ I ended up cancelling my preorder from Samsung - too bad, I'll miss out on the f
 
 At first I was concerned about how big the 46mm's gonna be on my tiny wrists, but turns out even this bigger Classic model is still way smaller and more compact that my good ol' trusty G-Shock:
 
-![](/images/field-notes/20210827_2232367359043429345516818.jpg)
+![](/assets/field-notes/20210827_2232367359043429345516818.jpg)
 
 Galaxy Watch 4 Classic 46mm and a Casio G-Shock comparison
 

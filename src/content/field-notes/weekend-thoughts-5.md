@@ -5,7 +5,7 @@ pubDate: 2019-10-07T01:19:00.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["nycc19", "friends", "new-york-comic-con", "toy-photography", "travel"]
-featuredImage: "/images/field-notes/nycc-friends.jpg"
+featuredImage: "/assets/field-notes/nycc-friends.jpg"
 wpId: 555
 wpSlug: "weekend-thoughts-5"
 ---
@@ -20,13 +20,13 @@ I already miss everyone, but I'm still optimistic about PMC and I'm already cons
 
 I regretted not staying longer, but NY hotels made Anaheim look like an AirBnb. I'll definitely need a bigger budget for next year and I'll start preparing as early as now. But seriously, as soon as an opportunity to spend time with these people again comes up, I will not hesitate to jump on the next plane back to NY!
 
-![](/images/field-notes/nycc-friends.jpg)
+![](/assets/field-notes/nycc-friends.jpg)
 
 I'm not saying goodbye, but more like "see you guys again soon!" :)
 
 * * *
 
-![](/images/field-notes/power-rangers-kamen-rider.jpg)
+![](/assets/field-notes/power-rangers-kamen-rider.jpg)
 
 So my Lightning Collection Magna Defender and S.H.Figuarts Ohma Zio arrived in the mail shortly before I flew to NY, so I never had the chance to unbox these guys just yet. I know the Magna Defender came with a crappy stiff plastic cape which will definitely hinder during toy photography, so I intend to get a cloth cape for him at some point.
 
@@ -36,7 +36,7 @@ As expected, Ohma Zio looks amazing! The only part that disappointed me was the 
 
 I didn't really do much loot shopping at NYCC, but other than the usual convention loot, I got myself the latest Snow MIku figma for this year!
 
-![](/images/field-notes/snow-miku-2019.jpg)
+![](/assets/field-notes/snow-miku-2019.jpg)
 
 She'll be joining my other Snow Mikus that I assemble on my office desk display during the Holiday season.
 
@@ -44,7 +44,7 @@ She'll be joining my other Snow Mikus that I assemble on my office desk display 
 
 NYCC is my last convention and trip for this year, so I began looking back on my previous travels plans for 2019 and then I realized that I managed to visit both the east and west coasts this year!
 
-![](/images/field-notes/2019-13306km.gif)
+![](/assets/field-notes/2019-13306km.gif)
 
 It's not much, but for a casual traveller like myself, this is quite an interesting achievement.
 
@@ -56,7 +56,7 @@ Over the course of my 4-day trip to NY I have accumulated a hefty sum of... one-
 
 Canada has already phased out the penny years ago, so I really don't get the point still. And those one-dollar bills have been confusing the heck out of me ever since my trip to the States a few years ago.
 
-![](/images/field-notes/us-dollar.jpg)
+![](/assets/field-notes/us-dollar.jpg)
 
 But hey, it does make me feel _rich_ in a way! :D
 
@@ -66,4 +66,4 @@ It kind of sucks that many of my fellow geek friends I've had good relations wit
 
 I miss y'all :(
 
-![](/images/field-notes/sitcker-power-rangers.jpg)
+![](/assets/field-notes/sitcker-power-rangers.jpg)

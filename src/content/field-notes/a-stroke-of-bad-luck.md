@@ -5,7 +5,7 @@ pubDate: 2019-10-24T03:18:28.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["life-happens", "rants"]
-featuredImage: "/images/field-notes/empty-box.jpg"
+featuredImage: "/assets/field-notes/empty-box.jpg"
 wpId: 647
 wpSlug: "a-stroke-of-bad-luck"
 ---
@@ -24,7 +24,7 @@ Now I'm on my call 4 out of I-don't-know-how-many-more awkward phone calls I hav
 
 I ordered a few action figure props from a propmaker online, and after waiting for it to arrive in the mail for so long...
 
-![](/images/field-notes/empty-box.jpg)
+![](/assets/field-notes/empty-box.jpg)
 
 That's right. There's nothing in it!
 
@@ -34,7 +34,7 @@ I checked every nook and cranny in the box... it looks like they may have sent t
 
 Looking at the North American Premium Bandai site, I was ecstatic to see that they're putting up the outfits that the characters wear in Kamen Rider Zero One and I quickly tried to place an order for one of Aruto's signature _Corned Beef_ hoodies, then I was greeted with this not-so-friendly error message:
 
-![](/images/field-notes/no-ship-canada.jpg)
+![](/assets/field-notes/no-ship-canada.jpg)
 
 Apparently they no longer ship to Canada as of July this year. I guess I was 4 months too late.
 

@@ -5,7 +5,7 @@ pubDate: 2019-09-13T03:54:22.000Z
 author: "the13thgeek"
 categories: ["events", "journal"]
 tags: ["event", "gatsbyjs", "programming", "toronto", "travel", "web-dev", "web-unleashed-2019"]
-featuredImage: "/images/field-notes/workshop-0.jpg"
+featuredImage: "/assets/field-notes/workshop-0.jpg"
 wpId: 403
 wpSlug: "getting-my-hands-dirty-with-gatsbyjs"
 ---
@@ -16,23 +16,23 @@ My employer is awesome enough to let me attend a Web Developer-focused conferenc
 
 Our workshop for today is led by [Wes Bos](https://wesbos.com/), and based off my acquaintances he's a good instructor so I did not pass up the opportunity.
 
-![](/images/field-notes/workshop-0.jpg)
+![](/assets/field-notes/workshop-0.jpg)
 
 'This includes you, WordPress devs!" Hey, that's me! :D
 
-![](/images/field-notes/workshop-1.jpg)
+![](/assets/field-notes/workshop-1.jpg)
 
 Setting up my dev environment
 
 Wes has provided clear instructions on how to set up our workshop dev environment but I had a very rocky start as I was unable to get my Gatsby environment completely set up. Every time I try to run the `npm install` command it throws me an error about the missing `pngquant` library.
 
-![](/images/field-notes/workshop-2.jpg)
+![](/assets/field-notes/workshop-2.jpg)
 
 This error threw me off tracks for a good half an hour!
 
 Wes tried his best to assist and based off the answers we saw on StackOverflow, the error is mostly fixed by installing the latest version of Microsoft's _Visual Studio Community Edition_ so I jumped right away to the Microsoft site and was bewildered that the whole thing requires a download of a couple of gigabytes!
 
-![](/images/field-notes/workshop-3.jpg)
+![](/assets/field-notes/workshop-3.jpg)
 
 Figured that this is probably my last hope in getting this thing sorted, I took the gamble and downloaded the whole thing while Wes began his lecture introduction. The idea of being left behind in a coding workshop, specifically on something I have little knowledge of terrifies me, so I had my fingers crossed the whole time while Visual Studio installs itself on my laptop.
 
@@ -50,7 +50,7 @@ First impressions with Gatsby:
 *   I like the modular approach to things - reminds me of my old projects when I was still learning Visual Basic back in university.
 *   Converting `<a href>` to `<Link to>` reminds me of .NET when converting a Page Control into a Server Control `runat="server"`; and I like that it supports an `activeClassName`. I had to do some witchcraft in PHP to make that work!
 
-![](/images/field-notes/workshop-4.jpg)
+![](/assets/field-notes/workshop-4.jpg)
 
 Lunch!
 
@@ -127,11 +127,11 @@ I think I spent the most time changing the GraphQL code. To be honest I'm still 
 
 He distributed some of his trademark stickers and pencils to everyone at the workshop. It makes a good set of souvenirs!
 
-*   ![](/images/field-notes/wesbos-pencil.jpg)
+*   ![](/assets/field-notes/wesbos-pencil.jpg)
     
     "Never stop making things" - from your friend Wes Bos
     
-*   ![](/images/field-notes/wesbos-stickers.jpg)
+*   ![](/assets/field-notes/wesbos-stickers.jpg)
     
     Bos Stickers!
     
@@ -142,6 +142,6 @@ Also, I'd like to thank the hotel's charging station for saving my \[phone's\] l
 
 I'm ready for all the fun topics for the conference in the next two days! Bring it on!!
 
-![](/images/field-notes/korean-bbq.jpg)
+![](/assets/field-notes/korean-bbq.jpg)
 
 Wrapped up my first day in Toronto with some good Korean BBQ. Hey, I earned it! :P

@@ -5,18 +5,18 @@ pubDate: 2021-07-24T03:59:42.000Z
 author: "the13thgeek"
 categories: ["cool-stuff", "journal"]
 tags: ["food", "friends"]
-featuredImage: "/images/field-notes/japanese-diy-candy-kracie-poppin-cookin-doughnut-kit.jpg"
+featuredImage: "/assets/field-notes/japanese-diy-candy-kracie-poppin-cookin-doughnut-kit.jpg"
 wpId: 812
 wpSlug: "expectation-vs-reality"
 ---
 
 Today I had a friend over and we bought of one those cute Japanese DIY snack kits that lets us make edible miniatures of actual food. There are many variations, and we got the Donuts one.
 
-![](/images/field-notes/japanese-diy-candy-kracie-poppin-cookin-doughnut-kit.jpg)
+![](/assets/field-notes/japanese-diy-candy-kracie-poppin-cookin-doughnut-kit.jpg)
 
 It was pretty straightforward and despite my limited Japanese I was able to read and follow the instructions at the back. It was a fun experience, but the caveat that I completely overlooked until it was time to decorate the tiny little donuts - they were not as easy as they look!
 
-![](/images/field-notes/20210723_1057118589209922463229909.jpg)
+![](/assets/field-notes/20210723_1057118589209922463229909.jpg)
 
 Expectation vs Reality
 

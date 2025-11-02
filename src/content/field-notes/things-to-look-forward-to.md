@@ -5,7 +5,7 @@ pubDate: 2019-08-14T05:03:01.000Z
 author: "the13thgeek"
 categories: ["events"]
 tags: ["event", "nycc", "power-morphicon", "travel"]
-featuredImage: "/images/field-notes/nycc.jpg"
+featuredImage: "/assets/field-notes/nycc.jpg"
 wpId: 36
 wpSlug: "things-to-look-forward-to"
 ---
@@ -26,7 +26,7 @@ The event should present many networking opportunities as well. To be honest I s
 
 ## New York Comic Con 2019
 
-![](/images/field-notes/nycc.jpg)
+![](/assets/field-notes/nycc.jpg)
 
 That's right! It'll be my first time attending NYCC and my first time in New York as well. Myself and a friend got fortunate in scoring Thursday to Saturday passes so we'll be flying in to New York for the convention weekend. We're planning to attend the convention during the day and do some sight-seeing in the evenings.
 
@@ -36,7 +36,7 @@ I've made new friends over at last year's Power Morphicon and for NYCC they've s
 
 ## Power Morphicon
 
-![](/images/field-notes/2018-events.jpg)
+![](/assets/field-notes/2018-events.jpg)
 
 This one's not until September 2020, but I've already secured my weekend passes. This is one of the biggest events I'll never miss!
 
@@ -46,7 +46,7 @@ Too bad Morphicon only happens once every two years, but it's good in a way that
 
 ## Possible Asian trip?
 
-![](/images/field-notes/merlion.jpg)
+![](/assets/field-notes/merlion.jpg)
 
 Photo by [Bjørn Christian Tørrissen](http://bjornfree.com/galleries.html)
 

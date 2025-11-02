@@ -5,7 +5,7 @@ pubDate: 2019-08-14T18:00:22.000Z
 author: "the13thgeek"
 categories: ["cool-stuff"]
 tags: ["tamagotchi"]
-featuredImage: "/images/field-notes/famtree.jpg"
+featuredImage: "/assets/field-notes/famtree.jpg"
 wpId: 79
 wpSlug: "sticky-genetics"
 ---
@@ -18,7 +18,7 @@ This new version features _genetics_, a very interesting concept. As the charact
 
 Speaking of which, I have these set of ears that I had since the first generation, and I'm currently on the fifth generation and it's been sticking around and it doesn't look like it's going away any time soon.
 
-![](/images/field-notes/famtree.jpg)
+![](/assets/field-notes/famtree.jpg)
 
 People have been trying to figure out "theories" on how they can control the character's growth (ie _specifically pick out characteristics they wanted to inherit_) but it looks like it's all RNG-based so far. In my case, really bad RNG.
 

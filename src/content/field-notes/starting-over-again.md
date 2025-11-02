@@ -5,7 +5,7 @@ pubDate: 2021-07-16T04:01:26.000Z
 author: "the13thgeek"
 categories: ["thoughts"]
 tags: ["ramblings", "rants"]
-featuredImage: "/images/field-notes/win10-update-stuck-on-restarting-1.png"
+featuredImage: "/assets/field-notes/win10-update-stuck-on-restarting-1.png"
 wpId: 783
 wpSlug: "starting-over-again"
 ---
@@ -24,4 +24,4 @@ So yes, I'm not giving up just yet!
 
 _Restarting..._
 
-![](/images/field-notes/win10-update-stuck-on-restarting-1.png)
+![](/assets/field-notes/win10-update-stuck-on-restarting-1.png)

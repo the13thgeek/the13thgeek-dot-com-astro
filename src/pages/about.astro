@@ -3,6 +3,7 @@ import GlobalLayout from '../layouts/GlobalLayout.astro';
 import HeadingCard from '../components/HeadingCard.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import SectionContainer from '../components/SectionContainer.astro';
+import ConnectCard from '../components/ConnectCard.astro';
 import '../styles/about.scss';
 ---
 
@@ -110,8 +111,7 @@ import '../styles/about.scss';
 						<p><b>Bike Week Winnipeg</b><br>
 						Pit Stop Personnel<br>
 						<em>2014 - 2017</em></p>
-					</div>
-					<div class="item">
+
 						<h3>education<span>()</span></h3>
 						<hr class="sub-divider">
 						<p><b>Polytechnic University of the Philippines</b>
@@ -136,16 +136,16 @@ import '../styles/about.scss';
 		</div>
 	</SectionContainer>
 	<SectionContainer className='profile-irl'>
+		<SectionHeading headingType='h2' sectionNumber={4} slot="heading">I.R.L.</SectionHeading>
+		<div slot="heading" class="tabs-list" role="tablist" aria-label="Select a language">
+			<button role="tab" aria-selected="true" aria-controls="panel-en" id="tab-en" class="lang-btn active"><img src="/assets/about/lang-en.png" alt="English (Canada)"></button>
+			<button role="tab" aria-selected="false" aria-controls="panel-jp" id="tab-jp" class="lang-btn"><img src="/assets/about/lang-jp.png" alt="Japanese"></button>
+			<button role="tab" aria-selected="false" aria-controls="panel-ph" id="tab-ph" class="lang-btn"><img src="/assets/about/lang-ph.png" alt="Tagalog"></button>
+		</div>
+
 		<div class="photo-block"></div>
 		<div class="contents-block">
-			<div class="heading-row">
-				<SectionHeading headingType='h2' sectionNumber={4}>I.R.L.</SectionHeading>
-				<div class="tabs-list" role="tablist" aria-label="Select a language">
-					<button role="tab" aria-selected="true" aria-controls="panel-en" id="tab-en" class="lang-btn active"><img src="/assets/about/lang-en.png" alt="English (Canada)"></button>
-					<button role="tab" aria-selected="false" aria-controls="panel-jp" id="tab-jp" class="lang-btn"><img src="/assets/about/lang-jp.png" alt="Japanese"></button>
-					<button role="tab" aria-selected="false" aria-controls="panel-ph" id="tab-ph" class="lang-btn"><img src="/assets/about/lang-ph.png" alt="Tagalog"></button>
-				</div>
-			</div>
+			
 			
 			<div role="tabpanel" id="panel-en" aria-labelledby="tab-en" class="tab-panel active">
 				<h3>Off the Grid</h3>
@@ -171,8 +171,13 @@ import '../styles/about.scss';
 	<SectionContainer className='profile-branding'>
 		<div class="brand-content">
 			<SectionHeading headingType='h2' sectionNumber={5}>Branding</SectionHeading>
+			<p>During Aldreich's university days when BBCode forums were popular, he frequently posted and shared C-language tips and hacks for his fellow IT freshmen. He initially wanted to use the handle "13thgeek"— because thirteen is his lucky number and "geek" being an IT undergrad at the time. However, the forum system didn't allow usernames to start with a digit, so he added "the" to bypass the restriction. This workaround not only solved the issue but also gave the handle a more distinct and definitive tone!</p>
+			<p>The branding depicts both serious and playful personalities converging together in harmony. The default "style" for the logo is a paint splatter, but can be versatile and changed depending on the event or occasion.</p>
 		</div>
 		<div class="brand-sample"></div>
+	</SectionContainer>
+	<SectionContainer noTopMargin className="profile-connect">
+		<ConnectCard />
 	</SectionContainer>
 </GlobalLayout>
 

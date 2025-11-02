@@ -5,7 +5,7 @@ pubDate: 2019-08-19T23:49:17.000Z
 author: "the13thgeek"
 categories: ["toy-photography"]
 tags: ["action-figures", "diorama", "toys"]
-featuredImage: "/images/field-notes/namieamuro-hideseek.jpg"
+featuredImage: "/assets/field-notes/namieamuro-hideseek.jpg"
 wpId: 263
 wpSlug: "danger-zone"
 ---
@@ -16,7 +16,7 @@ I started off by just taking them out of their display cases and making them do 
 
 For this instance, I came up with the idea of using _caution tape_ for a theme as these usually implies a scene where action is either expected or has happened. Where did the idea came from? While I was watching Namie Amuro's _Hide and Seek_ music video:
 
-![](/images/field-notes/namieamuro-hideseek.jpg)
+![](/assets/field-notes/namieamuro-hideseek.jpg)
 
 Namie Amuro - Hide & Seek (2007)
 
@@ -24,19 +24,19 @@ The Figuarts and Figma lines usually follow the 1/12 scale so initially I began 
 
 They ended up looking so much better in the photos!
 
-*   ![](/images/field-notes/dgz-figures-dva.jpg)
+*   ![](/assets/field-notes/dgz-figures-dva.jpg)
     
     D.Va and the Pink Rangers
     
-*   ![](/images/field-notes/dgz-figures-hazard.jpg)
+*   ![](/assets/field-notes/dgz-figures-hazard.jpg)
     
     Kamen Rider Build: Hazard Mode
     
-*   ![](/images/field-notes/dgz-figures-kyoryu.jpg)
+*   ![](/assets/field-notes/dgz-figures-kyoryu.jpg)
     
     Pureun & Dohee (Dino Force Brave)
     
-*   ![](/images/field-notes/dgz-figures-yellow.jpg)
+*   ![](/assets/field-notes/dgz-figures-yellow.jpg)
     
     Yellow Rangers!
     

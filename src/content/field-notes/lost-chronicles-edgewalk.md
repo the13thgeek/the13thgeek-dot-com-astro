@@ -5,7 +5,7 @@ pubDate: 2019-08-18T20:44:51.000Z
 author: "the13thgeek"
 categories: ["lost-chronicles"]
 tags: ["adventures", "toronto", "travel"]
-featuredImage: "/images/field-notes/cntoweredgewalk-2-1.jpg"
+featuredImage: "/assets/field-notes/cntoweredgewalk-2-1.jpg"
 wpId: 245
 wpSlug: "lost-chronicles-edgewalk"
 ---
@@ -18,17 +18,17 @@ This is the _single craziest_ thing I've done in my life so far - doing the [CN 
 > 
 > cntower.ca
 
-![CN Tower Edge Walk](/images/field-notes/cntoweredgewalk-2-1.jpg)
+![CN Tower Edge Walk](/assets/field-notes/cntoweredgewalk-2-1.jpg)
 
 I have always wanted to do this activity ever since I did a research on CN Tower (I have this fascination with mega-structures) so when I got the chance to fly to Toronto back in 2013, I immediately booked for a Sunday morning walk. I almost got late for my walk because we miscalculated the travel time, but thank goodness we managed to get on a cab and we were downtown in no time.
 
-*   [![](/images/field-notes/cntoweredgewalk-11.jpg)](/images/field-notes/cntoweredgewalk-11.jpg)
+*   [![](/assets/field-notes/cntoweredgewalk-11.jpg)](/assets/field-notes/cntoweredgewalk-11.jpg)
     
-*   [![](/images/field-notes/cntoweredgewalk-22.jpg)](/images/field-notes/cntoweredgewalk-22.jpg)
+*   [![](/assets/field-notes/cntoweredgewalk-22.jpg)](/assets/field-notes/cntoweredgewalk-22.jpg)
     
-*   [![](/images/field-notes/cntoweredgewalk-23.jpg)](/images/field-notes/cntoweredgewalk-23.jpg)
+*   [![](/assets/field-notes/cntoweredgewalk-23.jpg)](/assets/field-notes/cntoweredgewalk-23.jpg)
     
-*   [![](/images/field-notes/cntoweredgewalk-25.jpg)](/images/field-notes/cntoweredgewalk-25.jpg)
+*   [![](/assets/field-notes/cntoweredgewalk-25.jpg)](/assets/field-notes/cntoweredgewalk-25.jpg)
     
 
 Upon arriving at the EdgeWalk Base Camp, I was asked to sign a waiver and then underwent through several tests (breathalyzer, metal detection, etc.) before putting on those bright orange jumpers and the harnesses. We then proceeded to climb up the tower to get ready for the walk. I'm not afraid of heights but I started to feel really nervous but our guide is doing a good job in keeping us entertained with her Toronto trivia. We did some really dangerous activity up there, and despite the 30 kph winds all six of us were able to carry out the tasks pretty well. We were a pretty fun group because we spent most of the time laughing and talking to each other during the walk. It was a huge lifetime achievement for myself as this is the first extreme activity I have done so far (if riding rollercoasters isn't dangerous enough). It's not everyday I get to walk a 5-foot platform more than a hundred storeys high! We did get our certificates and photos printed and we also got a video of the experience as well!

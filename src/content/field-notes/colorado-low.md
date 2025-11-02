@@ -5,7 +5,7 @@ pubDate: 2019-10-13T06:48:00.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["mbstorm", "winnipeg"]
-featuredImage: "/images/field-notes/mbstorm-2.jpg"
+featuredImage: "/assets/field-notes/mbstorm-2.jpg"
 wpId: 568
 wpSlug: "colorado-low"
 ---
@@ -14,13 +14,13 @@ Thanks to that Colorado Low\*, it dumped a few feet of snow in my province and t
 
 ...and it's only October!!!
 
-![](/images/field-notes/mbstorm-2.jpg)
+![](/assets/field-notes/mbstorm-2.jpg)
 
 Even the autumn leaves are equally as confused as I was!
 
 For a quick second I even thought they might suspend work because of the winds and the heavy snowfall, but then again it's Winnipeg. It's not that we can't leave home and do our usual stuff, but many people got stuck in the snow and it crippled public transit. I was even late for work for half an hour Friday morning, but everyone knew what was going in anyway.
 
-![](/images/field-notes/mbstorm-1.jpg)
+![](/assets/field-notes/mbstorm-1.jpg)
 
 Okay snow, can you please go away now? I still need my nice comfy fall weather.
 

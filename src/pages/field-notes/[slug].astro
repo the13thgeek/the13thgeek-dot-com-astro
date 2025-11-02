@@ -1,0 +1,408 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import GlobalLayout from '../../layouts/GlobalLayout.astro';
+
+export const getStaticPaths = (async () => {
+  const fieldNotes = await getCollection('field-notes');
+  // Sort by date for proper prev/next
+  const sortedNotes = fieldNotes.sort((a, b) => 
+    b.data.pubDate.getTime() - a.data.pubDate.getTime()
+  );
+  
+  return sortedNotes.map((note, index) => {
+    const prevNote = index < sortedNotes.length - 1 ? sortedNotes[index + 1] : null;
+    const nextNote = index > 0 ? sortedNotes[index - 1] : null;
+    
+    return {
+      params: { slug: note.slug },
+      props: { note, prevNote, nextNote }
+    };
+  });
+}) satisfies GetStaticPaths;
+
+const { note, prevNote, nextNote } = Astro.props;
+const { Content } = await note.render();
+
+// Format date helper
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }).format(date);
+}
+
+// Prepare OpenGraph data
+const ogTitle = `${note.data.title} • the13thgeek`;
+const ogDescription = note.data.description || `A field note from ${formatDate(note.data.pubDate)}`;
+const ogImage = note.data.featuredImage || '/og-field-notes.png';
+const ogKeywords = [
+  'the13thgeek',
+  'field notes',
+  ...note.data.tags,
+  ...note.data.categories
+].join(', ');
+---
+
+<GlobalLayout 
+  title={ogTitle}
+  section="field-notes"
+  description={ogDescription}
+  keywords={ogKeywords}
+  ogImage={ogImage}
+  path={`/field-notes/${note.slug}/`}
+>
+  <article class="field-note">
+    <header class="note-header">
+      <div class="breadcrumb">
+        <a href="/field-notes/">← Back to Field Notes</a>
+      </div>
+      
+      <h1>{note.data.title}</h1>
+      
+      <div class="note-meta">
+        <time datetime={note.data.pubDate.toISOString()}>
+          {formatDate(note.data.pubDate)}
+        </time>
+        {note.data.author && (
+          <span class="author">by {note.data.author}</span>
+        )}
+      </div>
+
+      {(note.data.categories.length > 0 || note.data.tags.length > 0) && (
+        <div class="note-taxonomy">
+          {note.data.categories.length > 0 && (
+            <div class="categories">
+              <strong>Categories:</strong>
+              {note.data.categories.map(cat => (
+                <span class="category">{cat}</span>
+              ))}
+            </div>
+          )}
+          {note.data.tags.length > 0 && (
+            <div class="tags">
+              <strong>Tags:</strong>
+              {note.data.tags.map(tag => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </header>
+
+    <div class="note-content">
+      <Content />
+    </div>
+
+    <footer class="note-footer">
+      <nav class="post-navigation">
+        {prevNote && (
+          <a href={`/field-notes/${prevNote.slug}/`} class="nav-link prev" rel="prev">
+            <span class="nav-label">← Previous</span>
+            <span class="nav-title">{prevNote.data.title}</span>
+          </a>
+        )}
+        {nextNote && (
+          <a href={`/field-notes/${nextNote.slug}/`} class="nav-link next" rel="next">
+            <span class="nav-label">Next →</span>
+            <span class="nav-title">{nextNote.data.title}</span>
+          </a>
+        )}
+      </nav>
+      <a href="/field-notes/" class="back-link">← Back to all field notes</a>
+    </footer>
+  </article>
+</GlobalLayout>
+
+<style lang="scss">
+  .field-note {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .note-header {
+    margin-bottom: 3rem;
+
+    .breadcrumb {
+      margin-bottom: 1.5rem;
+
+      a {
+        color: #666;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #0066cc;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .note-meta {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+
+      time {
+        font-weight: 500;
+      }
+
+      .author {
+        &::before {
+          content: "•";
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .note-taxonomy {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+
+      .categories,
+      .tags {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+
+        strong {
+          color: #999;
+          font-weight: 500;
+        }
+
+        .category,
+        .tag {
+          display: inline-block;
+          padding: 0.25rem 0.75rem;
+          background: #f0f0f0;
+          border-radius: 12px;
+          color: #666;
+        }
+
+        .category {
+          background: #e3f2fd;
+          color: #1976d2;
+        }
+      }
+    }
+  }
+
+  .note-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+
+    /* Style the gallery lists */
+    :global(ul:has(li > img)) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+
+      :global(li) {
+        display: flex;
+        flex-direction: column;
+
+        :global(img) {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+
+        :global(p) {
+          margin-top: 0.5rem;
+          font-size: 0.9rem;
+          color: #666;
+          text-align: center;
+        }
+      }
+    }
+
+    /* General image styling */
+    :global(img) {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+    }
+
+    /* Headings */
+    :global(h2) {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    :global(h3) {
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Links */
+    :global(a) {
+      color: #0066cc;
+      text-decoration: none;
+      border-bottom: 1px solid #0066cc33;
+      transition: border-color 0.2s;
+
+      &:hover {
+        border-bottom-color: #0066cc;
+      }
+    }
+
+    /* Code blocks */
+    :global(pre) {
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+
+    :global(code) {
+      background: #f5f5f5;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+
+    :global(pre code) {
+      background: none;
+      padding: 0;
+    }
+
+    /* Blockquotes */
+    :global(blockquote) {
+      border-left: 4px solid #ddd;
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+      color: #666;
+      font-style: italic;
+    }
+  }
+
+  .note-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid #eee;
+
+    .post-navigation {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      .nav-link {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.2s;
+        background: white;
+
+        &:hover {
+          border-color: #0066cc;
+          box-shadow: 0 2px 8px rgba(0, 102, 204, 0.1);
+        }
+
+        &.prev {
+          text-align: left;
+        }
+
+        &.next {
+          text-align: right;
+          margin-left: auto;
+        }
+
+        &:only-child {
+          grid-column: span 2;
+          max-width: 50%;
+
+          &.prev {
+            margin-right: auto;
+          }
+        }
+
+        .nav-label {
+          font-size: 0.85rem;
+          color: #999;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          margin-bottom: 0.5rem;
+        }
+
+        .nav-title {
+          color: #333;
+          font-weight: 500;
+          line-height: 1.4;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        &:hover .nav-title {
+          color: #0066cc;
+        }
+      }
+    }
+
+    .back-link {
+      display: inline-block;
+      color: #666;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #0066cc;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .note-header h1 {
+      font-size: 2rem;
+    }
+
+    .note-content {
+      font-size: 1rem;
+
+      :global(ul:has(li > img)) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .note-footer {
+      .post-navigation {
+        grid-template-columns: 1fr;
+
+        .nav-link:only-child {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+</style>

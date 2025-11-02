@@ -5,7 +5,7 @@ pubDate: 2019-09-01T02:02:27.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["kamen-rider", "nycc", "toy-photography"]
-featuredImage: "/images/field-notes/nycc-2019.jpg"
+featuredImage: "/assets/field-notes/nycc-2019.jpg"
 wpId: 364
 wpSlug: "weekend-thoughts-1"
 ---
@@ -22,19 +22,19 @@ For the past couple of weeks I received a good amount of new stuff - from the So
 
 So I received my Thursday to Saturday badges for NYCC in October! I was disappointed at first because I remembered ordering some loot to go with it but they didn't turn up...
 
-![](/images/field-notes/nycc-2019.jpg)
+![](/assets/field-notes/nycc-2019.jpg)
 
 It turns out that the merch will be shipped a couple of weeks before the actual convention. Whew!
 
 * * *
 
-![](/images/field-notes/kamen-rider-zero-one.jpg)
+![](/assets/field-notes/kamen-rider-zero-one.jpg)
 
 Kamen Rider Zero One
 
 I watched the live stream of Kamen Rider Zero One's premiere in Japan earlier and I'm liking it so far! Speaking of which, Amazon has shipped my Zero One Driver but unfortunately that will have to wait until Tuesday (downsides of the long weekend) but that means I now officially have a third Kamen Rider cosplay! The main character's civilian outfit is only composed of sweatpants and a red hoodie - both of which I already have. No need to buy expensive loot off Premium Bandai for this year!
 
-![](/images/field-notes/hiden-aruto.jpg)
+![](/assets/field-notes/hiden-aruto.jpg)
 
 I'm liking the main characters now...
 

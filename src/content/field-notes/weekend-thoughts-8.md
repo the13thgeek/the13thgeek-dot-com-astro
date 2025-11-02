@@ -5,7 +5,7 @@ pubDate: 2019-12-02T01:46:29.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["cool-stuff", "diorama", "kamen-rider", "power-rangers"]
-featuredImage: "/images/field-notes/70623113_10156155771926058_4466397986452144128_o.jpg"
+featuredImage: "/assets/field-notes/70623113_10156155771926058_4466397986452144128_o.jpg"
 wpId: 704
 wpSlug: "weekend-thoughts-8"
 ---
@@ -16,7 +16,7 @@ I got myself some smart-home stuff - a Philips Hue LED strip (thinking of using 
 
 Speaking of which, I just realized I never really wrote about this. I'm actually a low-key aviation enthusiast growing up. I love planes, airports and aviation in general. I just recently started collecting some 1:400 scale airplane models and set up a small airport in my room!
 
-![](/images/field-notes/70623113_10156155771926058_4466397986452144128_o.jpg)
+![](/assets/field-notes/70623113_10156155771926058_4466397986452144128_o.jpg)
 
 * * *
 
@@ -26,7 +26,7 @@ Three years later, I began to realize how much I wanted to get on with it when I
 
 However, with the help of a few friends online I managed to secure all 3 years' worth of the hardcovers of this amazing comic series!
 
-![](/images/field-notes/mmprhc.jpg)
+![](/assets/field-notes/mmprhc.jpg)
 
 The reviews have been amazing, and the fact that they're hardbound sealed the deal for me, and next year I won't miss out again. I can't wait for these books to arrive in the mail and start catching up!
 
@@ -42,7 +42,7 @@ One traded a Ralts with me, and another one gave me a Dawn stone. Whew!! What wo
 
 My last Black Friday haul was unexpected - one of my friends hooked me up with a contact who works at a local wireless store and managed to help me get an irresistible deal to upgrade my phone from a Galaxy S9 to a Note 10+!
 
-![](/images/field-notes/20191201_171302.jpg)
+![](/assets/field-notes/20191201_171302.jpg)
 
 I've always wanted a Note since I find the stylus useful and with the help of some apps, get to practice my artistic skills that were lost in grade school. I've been eyeing on the Note 10+ since it was announced due to its new camera with the new lenses and features but I couldn't find an affordable deal until now.
 
@@ -52,9 +52,9 @@ Once again, what would I be without my friends? :)
 
 Remember that Corned Beef hoodie from the Kamen Rider series I've been trying to acquire for cosplay purposes? It's en route in the mail!
 
-![](/images/field-notes/cornedbeef-1.jpg)
+![](/assets/field-notes/cornedbeef-1.jpg)
 
-![](/images/field-notes/cornedbeef-2.jpg)
+![](/assets/field-notes/cornedbeef-2.jpg)
 
 If anyone's wondering, I got them off the Japanese P-Bandai site through a middleman service.
 

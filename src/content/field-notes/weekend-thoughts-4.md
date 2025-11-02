@@ -5,14 +5,14 @@ pubDate: 2019-09-30T01:19:49.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["kamen-rider", "nycc", "tamagotchi", "travel"]
-featuredImage: "/images/field-notes/the13thgeek-nycc.jpg"
+featuredImage: "/assets/field-notes/the13thgeek-nycc.jpg"
 wpId: 470
 wpSlug: "weekend-thoughts-4"
 ---
 
 All aboard the NYCC Hype Train! My flight to New York leaves on Wednesday but since I have two crazy busy weekdays ahead, I figured might as well pack as early as now.
 
-![](/images/field-notes/the13thgeek-nycc.jpg)
+![](/assets/field-notes/the13thgeek-nycc.jpg)
 
 It's been a crazy ride; since I originally wasn't planning on going as the NY hotel prices made Anaheim look like AirBnb and I couldn't afford it, until I one of my friends pitched me the idea of going and splitting costs. Looks like I'll be able to make it after all!
 
@@ -24,7 +24,7 @@ Kamen Rider Zero One continues to amaze me. Five episodes in and the writing, hu
 
 Premium Bandai has began selling the characters' outfits on their website, and I'm already eyeing that Engrish-ridden **Corned Beef** hoodie to use as a future cosplay:
 
-![](/images/field-notes/kamen-rider-zero-one-hoodie.jpg)
+![](/assets/field-notes/kamen-rider-zero-one-hoodie.jpg)
 
 8,800 yen translates to roughly $100 CAD, and that still excludes any possible middleman fees so it's gonna be one heck on an expensive hoodie, but it's not priority at the moment... maybe I'll reconsider if I have enough funds left after NYCC.
 
@@ -38,10 +38,10 @@ This year I will try my best not to cram on my homework and begin working on the
 
 I'm still running my Tamagotchi and I've been hunting again on the app for any Clock-gene bearing Tamagotchis to breed with. It's been around 6 generations of disappointing mixes until I met another one earlier today...
 
-![](/images/field-notes/tamagotchi-app.jpg)
+![](/assets/field-notes/tamagotchi-app.jpg)
 
 Unfortunately, after my character hatched their egg, my device suddenly went blank and has reset itself! :(
 
-![](/images/field-notes/tamagotchi-reset.jpg)
+![](/assets/field-notes/tamagotchi-reset.jpg)
 
 I've read enough stories of people having their devices randomly reset on them, and apparently it's a known defect that even the English versions were not safe from it. I tweeted the official Tamagotchi channel about it but I'm not expecting any decent or helpful response. There goes my 17 generations worth of in-game items and unlocks... :(

@@ -5,7 +5,7 @@ pubDate: 2019-08-17T04:11:21.000Z
 author: "the13thgeek"
 categories: ["events"]
 tags: ["ai-kon", "convention", "cosplay", "kamen-rider", "super-sentai"]
-featuredImage: "/images/field-notes/67089996_10156032378471058_8957204388011573248_n.jpg"
+featuredImage: "/assets/field-notes/67089996_10156032378471058_8957204388011573248_n.jpg"
 wpId: 225
 wpSlug: "ai-kon-winnipeg-2019"
 ---
@@ -20,13 +20,13 @@ Suprisingly, Ai-Kon had a Power Rangers panel so it was a must for me to attend 
 
 I'm equally surprised later in the evening when I changed out of my Ranger costume into Geiz, as Kamen Rider is obviously more niche, meaning an even smaller fanbase... but at least a dozen people recognized me! They were amazed at how accurate my cosplay was, but little did they knew that I actually bought Geiz's full gear from the official [Premium Bandai Shop](https://p-bandai.jp/) in Japan. They sell the actors' actual civilian clothes there as a clothing line! Couldn't get any more accurate than that! :D
 
-*   ![](/images/field-notes/67089996_10156032378471058_8957204388011573248_n.jpg)
+*   ![](/assets/field-notes/67089996_10156032378471058_8957204388011573248_n.jpg)
     
-*   ![](/images/field-notes/img_20190726_235439_555.jpg)
+*   ![](/assets/field-notes/img_20190726_235439_555.jpg)
     
-*   ![](/images/field-notes/20190726_201611.jpg)
+*   ![](/assets/field-notes/20190726_201611.jpg)
     
-*   ![](/images/field-notes/20190726_202051.jpg)
+*   ![](/assets/field-notes/20190726_202051.jpg)
     
 
 ### Day Two - Sunday
@@ -43,23 +43,23 @@ My ranger mashup costume for this day turned out to be a success! It looked way 
 
 Overall Ai-Kon was a success! I wish I could go on all three days next year. I really should be managing my scheduling more effectively.
 
-*   ![](/images/field-notes/20190728_121021.jpg)
+*   ![](/assets/field-notes/20190728_121021.jpg)
     
-*   ![](/images/field-notes/20190728_121036.jpg)
+*   ![](/assets/field-notes/20190728_121036.jpg)
     
-*   ![](/images/field-notes/20190728_131804.jpg)
+*   ![](/assets/field-notes/20190728_131804.jpg)
     
-*   ![](/images/field-notes/20190728_141425.jpg)
+*   ![](/assets/field-notes/20190728_141425.jpg)
     
-*   ![](/images/field-notes/20190728_144235.jpg)
+*   ![](/assets/field-notes/20190728_144235.jpg)
     
-*   ![](/images/field-notes/67661557_10156038266426058_1892659548951412736_n.jpg)
+*   ![](/assets/field-notes/67661557_10156038266426058_1892659548951412736_n.jpg)
     
-*   ![](/images/field-notes/67692000_2554392204582023_690553019468611584_o.jpg)
+*   ![](/assets/field-notes/67692000_2554392204582023_690553019468611584_o.jpg)
     
-*   ![](/images/field-notes/67703777_10215070447459737_846218057503211520_n.jpg)
+*   ![](/assets/field-notes/67703777_10215070447459737_846218057503211520_n.jpg)
     
-*   ![](/images/field-notes/67764158_10156039196351058_5399479073162395648_n.jpg)
+*   ![](/assets/field-notes/67764158_10156039196351058_5399479073162395648_n.jpg)
     
 
 ### Cosplay Information

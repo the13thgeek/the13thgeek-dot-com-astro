@@ -5,7 +5,7 @@ pubDate: 2022-04-05T02:30:00.000Z
 author: "the13thgeek"
 categories: ["journal"]
 tags: ["toronto", "travel"]
-featuredImage: "/images/field-notes/ywg-cookie-monster.jpg"
+featuredImage: "/assets/field-notes/ywg-cookie-monster.jpg"
 wpId: 1016
 wpSlug: "fromywgtoyyz"
 ---
@@ -26,7 +26,7 @@ The last few bits were basically to find an apartment in Toronto and grab plane 
 
 April 1st was the big day.
 
-![](/images/field-notes/ywg-cookie-monster.jpg)
+![](/assets/field-notes/ywg-cookie-monster.jpg)
 
 Thank you for the 12 years, Winnipeg!
 
@@ -34,7 +34,7 @@ I have a friend in Toronto who was nice enough to let us stay in his place for t
 
 We just moved in to our new unit today and for now it looks like a college dorm. My room is basically empty, save for me two suitcases worth of clothes and my work backpack, but as soon as my stuff from Winnipeg arrives it should start feeling like home.
 
-![](/images/field-notes/the13thgeek-yyz.jpg)
+![](/assets/field-notes/the13thgeek-yyz.jpg)
 
 Made it to Toronto! Cheers!
 

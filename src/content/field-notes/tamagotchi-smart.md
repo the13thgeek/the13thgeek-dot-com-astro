@@ -20,7 +20,7 @@ https://youtu.be/Tv1PO-DkTXA
 
 I really liked the mint colour and I managed to snag a preorder off Amazon Japan together with the first Smart Cards! The Tamagotchi Smart Cards are used like a physical DLC in which it lets the device download new raisable characters, wallpapers, food, clothing and even watch faces.
 
-![](/images/field-notes/tmgcsmart.jpg)
+![](/assets/field-notes/tmgcsmart.jpg)
 
 Preorder secured! 😁
 
