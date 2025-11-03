@@ -3,7 +3,7 @@ title: "NYCC Photoshoot!"
 excerpt: "Our photoshoot that took place during the third day of New York Comic Con are here - and everyone looks on-point! Kyoryu Red Gokai Yellow Gokai Red Gao Red…"
 pubDate: 2019-10-15T00:38:24.000Z
 author: "the13thgeek"
-categories: ["cool-stuff", "events"]
+categories: ["Cool Stuff", "Events"]
 tags: ["nycc19", "cosplay", "new-york-comic-con"]
 featuredImage: "/assets/field-notes/cosbotimage-3.jpg"
 wpId: 574

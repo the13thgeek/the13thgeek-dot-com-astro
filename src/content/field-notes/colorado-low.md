@@ -3,7 +3,7 @@ title: "Colorado Low"
 excerpt: "Thanks to that Colorado Low*, it dumped a few feet of snow in my province and together with it some crazy blowing winds that it almost sent my city in a…"
 pubDate: 2019-10-13T06:48:00.000Z
 author: "the13thgeek"
-categories: ["journal"]
+categories: ["Journal"]
 tags: ["mbstorm", "winnipeg"]
 featuredImage: "/assets/field-notes/mbstorm-2.jpg"
 wpId: 568

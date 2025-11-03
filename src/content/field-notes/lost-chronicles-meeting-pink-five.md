@@ -3,7 +3,7 @@ title: "Lost Chronicles: Meeting Pink Five!"
 excerpt: "As a kid growing up, I've always watched those superhero TV series from Japan as they were popular in Southeast Asia as local channels would pick them up and…"
 pubDate: 2019-08-30T02:13:34.000Z
 author: "the13thgeek"
-categories: ["lost-chronicles"]
+categories: ["Lost Chronicles"]
 tags: ["japan", "super-sentai", "travel"]
 featuredImage: "/assets/field-notes/bioman-2.jpg"
 wpId: 341

@@ -3,7 +3,7 @@ title: "Weekend Thoughts #3"
 excerpt: "We did some team-building activity with my IT colleagues at Activate Games yesterday. It's been my third time there (with different groups of people) but I…"
 pubDate: 2019-09-20T22:50:45.000Z
 author: "the13thgeek"
-categories: ["journal"]
+categories: ["Journal"]
 tags: ["food", "namie-amuro", "toronto", "travel"]
 featuredImage: "/assets/field-notes/activate-lounge.jpg"
 wpId: 452

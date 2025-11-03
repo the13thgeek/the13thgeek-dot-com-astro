@@ -3,7 +3,7 @@ title: "Weekend Thoughts #11"
 excerpt: "I did some more eating today - it's the baptism party for my coworkers baby and they had a small gathering at a park in the city. Considering I just had some…"
 pubDate: 2021-08-30T03:54:30.000Z
 author: "the13thgeek"
-categories: ["journal"]
+categories: ["Journal"]
 tags: ["food", "friends", "power-rangers", "tech"]
 featuredImage: "/assets/field-notes/20210829_174450329090400162784299.jpg"
 wpId: 955

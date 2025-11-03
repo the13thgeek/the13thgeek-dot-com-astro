@@ -3,7 +3,7 @@ title: "Lost Chronicles: 桜～Sakura"
 excerpt: "Seeing these famous _sakura_ (cherry blossoms) in person was my primary objective in travelling to Japan for vacation in early 2018. I knew they were prevalent…"
 pubDate: 2019-08-15T09:19:00.000Z
 author: "the13thgeek"
-categories: ["lost-chronicles"]
+categories: ["Lost Chronicles"]
 tags: ["japan", "photography", "travel"]
 featuredImage: "/assets/field-notes/20180323_202004.jpg"
 wpId: 118

@@ -3,7 +3,7 @@ title: "Ai-Kon Winnipeg 2019"
 excerpt: "I've always made it a point to make sure I attend Ai-Kon, Winnipeg's annual anime and Japanese culture convention. It always runs on a weekend in July from…"
 pubDate: 2019-08-17T04:11:21.000Z
 author: "the13thgeek"
-categories: ["events"]
+categories: ["Events"]
 tags: ["ai-kon", "convention", "cosplay", "kamen-rider", "super-sentai"]
 featuredImage: "/assets/field-notes/67089996_10156032378471058_8957204388011573248_n.jpg"
 wpId: 225

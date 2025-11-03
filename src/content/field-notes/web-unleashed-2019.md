@@ -3,7 +3,7 @@ title: "Web Unleashed 2019"
 excerpt: "Today wraps up my two-day conference at Web Unleashed. Information overload aside, the conference has presented a wide variety of topics ranging from how to…"
 pubDate: 2019-09-15T02:19:00.000Z
 author: "the13thgeek"
-categories: ["events", "journal"]
+categories: ["Events", "Journal"]
 tags: ["fitc", "tech-conference", "toronto", "web-dev", "web-unleashed-2019"]
 featuredImage: "/assets/field-notes/fitc-web-unleashed-1.jpg"
 wpId: 428

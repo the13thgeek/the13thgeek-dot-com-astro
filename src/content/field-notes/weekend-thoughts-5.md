@@ -3,8 +3,8 @@ title: "Weekend Thoughts #5"
 excerpt: "Well, that's a wrap for this year's New York Comic Con! _(well, for me at least...)_ It's still technically on-going on its 4th and last day, but here I am at…"
 pubDate: 2019-10-07T01:19:00.000Z
 author: "the13thgeek"
-categories: ["journal"]
-tags: ["nycc19", "friends", "new-york-comic-con", "toy-photography", "travel"]
+categories: ["Journal"]
+tags: ["nycc19", "friends", "new-york-comic-con", "Toy Photography", "travel"]
 featuredImage: "/assets/field-notes/nycc-friends.jpg"
 wpId: 555
 wpSlug: "weekend-thoughts-5"

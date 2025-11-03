@@ -23,7 +23,7 @@ import ConnectCard from '../components/ConnectCard.astro';
 	
     <SectionHero2 />
 
-    <SectionContainer noTopMargin ctaText='More projects' ctaHref='/projects/'>
+    <SectionContainer ctaText='More projects' ctaHref='/projects/'>
 		<SectionHeading sectionNumber={2} headingType='h2' slot="heading">Projects</SectionHeading>
 			<!-- <ProjectsGrid /> -->
 			<!-- <ProjectsGrid client:load /> -->
@@ -36,15 +36,15 @@ import ConnectCard from '../components/ConnectCard.astro';
 
 	<SectionContainer noTopMargin className="blog" ctaText='More entries' ctaHref='/field-notes/'>
 		<SectionHeading sectionNumber={3} headingType='h2' slot="heading">Field Notes</SectionHeading>
-		<SectionHomeBlog />
+		<SectionHomeBlog count={3} showExcerpt={true} showTags={true} />
 	</SectionContainer>
 
-	<SectionContainer noTopMargin className="gaming">
+	<SectionContainer className="gaming">
 		<SectionHeading sectionNumber={4} headingType='h2' slot="heading">Gaming</SectionHeading>
 		<SectionHomeGaming />
 	</SectionContainer>
 
-	<SectionContainer noTopMargin className="connect">
+	<SectionContainer className="connect">
 		<ConnectCard />
 	</SectionContainer>
 	

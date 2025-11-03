@@ -3,7 +3,7 @@ title: "Weekend Thoughts #9"
 excerpt: "With our local Covid-19 cases on a steady downward trend (knock on wood), my city has finally began allowing home visits for fully-vaccinated people. For the…"
 pubDate: 2021-07-19T05:14:00.000Z
 author: "the13thgeek"
-categories: ["journal"]
+categories: ["Journal"]
 tags: ["cooking", "covid-19", "food", "friends", "new-york-comic-con", "travel"]
 featuredImage: "/assets/field-notes/20210718_1540085401530227710321256.jpg"
 wpId: 796

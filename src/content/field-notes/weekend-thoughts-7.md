@@ -3,8 +3,8 @@ title: "Weekend Thoughts #7"
 excerpt: "The fall-back is here! I enjoyed my extra hour of sleep today :) _(I preferred the summer daylight time to stick around, but for now it is what it is.)_…"
 pubDate: 2019-11-04T03:21:48.000Z
 author: "the13thgeek"
-categories: ["journal"]
-tags: ["cool-stuff", "cosplay", "nintendo-switch"]
+categories: ["Journal"]
+tags: ["Cool Stuff", "cosplay", "nintendo-switch"]
 featuredImage: "/assets/field-notes/20191103_203754.jpg"
 wpId: 688
 wpSlug: "weekend-thoughts-7"

@@ -1,21 +1,39 @@
 ---
 import './SectionHomeBlog.scss';
-import { formatDate } from '../lib/common';
-import { PostService } from '../lib/PostService';
-import Icon from './Icon.astro';
+import { getLatestFieldNotes, formatDate } from '../lib/fieldNotes';
 
-const postService = new PostService();
-const posts = await postService.getLatest(3);
+interface Props {
+    count?: number;
+    showExcerpt?: boolean;
+    showTags?: boolean;
+}
 
+const {
+    count = 3,
+    showExcerpt = true,
+    showTags = true
+} = Astro.props;
 
+const latestNotes = await getLatestFieldNotes(count);
 ---
 <div class="blog-list">
-    {posts.map((post) => (
-        <a class="blog-entry" href={`/field-notes/${post.id+'-'+post.slug}`} aria-labelledby={`postid-${post.id}-h3`} aria-describedby={`postid-${post.id}-p`}>
-            <div class="preview" style={{backgroundImage: post ? `url(${post.jetpack_featured_media_url})` : 'none'}}></div>
-            <h3 id={`postid-${post.id}-h3`}>{post.title.rendered}</h3>
-            <div id={`postid-${post.id}-p`} class="excerpt" set:html={post.excerpt.rendered}></div>
-            <p class="post-date" set:html={`posted `+formatDate(post.date)}></p>
+    {latestNotes.map(note => (
+        <a class="blog-item" href={`/field-notes/${note.slug}/`} style={`background-image: url(${note.data.featuredImage})`}>
+            <div class="note-body">
+                {note.data.categories.length > 0 && (
+                    <ul class="category-list">
+                        {note.data.categories.map((cat) => (
+                            <li>{cat}</li>
+                        ))}
+                    </ul>
+                )}
+                <h3>{note.data.title}</h3>
+                <p>{note.data.excerpt}</p>
+                <hr />
+                <time datetime={note.data.pubDate.toISOString()}>
+                    {formatDate(note.data.pubDate, 'medium')}
+                </time>
+            </div>
         </a>
     ))}
 </div>

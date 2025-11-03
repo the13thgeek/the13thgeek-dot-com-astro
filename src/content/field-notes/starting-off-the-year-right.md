@@ -3,7 +3,7 @@ title: "Starting off the year right."
 excerpt: "It's crazy how things can change in a matter of one year. _December 31, 2021_ Last year, I was back in Winnipeg. It was a freezing cold New Year's Eve but I…"
 pubDate: 2023-01-02T07:43:00.000Z
 author: "the13thgeek"
-categories: ["journal", "thoughts"]
+categories: ["Journal"]
 tags: ["friends"]
 featuredImage: "/assets/field-notes/nye22-23.jpg"
 wpId: 1053

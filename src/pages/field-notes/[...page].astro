@@ -6,6 +6,7 @@ import SectionContainer from "../../components/SectionContainer.astro";
 import SectionHeading from "../../components/SectionHeading.astro";
 import HeadingCard from "../../components/HeadingCard.astro";
 import "../../styles/field-notes.scss";
+import { formatDate } from '../lib/fieldNotes';
 
 export const getStaticPaths = (async ({ paginate }) => {
     const allFieldNotes = await getCollection("field-notes");
@@ -13,7 +14,7 @@ export const getStaticPaths = (async ({ paginate }) => {
         (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
     );
 
-    return paginate(sortedFieldNotes, { pageSize: 12 });
+    return paginate(sortedFieldNotes, { pageSize: 10 });
 }) satisfies GetStaticPaths;
 
 type Props = {
@@ -59,14 +60,24 @@ const pageDescription =
             <p class="subtitle">Writeups about stuff</p>
         </HeadingCard>
     </SectionContainer>
-    <SectionContainer>
+    <SectionContainer className="field-notes">
         <div class="field-notes-grid">
-            {  page.data.map((note) => (
-                <a href={`/field-notes/${note.slug}/`} style={`background-image: url(${note.data.featuredImage})`}>
+            {page.data.map((note) => (
+                <a class="blog-item-link" href={`/field-notes/${note.slug}/`} style={`background-image: url(${note.data.featuredImage})`}>
                     <div class="note-body">
+                        {note.data.categories.length > 0 && (
+                            <ul class="category-list">
+                                {note.data.categories.map((cat) => (
+                                    <li>{cat}</li>
+                                ))}
+                            </ul>
+                        )}
                         <h3>{note.data.title}</h3>
                         <p>{note.data.excerpt}</p>
-                        <p>{note.data.categories}</p>
+                        <hr />
+                        <time datetime={note.data.pubDate.toISOString()}>
+                            {formatDate(note.data.pubDate, 'medium')}
+                        </time>
                     </div>
                 </a>
                 // <article class="note-card">
@@ -118,7 +129,7 @@ const pageDescription =
                     Page {page.currentPage} of {page.lastPage}
                 </div>
                 <div class="pagination-controls">
-                    {page.url.prev ? (
+                    {page.url.prev && (
                         <a
                             href={page.url.prev}
                             class="pagination-btn"
@@ -126,10 +137,6 @@ const pageDescription =
                         >
                             ← Previous
                         </a>
-                    ) : (
-                        <span class="pagination-btn disabled">
-                            ← Previous
-                        </span>
                     )}
 
                     <div class="pagination-numbers">
@@ -181,22 +188,18 @@ const pageDescription =
                                     key={pageNum}
                                     class="pagination-number current"
                                     aria-current="page"
-                                >
-                                    {pageNum}
-                                </span>
+                                >{pageNum}</span>
                             ) : (
                                 <a
                                     key={pageNum}
                                     href={pageUrl}
                                     class="pagination-number"
-                                >
-                                    {pageNum}
-                                </a>
+                                >{pageNum}</a>
                             );
                         })}
                     </div>
 
-                    {page.url.next ? (
+                    {page.url.next && (
                         <a
                             href={page.url.next}
                             class="pagination-btn"
@@ -204,8 +207,6 @@ const pageDescription =
                         >
                             Next →
                         </a>
-                    ) : (
-                        <span class="pagination-btn disabled">Next →</span>
                     )}
                 </div>
             </nav>)

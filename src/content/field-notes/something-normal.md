@@ -3,7 +3,7 @@ title: "Something \"Normal\""
 excerpt: "I'm usually a low-key person so even if today's my birthday I wasn't planning anything crazy, but that's about to change! First thing in the morning I got a…"
 pubDate: 2021-07-26T04:05:00.000Z
 author: "the13thgeek"
-categories: ["events", "journal"]
+categories: ["Events", "Journal"]
 tags: ["birthday", "friends"]
 featuredImage: "/assets/field-notes/20210725_0837154963893318701688961.jpg"
 wpId: 830

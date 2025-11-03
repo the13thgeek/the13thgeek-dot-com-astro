@@ -3,7 +3,7 @@ title: "No pressure this time."
 excerpt: "Hello. It's been such a long time, hasn't it? I think it's been three years since my last blogging attempt. This is my fifth attempt into getting back to…"
 pubDate: 2019-08-14T04:25:30.000Z
 author: "the13thgeek"
-categories: ["thoughts"]
+categories: ["Journal"]
 tags: ["welcome"]
 wpId: 31
 wpSlug: "no-pressure-this-time"

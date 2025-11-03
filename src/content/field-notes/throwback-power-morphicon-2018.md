@@ -3,7 +3,7 @@ title: "Throwback: Power Morphicon 2018"
 excerpt: "While Covid is still taking its toll, allow me to recall a couple of my favourite memories from attending the Power Morphicon event in Anaheim exactly three…"
 pubDate: 2021-08-19T00:02:00.000Z
 author: "the13thgeek"
-categories: ["events", "lost-chronicles"]
+categories: ["Events", "Lost Chronicles"]
 tags: ["event", "power-morphicon", "power-rangers", "super-sentai", "throwback"]
 featuredImage: "/assets/field-notes/fb_img_16293053967386242414998079479845.jpg"
 wpId: 860

@@ -3,7 +3,7 @@ title: "The Groomsman"
 excerpt: "Yesterday, two of my close friends tied the knot; and I'm one of the fortunate people whom have been chosen to bear witness! A wedding is a very important…"
 pubDate: 2019-08-25T16:29:00.000Z
 author: "the13thgeek"
-categories: ["journal"]
+categories: ["Journal"]
 tags: ["friends", "wedding"]
 featuredImage: "/assets/field-notes/img_20190827_232640_340.jpg"
 wpId: 318

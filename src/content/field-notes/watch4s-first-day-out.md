@@ -3,7 +3,7 @@ title: "Watch4's First Day Out"
 excerpt: "New gadget - means it needs to be put to the test to see how it performs! This morning I went for my usual weekend runs but it was a better experience this…"
 pubDate: 2021-08-29T05:43:42.000Z
 author: "the13thgeek"
-categories: ["cool-stuff", "journal"]
+categories: ["Cool Stuff", "Journal"]
 tags: ["food", "tech"]
 featuredImage: "/assets/field-notes/20210829_0023127894805871092235564.jpg"
 wpId: 937

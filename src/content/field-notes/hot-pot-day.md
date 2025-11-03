@@ -3,7 +3,7 @@ title: "Hot Pot Day"
 excerpt: "We've been planning this for a while now, glad it we finally had some! :D Hot pot, anyone? After work today we gathered to my coworker's place to finally have…"
 pubDate: 2019-08-22T04:10:00.000Z
 author: "the13thgeek"
-categories: ["journal"]
+categories: ["Journal"]
 tags: ["food", "friends", "video-games"]
 featuredImage: "/assets/field-notes/hotpot-group.jpg"
 wpId: 275

@@ -3,7 +3,7 @@ title: "Sticky Genetics"
 excerpt: "Is there anyone here who still remembers Tamagotchis? The fad died down in North America in the early 2000's but in Japan (its hometown) it never really went…"
 pubDate: 2019-08-14T18:00:22.000Z
 author: "the13thgeek"
-categories: ["cool-stuff"]
+categories: ["Cool Stuff"]
 tags: ["tamagotchi"]
 featuredImage: "/assets/field-notes/famtree.jpg"
 wpId: 79

@@ -3,7 +3,7 @@ title: "A Chibi Voltes V!"
 excerpt: "For the uninitiated, Voltes V (pronounced \"Voltes Five\") is a popular anime about a team of people piloting a five-machine fleet of powerful aircraft that the…"
 pubDate: 2019-08-24T02:36:44.000Z
 author: "the13thgeek"
-categories: ["cool-stuff"]
+categories: ["Cool Stuff"]
 tags: ["toys"]
 featuredImage: "/assets/field-notes/chc58ddenji_machine_voltes_v.jpg"
 wpId: 285

@@ -3,7 +3,7 @@ title: "Getting my hands dirty with GatsbyJS"
 excerpt: "All my developer life I've mostly concentrated on developing either static client-side HTML-only websites or dynamic PHP web applications, so when I was…"
 pubDate: 2019-09-13T03:54:22.000Z
 author: "the13thgeek"
-categories: ["events", "journal"]
+categories: ["Events", "Journal"]
 tags: ["event", "gatsbyjs", "programming", "toronto", "travel", "web-dev", "web-unleashed-2019"]
 featuredImage: "/assets/field-notes/workshop-0.jpg"
 wpId: 403

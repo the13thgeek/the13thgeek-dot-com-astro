@@ -3,7 +3,7 @@ title: "Training Week"
 excerpt: "Nothing too crazy this week, just attending a couple days' training for situational awareness as I work as a frontline outreach worker part-time. Charging up…"
 pubDate: 2021-08-21T02:23:00.000Z
 author: "the13thgeek"
-categories: ["journal"]
+categories: ["Journal"]
 tags: ["food", "friends"]
 featuredImage: "/assets/field-notes/20210820_0825542193955745235891658.jpg"
 wpId: 865

@@ -3,8 +3,8 @@ title: "Weekend Thoughts #1"
 excerpt: "Welcome to Weekend Thoughts - a collection of post with small random thoughts and ramblings! Finally, I get to experience an actual long weekend!! Due to my…"
 pubDate: 2019-09-01T02:02:27.000Z
 author: "the13thgeek"
-categories: ["journal"]
-tags: ["kamen-rider", "nycc", "toy-photography"]
+categories: ["Journal"]
+tags: ["kamen-rider", "nycc", "Toy Photography"]
 featuredImage: "/assets/field-notes/nycc-2019.jpg"
 wpId: 364
 wpSlug: "weekend-thoughts-1"

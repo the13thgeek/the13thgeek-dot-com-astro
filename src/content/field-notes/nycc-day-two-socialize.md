@@ -3,7 +3,7 @@ title: "NYCC Day Two: Socialize"
 excerpt: "Now that I've gotten my convention loot shopping (will post them later) out of the way, this is my chance to actually go around and socialize more with my…"
 pubDate: 2019-10-05T04:27:00.000Z
 author: "the13thgeek"
-categories: ["events", "journal"]
+categories: ["Events", "Journal"]
 tags: ["nycc19", "event", "friends", "new-york-comic-con", "travel"]
 featuredImage: "/assets/field-notes/nycc-d2-cosplay.jpg"
 wpId: 498

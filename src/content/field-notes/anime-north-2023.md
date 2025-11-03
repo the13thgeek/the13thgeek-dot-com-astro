@@ -3,7 +3,7 @@ title: "Anime North 2023!"
 excerpt: "It's been a hot minute since last ComiCon back in March, and I wasn't been able to make the most out of that because I got sick in the middle of the convention…"
 pubDate: 2023-05-29T23:16:10.000Z
 author: "the13thgeek"
-categories: ["events"]
+categories: ["Events", "Journal"]
 tags: ["anime-north", "conventions", "cosplay", "friends", "kamen-rider", "super-sentai"]
 featuredImage: "/assets/field-notes/20230527_110323.jpg"
 wpId: 1089

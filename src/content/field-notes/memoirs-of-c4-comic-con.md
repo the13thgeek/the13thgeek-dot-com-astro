@@ -3,7 +3,7 @@ title: "Memoirs of C4 Comic Con"
 excerpt: "Here back home in Winnipeg, we used to look forward to our annual big convention called the C4 (stands for Central Canada Comic Con). It's big enough to occupy…"
 pubDate: 2019-10-16T22:17:00.000Z
 author: "the13thgeek"
-categories: ["journal"]
+categories: ["Journal"]
 tags: ["convention", "winnipeg"]
 featuredImage: "/assets/field-notes/c4con-2011.jpg"
 wpId: 601

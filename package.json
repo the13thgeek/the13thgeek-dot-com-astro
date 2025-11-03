@@ -9,7 +9,8 @@
     "astro": "astro",
     "migrate": "tsx scripts/migrate-wordpress.ts",
     "download-images": "tsx scripts/download-images.ts",
-     "generate-excerpts": "tsx scripts/generate-excerpts.ts"
+    "generate-excerpts": "tsx scripts/generate-excerpts.ts",
+    "migrate-sanity": "tsx scripts/migrate-sanity.ts"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",
@@ -22,6 +23,9 @@
     "sass": "^1.91.0"
   },
   "devDependencies": {
+    "@portabletext/types": "^2.0.15",
+    "@sanity/client": "^7.12.0",
+    "@sanity/image-url": "^1.2.0",
     "@types/he": "^1.2.3",
     "@types/turndown": "^5.0.6",
     "@types/xml2js": "^0.4.14",

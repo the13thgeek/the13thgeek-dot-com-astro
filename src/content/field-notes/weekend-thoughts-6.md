@@ -3,7 +3,7 @@ title: "Weekend Thoughts #6"
 excerpt: "...there goes another week. Next thing we know, it's gonna be 2020 already! I'm starting off this weekend post with one of the songs that always reminded me of…"
 pubDate: 2019-10-20T05:11:56.000Z
 author: "the13thgeek"
-categories: ["journal"]
+categories: ["Journal"]
 tags: ["flashback", "nintendo-switch", "web-dev"]
 featuredImage: "/assets/field-notes/facepalm.gif"
 wpId: 635

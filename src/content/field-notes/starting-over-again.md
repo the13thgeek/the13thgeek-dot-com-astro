@@ -3,7 +3,7 @@ title: "Starting over. Again."
 excerpt: "So Covid happened. Then I moved out and lived on my own for the first time. Yay #Adulting! Then, that's really it. Can't go for a movie, or travel... and no…"
 pubDate: 2021-07-16T04:01:26.000Z
 author: "the13thgeek"
-categories: ["thoughts"]
+categories: ["Journal"]
 tags: ["ramblings", "rants"]
 featuredImage: "/assets/field-notes/win10-update-stuck-on-restarting-1.png"
 wpId: 783

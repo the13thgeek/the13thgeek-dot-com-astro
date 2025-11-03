@@ -3,7 +3,7 @@ title: "Life Imitates Action Figure Art (Vol. 1)"
 excerpt: "Sometimes, I would use memes as a source material for inspiration when posing dioramas and taking photos of action figures. For this one, I got the idea from…"
 pubDate: 2019-09-10T04:23:05.000Z
 author: "the13thgeek"
-categories: ["toy-photography"]
+categories: ["Toy Photography"]
 tags: ["diorama", "memes", "power-rangers", "s-h-figuarts", "toys"]
 featuredImage: "/assets/field-notes/distracted-boyfriend.jpg"
 wpId: 396

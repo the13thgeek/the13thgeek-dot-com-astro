@@ -3,7 +3,7 @@ title: "2020: First Downtime"
 excerpt: "Ain't it funny that more often than not, spontaneous \"plans\" have more chances of happening than the carefully-planned ones? Just yesterday, one of my friends…"
 pubDate: 2020-01-04T03:43:00.000Z
 author: "the13thgeek"
-categories: ["journal", "thoughts"]
+categories: ["Journal", "Journal"]
 tags: ["friends"]
 wpId: 765
 wpSlug: "2020-first-downtime"

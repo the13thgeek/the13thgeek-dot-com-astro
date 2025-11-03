@@ -3,7 +3,7 @@ title: "#fromYWGtoYYZ"
 excerpt: "Long time no see. So I did a thing. A big one! Just a few days ago, I moved from Winnipeg to Toronto! It's been a huge endeavour, I've always wanted to move…"
 pubDate: 2022-04-05T02:30:00.000Z
 author: "the13thgeek"
-categories: ["journal"]
+categories: ["Journal"]
 tags: ["toronto", "travel"]
 featuredImage: "/assets/field-notes/ywg-cookie-monster.jpg"
 wpId: 1016

@@ -3,7 +3,7 @@ title: "2019: In Recap!"
 excerpt: "Once again, the switching of the calendar is about to take place! But before all of that, let's look back at all the crazy adventures that came to be...…"
 pubDate: 2020-01-01T05:16:00.000Z
 author: "the13thgeek"
-categories: ["journal", "lost-chronicles"]
+categories: ["Journal", "Lost Chronicles"]
 tags: ["new-year"]
 featuredImage: "/assets/field-notes/feb-2019.jpg"
 wpId: 719

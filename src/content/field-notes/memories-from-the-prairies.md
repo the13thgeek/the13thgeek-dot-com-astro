@@ -3,7 +3,7 @@ title: "Memories from the Prairies"
 excerpt: "For my last nine days in Winnipeg, I've done some sort of countdown on my social media feed. For those nine days I would post a photo I've previously taken;…"
 pubDate: 2022-04-07T20:31:00.000Z
 author: "the13thgeek"
-categories: ["journal", "thoughts"]
+categories: ["Journal", "Journal"]
 tags: ["memories", "travel", "winnipeg"]
 featuredImage: "/assets/field-notes/ln9.jpg"
 wpId: 1032

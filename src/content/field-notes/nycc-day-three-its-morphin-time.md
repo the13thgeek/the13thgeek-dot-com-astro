@@ -3,7 +3,7 @@ title: "NYCC Day Three: It's Morphin' Time!"
 excerpt: "After months of planning - the big day has come! In the latter part of 2018, a group of people I met from last year's Power Morphicon began to organize a big…"
 pubDate: 2019-10-06T04:33:00.000Z
 author: "the13thgeek"
-categories: ["events", "journal"]
+categories: ["Events", "Journal"]
 tags: ["nycc19", "cosplay", "friends", "new-york-comic-con", "power-rangers", "super-sentai", "travel"]
 featuredImage: "/assets/field-notes/ranger-cosplay-helmets.jpg"
 wpId: 520

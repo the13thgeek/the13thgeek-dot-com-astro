@@ -3,7 +3,7 @@ title: "Expectation vs Reality"
 excerpt: "Today I had a friend over and we bought of one those cute Japanese DIY snack kits that lets us make edible miniatures of actual food. There are many…"
 pubDate: 2021-07-24T03:59:42.000Z
 author: "the13thgeek"
-categories: ["cool-stuff", "journal"]
+categories: ["Cool Stuff", "Journal"]
 tags: ["food", "friends"]
 featuredImage: "/assets/field-notes/japanese-diy-candy-kracie-poppin-cookin-doughnut-kit.jpg"
 wpId: 812
