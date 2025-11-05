@@ -19,7 +19,7 @@ body[data-section="field-notes"] {
             grid-template-columns: repeat(6, 1fr);
             gap: 3rem;
             
-            &>a.blog-item-link {
+            &>a {
                 grid-column: span 2;
 
                 &:nth-child(1),
@@ -30,65 +30,7 @@ body[data-section="field-notes"] {
                 }
             }
 
-        }
-
-        &>a.blog-item-link {
-            @include pictureBox;
-            @include tile(false);
-            min-height: 400px;
-            position: relative;
-            overflow: visible;
-
-            &:hover {
-                .note-body {
-                    transform: translateY(-30px);
-                }
-            }
-        }
-        
-        ul.category-list {
-            list-style: none;
-            gap: 0.5rem;
-            display: flex;
-            
-            li {
-                font-size: 0.7rem;
-                text-transform: uppercase;
-                background-color: var(--light);
-                padding: 2px 10px;
-                border-radius: 4px;
-            }
-        }
-
-        .note-body {
-            @include tile(true);
-            background-color: #fff;
-            width: 100%;
-            position: absolute;
-            bottom: -15px;
-            left: -15px;
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            gap: 0.5rem;
-            transition: transform 0.3s;
-
-            h3 {
-                margin: 0;
-                padding: 0;
-            }
-            hr {
-                border: none;
-                border-top: var(--accent) 2px solid;
-                width: 50px;
-            }
-            time {
-                font-size: 0.8rem;
-                font-weight: 500;
-                color: #555;
-            }            
-        }
+        }              
     }
 
     .field-notes .pagination {

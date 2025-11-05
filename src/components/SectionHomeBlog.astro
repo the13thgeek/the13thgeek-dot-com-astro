@@ -1,6 +1,7 @@
 ---
 import './SectionHomeBlog.scss';
 import { getLatestFieldNotes, formatDate } from '../lib/fieldNotes';
+import FieldNoteCard from './FieldNoteCard.astro';
 
 interface Props {
     count?: number;
@@ -18,22 +19,6 @@ const latestNotes = await getLatestFieldNotes(count);
 ---
 <div class="blog-list">
     {latestNotes.map(note => (
-        <a class="blog-item" href={`/field-notes/${note.slug}/`} style={`background-image: url(${note.data.featuredImage})`}>
-            <div class="note-body">
-                {note.data.categories.length > 0 && (
-                    <ul class="category-list">
-                        {note.data.categories.map((cat) => (
-                            <li>{cat}</li>
-                        ))}
-                    </ul>
-                )}
-                <h3>{note.data.title}</h3>
-                <p>{note.data.excerpt}</p>
-                <hr />
-                <time datetime={note.data.pubDate.toISOString()}>
-                    {formatDate(note.data.pubDate, 'medium')}
-                </time>
-            </div>
-        </a>
+        <FieldNoteCard note={note} />
     ))}
 </div>

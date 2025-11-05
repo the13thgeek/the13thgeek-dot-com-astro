@@ -6,66 +6,12 @@
     grid-template-columns: 1fr;
     gap: 2rem;
 
-    a.blog-item {
-        @include pictureBox;
-        @include tile(false);
-        color: #333;
-        min-height: 500px;
-        position: relative;
-        overflow: visible;
-
-        &:hover, &:focus-visible {
-            .note-body {
-                transform: translateY(-30px);
-            }
-        }
-
+    a.field-note-card {
         h3 {
             color: var(--deep);
         }
-    }
-
-    ul.category-list {
-        list-style: none;
-        gap: 0.5rem;
-        display: flex;
-        
-        li {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            background-color: var(--light);
-            padding: 2px 10px;
-            border-radius: 4px;
-        }
-    }
-
-    .note-body {
-        @include tile(true);
-        background-color: #fff;
-        width: 100%;
-        position: absolute;
-        bottom: -15px;
-        left: -15px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 0.5rem;
-        transition: transform 0.3s;
-
-        h3 {
-            margin: 0;
-            padding: 0;
-        }
-        hr {
-            border: none;
-            border-top: var(--accent) 2px solid;
-            width: 50px;
-        }
-        time {
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: #555;
+        ul.category-list li, p {
+            color: #333;
         }
     }
 

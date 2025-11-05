@@ -1,18 +1,19 @@
 ---
-import { getCollection } from "astro:content";
 import type { GetStaticPaths, Page } from "astro";
 import GlobalLayout from "../../layouts/GlobalLayout.astro";
 import SectionContainer from "../../components/SectionContainer.astro";
 import SectionHeading from "../../components/SectionHeading.astro";
 import HeadingCard from "../../components/HeadingCard.astro";
 import "../../styles/field-notes.scss";
-import { formatDate } from '../lib/fieldNotes';
+import { getAllFieldNotes, formatDate } from '../../lib/fieldNotes';
+import FieldNoteCard from "../../components/FieldNoteCard.astro";
 
 export const getStaticPaths = (async ({ paginate }) => {
-    const allFieldNotes = await getCollection("field-notes");
-    const sortedFieldNotes = allFieldNotes.sort(
-        (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
-    );
+    //const allFieldNotes = await getCollection("field-notes");
+    // const sortedFieldNotes = allFieldNotes.sort(
+    //     (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+    // );
+    const sortedFieldNotes = await getAllFieldNotes();
 
     return paginate(sortedFieldNotes, { pageSize: 10 });
 }) satisfies GetStaticPaths;
@@ -22,15 +23,6 @@ type Props = {
 };
 
 const { page } = Astro.props;
-
-// Format date helper
-function formatDate(date: Date): string {
-    return new Intl.DateTimeFormat("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-    }).format(date);
-}
 
 // Page title and description
 const pageTitle =
@@ -63,62 +55,7 @@ const pageDescription =
     <SectionContainer className="field-notes">
         <div class="field-notes-grid">
             {page.data.map((note) => (
-                <a class="blog-item-link" href={`/field-notes/${note.slug}/`} style={`background-image: url(${note.data.featuredImage})`}>
-                    <div class="note-body">
-                        {note.data.categories.length > 0 && (
-                            <ul class="category-list">
-                                {note.data.categories.map((cat) => (
-                                    <li>{cat}</li>
-                                ))}
-                            </ul>
-                        )}
-                        <h3>{note.data.title}</h3>
-                        <p>{note.data.excerpt}</p>
-                        <hr />
-                        <time datetime={note.data.pubDate.toISOString()}>
-                            {formatDate(note.data.pubDate, 'medium')}
-                        </time>
-                    </div>
-                </a>
-                // <article class="note-card">
-                //     {note.data.featuredImage && (
-                //         <a
-                //             href={`/field-notes/${note.slug}/`}
-                //             class="note-image"
-                //         >
-                //             <img
-                //                 src={note.data.featuredImage}
-                //                 alt={
-                //                     note.data.featuredImageAlt ||
-                //                     note.data.title
-                //                 }
-                //                 loading="lazy"
-                //             />
-                //         </a>
-                //     )}
-                //     <div class="note-body">
-                //         <time datetime={note.data.pubDate.toISOString()}>
-                //             {formatDate(note.data.pubDate)}
-                //         </time>
-                //         <h2>
-                //             <a href={`/field-notes/${note.slug}/`}>
-                //                 {note.data.title}
-                //             </a>
-                //         </h2>
-                //         {note.data.description && (
-                //             <p class="description">
-                //                 {note.data.description}
-                //             </p>
-                //         )}
-                //         {note.data.tags.length > 0 && (
-                //             <div class="tags">
-                //                 {note.data.tags.slice(0, 3).map((tag) => (
-                //                     <span class="tag">{tag}</span>
-                //                 ))}
-                //             </div>
-                //         )}
-                //     </div>
-                // </article>
+                <FieldNoteCard note={note} />
                 ))
             }
         </div>

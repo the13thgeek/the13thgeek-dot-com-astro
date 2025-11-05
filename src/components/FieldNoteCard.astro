@@ -1,0 +1,39 @@
+---
+import type { FieldNote } from "../lib/fieldNotes";
+import { formatDate } from "../lib/fieldNotes";
+import './FieldNoteCard.scss';
+
+interface Props {
+  note: FieldNote;
+}
+
+const { note } = Astro.props;
+
+// Unique IDs for accessibility
+const cardId = `note-${note.slug}`;
+const excerptId = `${cardId}-excerpt`;
+---
+
+<a class="field-note-card"
+  href={`/field-notes/${note.slug}/`}
+  style={note.data.featuredImage ? `background-image: url(${note.data.featuredImage})` : ''}
+  aria-describedby={note.data.excerpt ? excerptId : undefined}
+>
+  <div class="note-body">
+    {note.data.categories.length > 0 && (
+      <ul class="category-list">
+        {note.data.categories.map((cat) => (
+          <li>{cat}</li>
+        ))}
+      </ul>
+    )}
+    <h3>{note.data.title}</h3>
+    {note.data.excerpt && (
+      <p id={excerptId}>{note.data.excerpt}</p>
+    )}
+    <hr />
+    <time datetime={note.data.pubDate.toISOString()}>
+      {formatDate(note.data.pubDate, 'medium')}
+    </time>
+  </div>
+</a>

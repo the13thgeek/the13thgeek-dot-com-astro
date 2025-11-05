@@ -2,14 +2,11 @@
 import { getCollection } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import GlobalLayout from '../../layouts/GlobalLayout.astro';
+import { getAllFieldNotes, formatDate } from '../../lib/fieldNotes';
 
 export const getStaticPaths = (async () => {
-  const fieldNotes = await getCollection('field-notes');
-  // Sort by date for proper prev/next
-  const sortedNotes = fieldNotes.sort((a, b) => 
-    b.data.pubDate.getTime() - a.data.pubDate.getTime()
-  );
-  
+  const sortedNotes = await getAllFieldNotes();
+
   return sortedNotes.map((note, index) => {
     const prevNote = index < sortedNotes.length - 1 ? sortedNotes[index + 1] : null;
     const nextNote = index > 0 ? sortedNotes[index - 1] : null;
@@ -24,18 +21,9 @@ export const getStaticPaths = (async () => {
 const { note, prevNote, nextNote } = Astro.props;
 const { Content } = await note.render();
 
-// Format date helper
-function formatDate(date: Date): string {
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  }).format(date);
-}
-
 // Prepare OpenGraph data
 const ogTitle = `${note.data.title} • the13thgeek`;
-const ogDescription = note.data.description || `A field note from ${formatDate(note.data.pubDate)}`;
+const ogDescription = note.data.excerpt || note.data.description || `A field note from ${formatDate(note.data.pubDate, 'long')}`;
 const ogImage = note.data.featuredImage || '/og-field-notes.png';
 const ogKeywords = [
   'the13thgeek',
