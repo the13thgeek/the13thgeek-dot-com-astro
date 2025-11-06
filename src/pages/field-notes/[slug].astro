@@ -1,8 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import GlobalLayout from '../../layouts/GlobalLayout.astro';
 import { getAllFieldNotes, formatDate } from '../../lib/fieldNotes';
+import '../../styles/field-notes.scss';
+import SectionHeading from '../../components/SectionHeading.astro';
+import SectionContainer from '../../components/SectionContainer.astro';
+import HeadingCard from '../../components/HeadingCard.astro';
 
 export const getStaticPaths = (async () => {
   const sortedNotes = await getAllFieldNotes();
@@ -41,70 +44,72 @@ const ogKeywords = [
   ogImage={ogImage}
   path={`/field-notes/${note.slug}/`}
 >
+
   <article class="field-note">
-    <header class="note-header">
-      <div class="breadcrumb">
-        <a href="/field-notes/">← Back to Field Notes</a>
-      </div>
-      
-      <h1>{note.data.title}</h1>
-      
-      <div class="note-meta">
-        <time datetime={note.data.pubDate.toISOString()}>
-          {formatDate(note.data.pubDate)}
-        </time>
-        {note.data.author && (
-          <span class="author">by {note.data.author}</span>
+    <div class="struct">
+      <header>
+        <div class="meta">
+          <a href="/field-notes/">← Back to Field Notes</a>
+          <SectionHeading isStyled={false} headingType="h1" sectionNumber={1}>
+            {note.data.title}
+          </SectionHeading>
+          <p><time datetime={note.data.pubDate.toISOString()}>
+            {formatDate(note.data.pubDate)}
+          </time>{note.data.author && (
+            <span class="author">by {note.data.author}</span>
+          )}</p>
+          {(note.data.categories.length > 0 || note.data.tags.length > 0) && (
+          <div class="note-taxonomy">
+            {note.data.categories.length > 0 && (
+              <div class="categories">
+                <strong>Categories:</strong>
+                {note.data.categories.map(cat => (
+                  <span class="category">{cat}</span>
+                ))}
+              </div>
+            )}
+            {note.data.tags.length > 0 && (
+              <div class="tags">
+                <strong>Tags:</strong>
+                {note.data.tags.map(tag => (
+                  <span class="tag">{tag}</span>
+                ))}
+              </div>
+            )}
+          </div>
         )}
-      </div>
-
-      {(note.data.categories.length > 0 || note.data.tags.length > 0) && (
-        <div class="note-taxonomy">
-          {note.data.categories.length > 0 && (
-            <div class="categories">
-              <strong>Categories:</strong>
-              {note.data.categories.map(cat => (
-                <span class="category">{cat}</span>
-              ))}
-            </div>
-          )}
-          {note.data.tags.length > 0 && (
-            <div class="tags">
-              <strong>Tags:</strong>
-              {note.data.tags.map(tag => (
-                <span class="tag">{tag}</span>
-              ))}
-            </div>
-          )}
         </div>
-      )}
-    </header>
+        <div class="preview-image" style={note.data.featuredImage ? `background-image: url(${note.data.featuredImage})` : ''}></div>
+      </header>
+    
+    
+      <div class="note-content">
+        <Content />
+      </div>
 
-    <div class="note-content">
-      <Content />
+      <footer class="note-footer">
+        <nav class="post-navigation">
+          {prevNote && (
+            <a href={`/field-notes/${prevNote.slug}/`} class="nav-link prev" rel="prev">
+              <span class="nav-label">← Previous</span>
+              <span class="nav-title">{prevNote.data.title}</span>
+            </a>
+          )}
+          {nextNote && (
+            <a href={`/field-notes/${nextNote.slug}/`} class="nav-link next" rel="next">
+              <span class="nav-label">Next →</span>
+              <span class="nav-title">{nextNote.data.title}</span>
+            </a>
+          )}
+        </nav>
+        <a href="/field-notes/" class="back-link">← Back to all field notes</a>
+      </footer>
     </div>
-
-    <footer class="note-footer">
-      <nav class="post-navigation">
-        {prevNote && (
-          <a href={`/field-notes/${prevNote.slug}/`} class="nav-link prev" rel="prev">
-            <span class="nav-label">← Previous</span>
-            <span class="nav-title">{prevNote.data.title}</span>
-          </a>
-        )}
-        {nextNote && (
-          <a href={`/field-notes/${nextNote.slug}/`} class="nav-link next" rel="next">
-            <span class="nav-label">Next →</span>
-            <span class="nav-title">{nextNote.data.title}</span>
-          </a>
-        )}
-      </nav>
-      <a href="/field-notes/" class="back-link">← Back to all field notes</a>
-    </footer>
   </article>
+
 </GlobalLayout>
 
-<style lang="scss">
+<!-- <style lang="scss">
   .field-note {
     max-width: 750px;
     margin: 0 auto;
@@ -393,4 +398,4 @@ const ogKeywords = [
       }
     }
   }
-</style>
+</style> -->

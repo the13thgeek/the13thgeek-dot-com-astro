@@ -47,6 +47,8 @@
         .photo {
             @include tile(false);
             background-color: var(--accent);
+            @include pictureBox();
+            background-image: url('/assets/about/headshot.jpg');
             display: none;
 
             @include respond(md) {
@@ -286,6 +288,8 @@
 
     .photo-block {
         background-color: var(--accent);
+        @include pictureBox();
+        background-image: url('/assets/about/photo-irl.jpg');
         height: 400px;
 
         @include respond(md) {
@@ -387,7 +391,7 @@
 
     .brand-sample {
         @include tile();
-        background-color: #fff;
+        background-color: #000;
     }
 
     h2, h3 {

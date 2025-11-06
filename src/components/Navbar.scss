@@ -183,6 +183,7 @@ nav.main-nav {
 
 // overrides
 body[data-section="home"] nav.main-nav ul li a.active,
-body[data-section="projects"] nav.main-nav ul li a.active {
+body[data-section="projects"] nav.main-nav ul li a.active,
+body[data-section="field-notes"] nav.main-nav ul li a.active {
     color: #333;
 }

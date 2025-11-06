@@ -58,7 +58,7 @@ h3 {
   //font-size: $size-1 * 1.25;
 }
 
-section, footer {
+section, footer, article.field-note header {
     padding: $size-1 0;
 
     @include respond(md) {
