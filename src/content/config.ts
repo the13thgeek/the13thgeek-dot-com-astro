@@ -20,6 +20,22 @@ const fieldNotesCollection = defineCollection({
   }),
 });
 
+const projectsCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    type: z.enum(['wip', 'past']),
+    featured: z.boolean().default(false),
+    order: z.number().optional(),
+    image: z.string(), // path like '/assets/projects/my-project.jpg'
+    url: z.string().url().optional(),
+    tech: z.array(z.string()),
+    notes: z.string().optional(),
+  }),
+});
+
 export const collections = {
   'field-notes': fieldNotesCollection,
+  'projects': projectsCollection
 };

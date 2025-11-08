@@ -1,0 +1,38 @@
+---
+import type { GetStaticPaths } from "astro";
+import GlobalLayout from '../../layouts/GlobalLayout.astro';
+import HeadingCard from '../../components/HeadingCard.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import SectionContainer from '../../components/SectionContainer.astro';
+import { getAllProjects } from '../../lib/projects';
+
+export const getStaticPaths = ( async () => {
+    const projects = await getAllProjects();
+
+    return projects.map((project) => ({
+        params: { slug: project.slug },
+        props: { project }
+    }));
+}) satisfies GetStaticPaths;
+
+const { project } = Astro.props;
+const { Content } = await project.render();
+---
+
+
+<GlobalLayout 
+  title={`${project.data.title} | the13thgeek`}
+  section="projects"
+  description={project.data.description}
+  ogImage={project.data.image}
+  path={`/projects/${project.slug}/`}
+>
+    <SectionContainer>	
+		<HeadingCard>
+			<SectionHeading isStyled={false} headingType="h1" sectionNumber={1}>
+				{project.data.title}
+			</SectionHeading>
+			<p class="subtitle">Ideas brought to life</p>
+		</HeadingCard>
+	</SectionContainer>
+</GlobalLayout>

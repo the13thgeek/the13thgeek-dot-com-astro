@@ -1,0 +1,47 @@
+---
+import GlobalLayout from '../../layouts/GlobalLayout.astro';
+import HeadingCard from '../../components/HeadingCard.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import SectionContainer from '../../components/SectionContainer.astro';
+import { getAllProjects } from "../../lib/projects";
+
+const projects = await getAllProjects();
+---
+
+<GlobalLayout 
+  title="Projects | the13thgeek"
+  section="projects"
+  description="A collection of my work and side projects"
+  path="/projects/"
+>
+  <SectionContainer>	
+    <HeadingCard>
+        <SectionHeading isStyled={false} headingType="h1" sectionNumber={1}>
+            Projects
+        </SectionHeading>
+        <p class="subtitle">Ideas brought to life</p>
+    </HeadingCard>
+  </SectionContainer>
+  <SectionContainer>
+    <div class="projects-grid">
+        {projects.map((project) => (
+        <article class="project-card">
+            <img src={project.data.image} alt={project.data.title} />
+            <h2>
+            <a href={`/projects/${project.slug}`}>
+                {project.data.title}
+            </a>
+            </h2>
+            <p>{project.data.description}</p>
+            <div class="tech-stack">
+            {project.data.tech.map(tech => (
+                <span class="tech-tag">{tech}</span>
+            ))}
+            </div>
+            <span class="project-type">{project.data.type}</span>
+        </article>
+        ))}
+    </div>
+  </SectionContainer>
+  
+</GlobalLayout>

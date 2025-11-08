@@ -5,7 +5,7 @@ pubDate: 2021-08-26T01:09:41.000Z
 author: "the13thgeek"
 categories: ["Cool Stuff"]
 tags: ["tamagotchi", "tech", "toys"]
-featuredImage: null
+featuredImage: ""
 wpId: 899
 wpSlug: "tamagotchi-smart"
 ---
