@@ -1,0 +1,44 @@
+---
+import './ProjectBento.scss';
+
+interface BentoItem {
+  icon: string;
+  title: string;
+  description: string;
+  size?: 'default' | 'large' | 'wide' | 'tall';
+  stat?: string;
+  tags?: string[];
+  hasFeatureIcon?: boolean;
+}
+
+interface Props {
+  items: BentoItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="project-bento-grid">
+  {items.map((item) => (
+    <div class={`bento-item ${item.size || 'default'}`}>
+      <div>
+        {item.hasFeatureIcon ? (
+          <div class="feature-icon">{item.icon}</div>
+        ) : (
+          <div class="item-icon">{item.icon}</div>
+        )}
+        <h3 class="item-title">{item.title}</h3>
+        <p class="item-description">{item.description}</p>
+        {item.tags && (
+          <div class="tech-list">
+            {item.tags.map((tag) => (
+              <span class="tech-tag">{tag}</span>
+            ))}
+          </div>
+        )}
+      </div>
+      {item.stat && <div class="stat-number">{item.stat}</div>}
+    </div>
+  ))}
+</div>
+

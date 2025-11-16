@@ -1,0 +1,118 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.project-bento-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px;
+    gap: 16px;
+    width: 100%;
+
+    @include respond(md) {
+        grid-auto-rows: 275px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(lg) {
+        grid-auto-rows: 300px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bento-item {
+    @include tile(true);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:hover {
+        background: rgba(255, 255, 255, 1);
+        transform: translateY(-4px);
+    }
+
+    .item-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .item-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        color: #000;
+    }
+
+    .item-description {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    // Mobile-first: sizes only apply at larger breakpoints
+    @include respond(md) {
+        &.large {
+            grid-column: span 2;
+        }
+    }
+
+    @include respond(lg) {
+        &.large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        &.wide {
+            grid-column: span 2;
+        }
+
+        &.tall {
+            grid-row: span 2;
+        }
+    }
+}
+
+
+
+
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+

@@ -25,13 +25,23 @@ const projectsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    type: z.enum(['wip', 'past']),
+    type: z.enum(['wip', 'archived']),
     featured: z.boolean().default(false),
     order: z.number().optional(),
     image: z.string(), // path like '/assets/projects/my-project.jpg'
     url: z.string().url().optional(),
     tech: z.array(z.string()),
     notes: z.string().optional(),
+
+    bentoItems: z.array(z.object({
+      icon: z.string(),
+      title: z.string(),
+      description: z.string(),
+      size: z.enum(['default', 'large', 'wide', 'tall']).default('default'),
+      stat: z.string().optional(),
+      tags: z.array(z.string()).optional(),
+      hasFeatureIcon: z.boolean().optional(),
+    })).optional(),
   }),
 });
 

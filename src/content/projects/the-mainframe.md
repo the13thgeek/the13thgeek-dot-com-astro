@@ -8,14 +8,59 @@ image: "/assets/projects/thumb-the-mainframe.jpg"
 url: "https://mainframe.the13thgeek.com"
 tech: ["NodeJS", "MySQL", "HTML", "Twitch API", "React"]
 notes: ""
+
+bentoItems:
+#   - icon: '🚀'
+#     title: 'Tech Stack'
+#     description: 'Built with modern streaming technologies for real-time performance'
+#     size: 'large'
+#     tags: ['React', 'Node.js', 'WebSockets', 'Twitch API', 'Express']
+  
+  - icon: '☁️'
+    title: 'Cloud-Based'
+    description: 'Instant updates and real-time Twitch integration'
+    size: 'default'
+    stat: '<50ms'
+  
+  - icon: '👥'
+    title: 'Community'
+    description: 'Registered members'
+    size: 'default'
+    stat: '115+'
+  
+  - icon: '⭐'
+    title: 'Gamification'
+    description: 'Features tied to viewer interaction and stream events'
+    size: 'wide'
+    hasFeatureIcon: true
+  
+  - icon: '📱'
+    title: 'Mobile First'
+    description: 'Optimized for tablets and phones'
+    size: 'default'
+  
+  - icon: '🔒'
+    title: 'Secure'
+    description: 'Twitch OAuth integration'
+    size: 'default'
+  
+  - icon: '1️⃣'
+    title: 'User Levelling'
+    description: 'Tracks engagement and awards EXP for various actions'
+    size: 'default'
+
+  - icon: '🎶'
+    title: 'Rhythm Game Integration'
+    description: 'Songlist search for rhythm game streams'
+    size: 'default'
 ---
 
-## Overview
+### Overview
 
 **theMainframe** is my current Twitch-integrated web community. It's a centralized hub where my regulars  (viewers) can log in with their Twitch account and explore a fully-gamified community ecosystem. It blends user progression, collectible card designs, leaderboards and other live stream functions and interactivities into a single platform.
 This project initially started as a custom small live-stream request service. This enabled viewers to request songs to play while I stream Dance Dance Revolution on weekends. I was initially using the Streamer Songlist service but after struggling on maintaining a single songlist for multiple games, I figured I had to write my own and expand the functionality I wanted that wasn't present on Streamer Songlist; including full customizability of the overlays and multiple song lists depending on the game.
 
-## Technical Approach
+### Technical Approach
 
 - **Frontend:** The site is built using React with component-driven architecture, responsive layouts and Twitch integration.
 - **Backend:** Node.js Express services handles user profiles, levelling, achievements and card inventory.
@@ -23,7 +68,7 @@ This project initially started as a custom small live-stream request service. Th
 - **Authentication:** Twitch OAuth for secure login, pulling essential profile data and using MySQL to store custom account metadata.
 - **Deployment:** Site is currently hosted as a React application on Github Pages and the backend is deployed to Fly.io.
 
-## Key Features
+### Key Features
 - **Twitch Login:** Users authenticate using their existing Twitch account to access their Mainframe profile with avatar and custom stats.
 - **EXP + Level Progression:** theMainframe has a built-in levelling system where users gain EXP by watching my live streams. It tracks all in-stream interactions and viewer activity and awards experience points.
 - **Collectible Card Designs:** Viewers check-in to the stream and it shows their personal "membership card" on stream which acts similar to a nameplate. They can collect multiple designs using a gacha mechanic on the live stream and collect various designs - some common, some rare and some are event or season-exclusive.
@@ -33,7 +78,7 @@ This project initially started as a custom small live-stream request service. Th
 - **Modular Add-ons:** The system is designed so new mechanics and gimmicks can be layered without breaking existing functionality.
 - **Song Request System:** The site provides a user-friendly searchable song database for viewers to search for playable songs during a rhythm game stream. It uses WebSocket to send requests directly from the site to the live stream.
 
-## Challenges & Solutions
+### Challenges & Solutions
 
 1. **Managing Authentication**
 

@@ -20,3 +20,25 @@ export async function getProjectsByType(type: 'wip' | 'past') {
   const projects = await getAllProjects();
   return projects.filter(p => p.data.type === type);
 }
+
+export function getBentoItemsWithTech(project: Project) {
+  const items = project.data.bentoItems || [];
+  
+  // Optionally auto-add tech stack as first item if not manually specified
+  const hasTechItem = items.some(item => item.title === 'Tech Stack');
+  
+  if (!hasTechItem && project.data.tech.length > 0) {
+    return [
+      {
+        icon: '🚀',
+        title: 'Tech Stack',
+        description: 'Built with modern streaming technologies for real-time performance',
+        size: 'large' as const,
+        tags: project.data.tech,
+      },
+      ...items,
+    ];
+  }
+  
+  return items;
+}
