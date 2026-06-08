@@ -1,0 +1,50 @@
+---
+import './ShareButtons.scss';
+import Icon from './Icon.astro';
+const { url, title } = Astro.props;
+
+const encodedUrl = encodeURIComponent(url);
+const encodedTitle = encodeURIComponent(title);
+---
+
+<div class="share-buttons">
+    <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`} target="_blank" rel="noopener noreferrer">
+        <Icon id="facebook" width="24" height="24" decorative />
+        <span>Share on Facebook</span>
+        <Icon id="caret-right" width="16" height="16" class="caret" decorative />
+    </a>
+    <a href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`} target="_blank" rel="noopener noreferrer">
+        <Icon id="xtwitter" width="24" height="24" decorative />
+        <span>Share on X/Twitter</span>
+        <Icon id="caret-right" width="16" height="16" class="caret" decorative />
+    </a>
+    <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedUrl}&title=${encodedTitle}`} target="_blank" rel="noopener noreferrer">
+        <Icon id="linkedin" width="24" height="24" decorative />
+        <span>Share on LinkedIn</span>
+        <Icon id="caret-right" width="16" height="16" class="caret" decorative />
+    </a>
+    <button data-url={url}>
+        <Icon id="copy" width="24" height="24" decorative />
+        <span>Copy Link</span>
+        <Icon id="caret-right" width="16" height="16" class="caret" decorative />
+    </button>
+    <a href={`mailto:?subject=${encodedTitle}&body=${encodedUrl}`} target="_blank" rel="noopener noreferrer">
+        <Icon id="email" width="24" height="24" decorative />
+        <span>Share via email</span>
+        <Icon id="caret-right" width="16" height="16" class="caret" decorative />
+    </a>
+</div>
+
+<script>
+    const copyButton = document.querySelector('.share-buttons button');
+    if (copyButton) {
+    copyButton.addEventListener('click', () => {
+        const urlToCopy = copyButton.getAttribute('data-url') || window.location.href;
+        navigator.clipboard.writeText(urlToCopy).then(() => {
+            alert('Link copied to clipboard!');
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    });
+  }
+</script>

@@ -314,6 +314,10 @@ body[data-section="field-notes"] {
                     font-family: 'Courier New', Courier, monospace;
                     font-size: 0.95rem;
                 }
+                p {
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+                }
             }
 
             .sidebar {
@@ -396,6 +400,13 @@ body[data-section="field-notes"] {
                     }
                 }
 
+                .share {
+                    background-color: #fff;
+                    border: 1px solid var(--light);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
                 
             }
         }

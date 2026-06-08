@@ -3,6 +3,7 @@ import type { GetStaticPaths } from 'astro';
 import GlobalLayout from '../../layouts/GlobalLayout.astro';
 import { getAllFieldNotes, formatDate } from '../../lib/fieldNotes';
 import '../../styles/field-notes.scss';
+import ShareButtons from '../../components/ShareButtons.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import SectionContainer from '../../components/SectionContainer.astro';
 import HeadingCard from '../../components/HeadingCard.astro';
@@ -67,7 +68,7 @@ const ogKeywords = [
             <img src="/assets/field-notes-assets/author-avatar-the13thgeek.png" alt="the13thgeek" />
           </div>
           <p class="name">@{note.data.author}</p>
-          <p class="bio">Developer & designer building for the web, streaming games, and sharing projects and adventures.</p>
+          <p class="bio">Developer & designer building for the Web, streaming games, and sharing projects and adventures.</p>
         </div>
         <div class="blog-minute">
           <span class="minute">{note.data.readingTime} <small>min</small></span>
@@ -113,6 +114,7 @@ const ogKeywords = [
           <Content />
         </div>
         <div class="sidebar">
+
           <div class="tags">
             <h2>Tags</h2>
             {note.data.tags.length > 0 ? (
@@ -125,6 +127,7 @@ const ogKeywords = [
               <p>No tags for this field note.</p>
             )}
           </div>
+
           <div class="read-progress">
             <h2>Reading Progress</h2>
             <div class="progress-bar">
@@ -132,6 +135,13 @@ const ogKeywords = [
             </div>
             <p><span id="progressText">0</span>% read</p>
           </div>
+
+          <div class="share">
+            <h2>Share this note</h2>
+            <ShareButtons url={`https://the13thgeek.com/field-notes/${note.slug}/`} title={note.data.title} />
+          </div>  
+
+
         </div>
       </div>
 

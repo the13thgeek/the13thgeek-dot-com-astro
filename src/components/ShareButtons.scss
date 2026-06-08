@@ -1,0 +1,45 @@
+.share-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  a, button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    outline: none;   
+    background-color: #f4f4f4;
+    color: var(--accent);
+    border: var(--accent) 1px solid;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+    &:hover {
+      background-color: var(--accent);
+      color: #fff;
+    }
+
+    svg {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      aspect-ratio: 1 / 1;
+      fill: currentColor;
+
+      &.caret {
+        width: 16px;
+        height: 16px;
+      }
+
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+  }
+}
