@@ -1,6 +1,7 @@
 ---
 title: "Tamagotchi Breeding Experiment"
 excerpt: "I've been running this latest version of the Tamagotchi for a while now and I'm having fun with the mixing (breeding) functions across generations; a fun…"
+readingTime: 2
 pubDate: 2019-09-06T04:09:14.000Z
 author: "the13thgeek"
 categories: ["Cool Stuff"]

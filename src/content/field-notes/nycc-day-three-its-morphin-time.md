@@ -1,6 +1,7 @@
 ---
 title: "NYCC Day Three: It's Morphin' Time!"
 excerpt: "After months of planning - the big day has come! In the latter part of 2018, a group of people I met from last year's Power Morphicon began to organize a big…"
+readingTime: 8
 pubDate: 2019-10-06T04:33:00.000Z
 author: "the13thgeek"
 categories: ["Events", "Journal"]

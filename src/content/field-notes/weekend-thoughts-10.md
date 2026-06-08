@@ -1,6 +1,7 @@
 ---
 title: "Weekend Thoughts #10"
 excerpt: "Raise your hand if you haven't played half of the games on your Steam game library? Guilty. And that's about to get worse, because recently my roommate and a…"
+readingTime: 4
 pubDate: 2021-08-23T00:48:13.000Z
 author: "the13thgeek"
 categories: ["Journal"]

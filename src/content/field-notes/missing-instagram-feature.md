@@ -1,6 +1,7 @@
 ---
 title: "Missing Instagram Feature?"
 excerpt: "Recently, I've been getting story shoutouts from many of my friends on Instagram, but for some reason I am unable to return the favour. You saw that right. I…"
+readingTime: 1
 pubDate: 2020-02-21T23:47:00.000Z
 author: "the13thgeek"
 categories: ["Journal"]

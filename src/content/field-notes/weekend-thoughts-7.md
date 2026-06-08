@@ -1,6 +1,7 @@
 ---
 title: "Weekend Thoughts #7"
 excerpt: "The fall-back is here! I enjoyed my extra hour of sleep today :) _(I preferred the summer daylight time to stick around, but for now it is what it is.)_…"
+readingTime: 4
 pubDate: 2019-11-04T03:21:48.000Z
 author: "the13thgeek"
 categories: ["Journal"]

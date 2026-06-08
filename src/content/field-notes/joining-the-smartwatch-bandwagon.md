@@ -1,6 +1,7 @@
 ---
 title: "Joining the Smartwatch Bandwagon!"
 excerpt: "It's a chilly, rainy day today - perfect day for pho! Meatballs and briskets pho for lunch! This was my first pho since November of last year, thanks to our…"
+readingTime: 3
 pubDate: 2021-08-28T03:55:20.000Z
 author: "the13thgeek"
 categories: ["Cool Stuff", "Journal"]

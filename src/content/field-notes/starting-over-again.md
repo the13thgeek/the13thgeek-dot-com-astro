@@ -1,6 +1,7 @@
 ---
 title: "Starting over. Again."
 excerpt: "So Covid happened. Then I moved out and lived on my own for the first time. Yay #Adulting! Then, that's really it. Can't go for a movie, or travel... and no…"
+readingTime: 1
 pubDate: 2021-07-16T04:01:26.000Z
 author: "the13thgeek"
 categories: ["Journal"]

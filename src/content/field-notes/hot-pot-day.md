@@ -1,6 +1,7 @@
 ---
 title: "Hot Pot Day"
 excerpt: "We've been planning this for a while now, glad it we finally had some! :D Hot pot, anyone? After work today we gathered to my coworker's place to finally have…"
+readingTime: 1
 pubDate: 2019-08-22T04:10:00.000Z
 author: "the13thgeek"
 categories: ["Journal"]

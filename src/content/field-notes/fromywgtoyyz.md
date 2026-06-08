@@ -1,6 +1,7 @@
 ---
 title: "#fromYWGtoYYZ"
 excerpt: "Long time no see. So I did a thing. A big one! Just a few days ago, I moved from Winnipeg to Toronto! It's been a huge endeavour, I've always wanted to move…"
+readingTime: 3
 pubDate: 2022-04-05T02:30:00.000Z
 author: "the13thgeek"
 categories: ["Journal"]

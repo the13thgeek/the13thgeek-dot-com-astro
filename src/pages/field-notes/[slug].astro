@@ -48,7 +48,32 @@ const ogKeywords = [
   <article class="field-note">
     <div class="struct">
       <header>
-        <div class="meta">
+        <div class="blog-hero">
+          <img src={note.data.featuredImage} alt={note.data.title} />
+          <div class="meta">
+            <ul class="eyebrow">
+              {note.data.categories.map(cat => (
+                  <li class="category">{cat}</li>
+              ))}
+            </ul>
+            <h1>{note.data.title}</h1>
+            <p><time datetime={note.data.pubDate.toISOString()}>
+              {formatDate(note.data.pubDate)}
+            </time>
+          </div>
+        </div>
+        <div class="blog-author">
+          <div class="avatar">
+            <img src="/assets/field-notes-assets/author-avatar-the13thgeek.png" alt="the13thgeek" />
+          </div>
+          <p class="name">@{note.data.author}</p>
+          <p class="bio">Developer & designer building for the web, streaming games, and sharing projects and adventures.</p>
+        </div>
+        <div class="blog-minute">
+          <span class="minute">{note.data.readingTime} <small>min</small></span>
+          <span class="label">read time</span>
+        </div>
+        <!-- <div class="meta">
           <a href="/field-notes/">← Back to Field Notes</a>
           <SectionHeading isStyled={false} headingType="h1" sectionNumber={1}>
             {note.data.title}
@@ -79,12 +104,35 @@ const ogKeywords = [
           </div>
         )}
         </div>
-        <div class="preview-image" style={note.data.featuredImage ? `background-image: url(${note.data.featuredImage})` : ''}></div>
+        <div class="preview-image" style={note.data.featuredImage ? `background-image: url(${note.data.featuredImage})` : ''}></div> -->
       </header>
     
     
-      <div class="note-content">
-        <Content />
+      <div class="field-note-content">
+        <div class="body">
+          <Content />
+        </div>
+        <div class="sidebar">
+          <div class="tags">
+            <h2>Tags</h2>
+            {note.data.tags.length > 0 ? (
+              <ul>
+                {note.data.tags.map(tag => (
+                  <li>{tag}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>No tags for this field note.</p>
+            )}
+          </div>
+          <div class="read-progress">
+            <h2>Reading Progress</h2>
+            <div class="progress-bar">
+              <div class="progress" id="progressIndicator"></div>
+            </div>
+            <p><span id="progressText">0</span>% read</p>
+          </div>
+        </div>
       </div>
 
       <footer class="note-footer">
@@ -108,6 +156,24 @@ const ogKeywords = [
   </article>
 
 </GlobalLayout>
+
+<script>
+  const bar = document.getElementById('progressIndicator');
+  const progressText = document.getElementById('progressText');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (scrollTop / docHeight) * 100;
+
+  if(bar) {
+    bar.style.width = `${progress}%`;
+  }
+  if(progressText) {
+    progressText.textContent = Math.round(progress).toString();
+  }
+});
+</script>
 
 <!-- <style lang="scss">
   .field-note {

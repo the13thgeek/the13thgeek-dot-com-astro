@@ -1,6 +1,7 @@
 ---
 title: "NYCC Day Two: Socialize"
 excerpt: "Now that I've gotten my convention loot shopping (will post them later) out of the way, this is my chance to actually go around and socialize more with my…"
+readingTime: 3
 pubDate: 2019-10-05T04:27:00.000Z
 author: "the13thgeek"
 categories: ["Events", "Journal"]

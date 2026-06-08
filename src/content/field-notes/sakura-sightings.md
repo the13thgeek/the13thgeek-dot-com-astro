@@ -1,6 +1,7 @@
 ---
 title: "桜～Sakura sightings"
 excerpt: "Seeing these famous sakura (cherry blossoms) in person was my primary objective in travelling to Japan for vacation in early 2018. I knew they were prevalent…"
+readingTime: 5
 pubDate: 2024-09-21T21:10:00.000Z
 author: "the13thgeek"
 categories: ["Lost Chronicles"]

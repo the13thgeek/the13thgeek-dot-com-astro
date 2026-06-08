@@ -1,6 +1,7 @@
 ---
 title: "Ai-Kon Winnipeg 2019"
 excerpt: "I've always made it a point to make sure I attend Ai-Kon, Winnipeg's annual anime and Japanese culture convention. It always runs on a weekend in July from…"
+readingTime: 5
 pubDate: 2019-08-17T04:11:21.000Z
 author: "the13thgeek"
 categories: ["Events"]

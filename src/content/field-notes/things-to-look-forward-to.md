@@ -1,6 +1,7 @@
 ---
 title: "Things to look forward to..."
 excerpt: "First entry! I've already began to think of things to start writing about, and what's on my head right now are some of my upcoming adventures, a.k.a.…"
+readingTime: 4
 pubDate: 2019-08-14T05:03:01.000Z
 author: "the13thgeek"
 categories: ["Events"]

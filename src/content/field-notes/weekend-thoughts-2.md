@@ -1,6 +1,7 @@
 ---
 title: "Weekend Thoughts #2"
 excerpt: "ManyFest is finally over - it's that busy time of the year for me as I help the festival through the Watch Ambassador Team for the entire weekend. It was fun…"
+readingTime: 4
 pubDate: 2019-09-09T04:19:41.000Z
 author: "the13thgeek"
 categories: ["Journal"]

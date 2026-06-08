@@ -1,6 +1,7 @@
 ---
 title: "Hello world!"
 excerpt: "Mic test... one, two, three! Is this on? Welcome to Field Notes! I'm testing this new blog function on the website! I was asking around for a back-end…"
+readingTime: 2
 pubDate: 2024-09-18T19:52:18.963Z
 author: "the13thgeek"
 categories: ["(mis)adventures"]

@@ -1,6 +1,7 @@
 ---
 title: "Action Figure Crossover Vol. 1: Red Ranger &amp; Saitama"
 excerpt: "> \"No sweat.\" This one's one of my recent crossovers featuring the Red Ranger from _Mighty Morphin' Power Rangers_ and Saitama from _One-Punch Man_ trying to…"
+readingTime: 1
 pubDate: 2019-09-18T19:27:22.000Z
 author: "the13thgeek"
 categories: ["Toy Photography"]

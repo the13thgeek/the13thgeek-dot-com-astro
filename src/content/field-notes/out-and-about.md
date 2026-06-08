@@ -1,6 +1,7 @@
 ---
 title: "Out and About"
 excerpt: "Here I am on a late Sunday evening, recovering (in a good way!) from a very busy week. It's been a while since I've had a busy week, social-wise. It was…"
+readingTime: 7
 pubDate: 2024-10-21T02:36:00.000Z
 author: "the13thgeek"
 categories: ["(mis)adventures"]
@@ -12,7 +13,7 @@ sanityId: "d665a086-2344-445c-a0fa-48408f0a845d"
 Here I am on a late Sunday evening, recovering (in a good way!) from a very busy week. It's been a while since I've had a busy week, social-wise. It was actually pretty noteworthy.
 
 
-##### **Monday**
+## **Monday**
 
 It was Canadian Thanksgiving. I usually love this day because other than the fact that it's a holiday, it's one of the few days of the year I temporarily loosen my dietary restrictions and I let myself eat whatever I want.
 
@@ -28,7 +29,7 @@ I met up with some good friends who are passing through the city in the afternoo
 We had a lot of fun just looking around and checking out all the cool stuff they have here. I normally only see these Bandai gashapon machines at conventions that I attend. It's a refreshing sight to see this in the city at such an accessible location. I pulled and got a few cool Kamen Rider items. The staff mentioned that they rotate the goodies every few days. I made a mental note to make it a habit of checking this place out when I (fingers crossed) get a new job downtown.
 
 
-##### Tuesday
+## Tuesday
 
 My Employment Insurance is not going to last forever and for the last few months I've submitted a hundred applications or so to zero success. With that in mind, I figured I have to do something before help runs out. I reached out to a few agencies and a local organization, Achev was nice enough to take me in.
 
@@ -42,7 +43,7 @@ I needed help. I'm getting help.
 Later in the day I met up with another local friend whom I haven't talked to in a while. We've both had our rollercoaster share of events, and it was nice to grab some food and catch up. I have a few low-maintenance friends in the city and it's always nice to know that despite the fact that we don't always talk, I know they're just around.
 
 
-##### Wednesday
+## Wednesday
 
 Hump days are usually the days I take a break from streaming, but since I won't be able to stream over the weekend, I hosted a Left 4 Dead 2 game with a big group of online friends. It's funny because until that evening, I had no idea I could play as an Infected with the Versus mode!
 
@@ -54,7 +55,7 @@ Halloween is one of my favourite times of the year, and I'm starting to feel it 
 Despite living here for two years now, I will never get tired of looking up at this majestic megastructure.
 
 
-##### Thursday
+## Thursday
 
 For the next few days, I would be hanging out with some friends from Winnipeg. They flew in to watch One Ok Rock perform and hang out with us. I met these lovely folks from streaming and another funny thought occurred to me: during my time in Winnipeg, I've always had difficulties making friends because it still had that small-town mentality and people tend to be more insular, but now that I've moved to Toronto, I've started making more friends from Winnipeg.
 
@@ -66,7 +67,7 @@ To start off their short trip, we had some Japanese grill and checked out a cat 
 The cat cafe was fun. At one point during our visit, I was tempted to adopt a cat but I realized that my roommate is allergic to them and I tend to travel a lot and be away for many days. Probably not right now.
 
 
-##### Friday
+## Friday
 
 I rejoined their group again and this time, we walked around downtown and because it's my neck of the woods I became their tour guide. We checked out the shops on Queen and the bars on King. With the sunset now becoming earlier, I even caught a nice glimpse of Union during the golden hour.
 
@@ -78,7 +79,7 @@ Walking and showing tourist friends reminded me how much I enjoyed strolling aro
 We went to check out The Well afterwards. It's a very touristy place. Not much stores open yet, and it looks like it's mostly geared towards a wealthier crowd, but we didn't let that ruin the fun. We grabbed some Japadog (yes, we have one here now!) for dinner before they were off to watch One Ok Rock.
 
 
-##### Saturday
+## Saturday
 
 It was their last day in the city today, so we figured we'd make the most out of the day. We had some ramen to start, and checked out the newly-opened Japanese arcade place called Yume Arcade in Chinatown. 
 

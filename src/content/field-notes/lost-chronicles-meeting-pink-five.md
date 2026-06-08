@@ -1,6 +1,7 @@
 ---
 title: "Lost Chronicles: Meeting Pink Five!"
 excerpt: "As a kid growing up, I've always watched those superhero TV series from Japan as they were popular in Southeast Asia as local channels would pick them up and…"
+readingTime: 5
 pubDate: 2019-08-30T02:13:34.000Z
 author: "the13thgeek"
 categories: ["Lost Chronicles"]

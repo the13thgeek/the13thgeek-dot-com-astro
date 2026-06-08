@@ -1,6 +1,7 @@
 ---
 title: "Something \"Normal\""
 excerpt: "I'm usually a low-key person so even if today's my birthday I wasn't planning anything crazy, but that's about to change! First thing in the morning I got a…"
+readingTime: 4
 pubDate: 2021-07-26T04:05:00.000Z
 author: "the13thgeek"
 categories: ["Events", "Journal"]

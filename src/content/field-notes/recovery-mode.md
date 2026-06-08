@@ -1,10 +1,11 @@
 ---
 title: "Recovery Mode"
 excerpt: "The long road to recovery begins. I spent the first half of last week in the Shouldice hospital here in the GTA. I've had to undergo surgery and while I was in…"
+readingTime: 2
 pubDate: 2024-09-28T18:44:00.000Z
 author: "the13thgeek"
 categories: ["(mis)adventures"]
-tags: ["surgery", ""]
+tags: ["surgery"]
 featuredImage: "/assets/field-notes/recovery-mode-featured.jpg"
 sanityId: "4c1dbaad-599b-4ffd-859a-704181a117dc"
 ---

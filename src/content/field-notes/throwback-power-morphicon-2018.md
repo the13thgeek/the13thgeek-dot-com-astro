@@ -1,6 +1,7 @@
 ---
 title: "Throwback: Power Morphicon 2018"
 excerpt: "While Covid is still taking its toll, allow me to recall a couple of my favourite memories from attending the Power Morphicon event in Anaheim exactly three…"
+readingTime: 2
 pubDate: 2021-08-19T00:02:00.000Z
 author: "the13thgeek"
 categories: ["Events", "Lost Chronicles"]

@@ -1,6 +1,7 @@
 ---
 title: "Weekend Thoughts #4"
 excerpt: "All aboard the NYCC Hype Train! My flight to New York leaves on Wednesday but since I have two crazy busy weekdays ahead, I figured might as well pack as early…"
+readingTime: 3
 pubDate: 2019-09-30T01:19:49.000Z
 author: "the13thgeek"
 categories: ["Journal"]

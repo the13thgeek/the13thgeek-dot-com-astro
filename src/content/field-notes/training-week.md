@@ -1,6 +1,7 @@
 ---
 title: "Training Week"
 excerpt: "Nothing too crazy this week, just attending a couple days' training for situational awareness as I work as a frontline outreach worker part-time. Charging up…"
+readingTime: 1
 pubDate: 2021-08-21T02:23:00.000Z
 author: "the13thgeek"
 categories: ["Journal"]

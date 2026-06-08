@@ -1,6 +1,7 @@
 ---
 title: "Twitch Overlay Update!"
 excerpt: "Welcome to the13thgeek Season 3! I recently decided to update my overlay setup with a fresh new visual experience. We went from a bullet train vibe (Season 2)…"
+readingTime: 4
 pubDate: 2024-11-05T14:51:00.000Z
 author: "the13thgeek"
 categories: ["Tech Blog"]
@@ -9,7 +10,7 @@ featuredImage: "/assets/field-notes/twitch-overlay-update-featured.jpg"
 sanityId: "ffc688be-7930-42cc-aacd-2fe687b9ac3c"
 ---
 
-Welcome to the13thgeek Season 3!
+> Welcome to the13thgeek Season 3!
 
 I recently decided to update my overlay setup with a fresh new visual experience. We went from a bullet train vibe (Season 2) to airplanes for this new one!
 

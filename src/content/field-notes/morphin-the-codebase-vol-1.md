@@ -1,6 +1,7 @@
 ---
 title: "Morphin' the Codebase (vol. 1)"
 excerpt: "It's Morphin' Time! So how did this project came to be? I'm a huge tokusatsu (Japanese live-action superhero TV shows) and I attend an convention called Power…"
+readingTime: 4
 pubDate: 2024-09-21T00:40:00.000Z
 author: "the13thgeek"
 categories: ["Tech Blog"]

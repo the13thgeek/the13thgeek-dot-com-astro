@@ -1,6 +1,7 @@
 ---
 title: "Weekend Thoughts #8"
 excerpt: "Been quite a rough month, but I'm glad November's over and done with, and I capped it off with some Black Friday shopping! I got myself some smart-home stuff -…"
+readingTime: 3
 pubDate: 2019-12-02T01:46:29.000Z
 author: "the13thgeek"
 categories: ["Journal"]

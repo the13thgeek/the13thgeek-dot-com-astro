@@ -1,6 +1,7 @@
 ---
 title: "Self-affirmation"
 excerpt: "I am worthy."
+readingTime: 1
 pubDate: 2023-09-21T00:24:48.000Z
 author: "the13thgeek"
 categories: ["Journal"]

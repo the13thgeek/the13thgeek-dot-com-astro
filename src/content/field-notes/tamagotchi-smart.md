@@ -1,6 +1,7 @@
 ---
 title: "Tamagotchi Smart!"
 excerpt: "!Tamagotchi Smart Welp, I just preordered a smart watch... I've been collecting the recent colour Tamagotchi versions so I can't miss out on this one! For this…"
+readingTime: 1
 pubDate: 2021-08-26T01:09:41.000Z
 author: "the13thgeek"
 categories: ["Cool Stuff"]

@@ -1,6 +1,7 @@
 ---
 title: "Weekend Thoughts #12"
 excerpt: "Early morning at the Riverwalk Thanks to the Watch4, it made me motivated again to do early morning weekend runs. Only managed a 4K run compared to last…"
+readingTime: 2
 pubDate: 2021-09-07T00:25:25.000Z
 author: "the13thgeek"
 categories: ["Journal"]

@@ -1,6 +1,7 @@
 ---
 title: "Weekend Thoughts #3"
 excerpt: "We did some team-building activity with my IT colleagues at Activate Games yesterday. It's been my third time there (with different groups of people) but I…"
+readingTime: 2
 pubDate: 2019-09-20T22:50:45.000Z
 author: "the13thgeek"
 categories: ["Journal"]

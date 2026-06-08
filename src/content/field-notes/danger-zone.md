@@ -1,6 +1,7 @@
 ---
 title: "Danger Zone"
 excerpt: "I've been collecting action figures for a few years now, and naturally I slowly began to dip my toes into the realm of action figure photography. I mostly…"
+readingTime: 2
 pubDate: 2019-08-19T23:49:17.000Z
 author: "the13thgeek"
 categories: ["Toy Photography"]

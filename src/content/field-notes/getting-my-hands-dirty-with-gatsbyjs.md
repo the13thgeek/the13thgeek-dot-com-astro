@@ -1,6 +1,7 @@
 ---
 title: "Getting my hands dirty with GatsbyJS"
 excerpt: "All my developer life I've mostly concentrated on developing either static client-side HTML-only websites or dynamic PHP web applications, so when I was…"
+readingTime: 7
 pubDate: 2019-09-13T03:54:22.000Z
 author: "the13thgeek"
 categories: ["Events", "Journal"]

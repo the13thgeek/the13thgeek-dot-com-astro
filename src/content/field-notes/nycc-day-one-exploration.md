@@ -1,6 +1,7 @@
 ---
 title: "NYCC Day One: Exploration"
 excerpt: "Hello, New York! Let's roll! It's both my first time being here in the Big Apple and it's my very first New York Comic Con as well! The whole thing takes place…"
+readingTime: 4
 pubDate: 2019-10-04T04:15:00.000Z
 author: "the13thgeek"
 categories: ["Events", "Journal"]

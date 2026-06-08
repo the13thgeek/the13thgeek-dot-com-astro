@@ -1,6 +1,7 @@
 ---
 title: "Happy National Power Rangers Day!"
 excerpt: "I've been a huge fan of the Power Rangers since the very first episode aired on TV in August 28, 1993, exactly 26 years ago... and possibly even before that,…"
+readingTime: 3
 pubDate: 2019-08-29T02:16:34.000Z
 author: "the13thgeek"
 categories: ["Events", "Journal"]

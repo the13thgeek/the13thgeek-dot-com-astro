@@ -1,6 +1,7 @@
 ---
 title: "Web Unleashed 2019"
 excerpt: "Today wraps up my two-day conference at Web Unleashed. Information overload aside, the conference has presented a wide variety of topics ranging from how to…"
+readingTime: 6
 pubDate: 2019-09-15T02:19:00.000Z
 author: "the13thgeek"
 categories: ["Events", "Journal"]

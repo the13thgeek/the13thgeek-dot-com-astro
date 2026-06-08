@@ -1,6 +1,7 @@
 ---
 title: "Lost Chronicles: EdgeWalk"
 excerpt: "Acrophobia Warning! This is the _single craziest_ thing I've done in my life so far - doing the CN Tower EdgeWalk! > _EdgeWalk is CN Tower’s most thrilling…"
+readingTime: 3
 pubDate: 2019-08-18T20:44:51.000Z
 author: "the13thgeek"
 categories: ["Lost Chronicles"]

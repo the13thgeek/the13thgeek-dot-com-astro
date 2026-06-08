@@ -1,6 +1,7 @@
 ---
 title: "A stroke of (bad) luck..."
 excerpt: "I am, in reality, a believer Murphy's Law. Things can go wrong, and very likely will go wrong. While I'm not a complete pessimist, I'd always assume that…"
+readingTime: 2
 pubDate: 2019-10-24T03:18:28.000Z
 author: "the13thgeek"
 categories: ["Journal"]

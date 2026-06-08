@@ -14,6 +14,7 @@ const fieldNotesCollection = defineCollection({
     featuredImage: z.string().optional(),
     featuredImageAlt: z.string().optional(),
     draft: z.boolean().default(false),
+    readingTime: z.number().optional(),
     // For tracking the original WordPress data
     wpId: z.number().optional(),
     wpSlug: z.string().optional(),

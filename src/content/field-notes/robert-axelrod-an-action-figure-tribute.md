@@ -1,6 +1,7 @@
 ---
 title: "Robert Axelrod: An Action Figure Tribute"
 excerpt: "I've heard the news of Mr. Axelrod's passing and I've always wanted to make a tribute but never found the free time until recently. I've known Robert Axelrod…"
+readingTime: 2
 pubDate: 2019-09-23T02:49:48.000Z
 author: "the13thgeek"
 categories: ["Toy Photography"]

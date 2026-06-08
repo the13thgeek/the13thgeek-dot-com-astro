@@ -10,7 +10,8 @@
     "migrate": "tsx scripts/migrate-wordpress.ts",
     "download-images": "tsx scripts/download-images.ts",
     "generate-excerpts": "tsx scripts/generate-excerpts.ts",
-    "migrate-sanity": "tsx scripts/migrate-sanity.ts"
+    "migrate-sanity": "tsx scripts/migrate-sanity.ts",
+    "reading-time": "tsx scripts/reading-time.ts"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",

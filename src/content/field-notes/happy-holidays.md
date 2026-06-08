@@ -1,6 +1,7 @@
 ---
 title: "Happy Holidays!!"
 excerpt: "Early New Year's resolution: write some more! Hope everyone's enjoying the festive season! :D Finally, I found the time to write again after the crazy holiday…"
+readingTime: 3
 pubDate: 2019-12-26T04:05:23.000Z
 author: "the13thgeek"
 categories: ["Journal"]

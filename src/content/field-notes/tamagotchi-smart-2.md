@@ -1,6 +1,7 @@
 ---
 title: "Tamagotchi Smart!"
 excerpt: "Just making a quick update... my early-release version of the Tamagotchi Smart arrived today!! Unboxing and initial insights will be posted soon! 😊"
+readingTime: 1
 pubDate: 2021-09-07T20:54:54.000Z
 author: "the13thgeek"
 categories: ["Cool Stuff"]

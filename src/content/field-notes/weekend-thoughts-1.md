@@ -1,6 +1,7 @@
 ---
 title: "Weekend Thoughts #1"
 excerpt: "Welcome to Weekend Thoughts - a collection of post with small random thoughts and ramblings! Finally, I get to experience an actual long weekend!! Due to my…"
+readingTime: 2
 pubDate: 2019-09-01T02:02:27.000Z
 author: "the13thgeek"
 categories: ["Journal"]

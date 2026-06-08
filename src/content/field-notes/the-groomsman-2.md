@@ -1,6 +1,7 @@
 ---
 title: "The Groomsman"
 excerpt: "My first wedding in exactly 2 years! Congratulations to the newlyweds Josh and Shae! I feel honoured to be part of your lovely wedding party :)"
+readingTime: 1
 pubDate: 2021-08-12T15:57:00.000Z
 author: "the13thgeek"
 categories: ["Events"]

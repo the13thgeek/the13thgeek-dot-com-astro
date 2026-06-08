@@ -1,10 +1,11 @@
 ---
 title: "What's \"Next?\""
 excerpt: "That is indeed the question. Now that this site is up and running, I've managed to clean up and optimize some of the code, but there's still a few lingering…"
+readingTime: 3
 pubDate: 2024-10-09T01:47:49.099Z
 author: "the13thgeek"
 categories: ["Tech Blog"]
-tags: [""]
+tags: []
 featuredImage: "/assets/field-notes/whats-next-featured.jpg"
 sanityId: "fbdd40f7-a4e2-4286-9607-d6218f7f7de5"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Expectation vs Reality"
 excerpt: "Today I had a friend over and we bought of one those cute Japanese DIY snack kits that lets us make edible miniatures of actual food. There are many…"
+readingTime: 1
 pubDate: 2021-07-24T03:59:42.000Z
 author: "the13thgeek"
 categories: ["Cool Stuff", "Journal"]
