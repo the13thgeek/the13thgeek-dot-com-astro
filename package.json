@@ -21,7 +21,8 @@
     "he": "^1.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "sass": "^1.91.0"
+    "sass": "^1.91.0",
+    "swiper": "^12.2.0"
   },
   "devDependencies": {
     "@portabletext/types": "^2.0.15",

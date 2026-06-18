@@ -3,6 +3,9 @@ import GlobalLayout from '../layouts/GlobalLayout.astro';
 import HeadingCard from '../components/HeadingCard.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import SectionContainer from '../components/SectionContainer.astro';
+import OnAir from '../react-components/OnAir.tsx';
+import NowPlaying from '../react-components/NowPlaying.tsx';
+import '../styles/twitch.scss';
 ---
 
 <GlobalLayout
@@ -16,5 +19,17 @@ import SectionContainer from '../components/SectionContainer.astro';
 			</SectionHeading>
 			<p class="subtitle">Live. Chill. Game. Repeat.</p>
 		</HeadingCard>
+	</SectionContainer>
+	<SectionContainer className='twitch-struct'>
+		<SectionHeading isStyled={true} headingType="h2" sectionNumber={2}>
+			On Air
+		</SectionHeading>
+		<OnAir client:load />
+	</SectionContainer>
+	<SectionContainer className='twitch-nowplaying'>
+		<SectionHeading isStyled={true} headingType="h2" sectionNumber={3}>
+			Now Playing
+		</SectionHeading>
+		<NowPlaying client:load />
 	</SectionContainer>
 </GlobalLayout>
