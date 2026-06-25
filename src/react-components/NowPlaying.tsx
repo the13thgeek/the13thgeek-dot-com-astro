@@ -4,6 +4,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/pagination";
 import './NowPlaying.scss';
+import NpData from '../data/nowplaying.json';
 
 const NowPlaying = () => {
   return (
@@ -19,62 +20,21 @@ const NowPlaying = () => {
         pagination={{el: '.np-nav',clickable: true}}
         autoplay={{delay: 5000, disableOnInteraction: false}}
       >
-        <SwiperSlide>
-          <div className="card-content">
-            <img src="https://placehold.co/1280x720" alt="" className="bg" />
-            <div className="data">
-              <img src="https://placehold.co/200x75" alt="" className="gametitle" />
-              <h3>Lorem Ipsum</h3>
-              <span className="schedule">Streams Fridays @ 8pm EST</span>
-              <p>Superheroes, supervillains, and super chaos! Watch as @the13thgeek assembles the ultimate team... or gets yeeted across the battlefield.</p>
+        {NpData.filter(slide => slide.show_game).map((slide,idx) =>
+          <SwiperSlide key={idx} className='slide-item'>
+            <div className="card-content">
+              <img src={`/assets/twitch/now-playing/slide-${slide.game_id}.jpg`} alt="" className="bg" />
+              <div className="data">
+                <img src={`/assets/twitch/now-playing/logo-${slide.game_id}.png`} alt={slide.game_title} className="gametitle" />
+                <h3>{slide.game_title}</h3>
+                <p>{slide.description}</p>
+                <span className="schedule">{slide.schedule ? ('Streams ' + slide.schedule) : 'Streaming in Regular Rotation' }</span>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card-content">
-            <img src="https://placehold.co/1280x720" alt="" className="bg" />
-            <div className="data">
-              <img src="https://placehold.co/200x75" alt="" className="gametitle" />
-              <h3>Lorem Ipsum</h3>
-              <span className="schedule">Streams Fridays @ 8pm EST</span>
-              <p>Superheroes, supervillains, and super chaos! Watch as @the13thgeek assembles the ultimate team... or gets yeeted across the battlefield.</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card-content">
-            <img src="https://placehold.co/1280x720" alt="" className="bg" />
-            <div className="data">
-              <img src="https://placehold.co/200x75" alt="" className="gametitle" />
-              <h3>Lorem Ipsum</h3>
-              <span className="schedule">Streams Fridays @ 8pm EST</span>
-              <p>Superheroes, supervillains, and super chaos! Watch as @the13thgeek assembles the ultimate team... or gets yeeted across the battlefield.</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card-content">
-            <img src="https://placehold.co/1280x720" alt="" className="bg" />
-            <div className="data">
-              <img src="https://placehold.co/200x75" alt="" className="gametitle" />
-              <h3>Lorem Ipsum</h3>
-              <span className="schedule">Streams Fridays @ 8pm EST</span>
-              <p>Superheroes, supervillains, and super chaos! Watch as @the13thgeek assembles the ultimate team... or gets yeeted across the battlefield.</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card-content">
-            <img src="https://placehold.co/1280x720" alt="" className="bg" />
-            <div className="data">
-              <img src="https://placehold.co/200x75" alt="" className="gametitle" />
-              <h3>Lorem Ipsum</h3>
-              <span className="schedule">Streams Fridays @ 8pm EST</span>
-              <p>Superheroes, supervillains, and super chaos! Watch as @the13thgeek assembles the ultimate team... or gets yeeted across the battlefield.</p>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        )}
       </Swiper>
+        
       <div className="np-nav"></div>
     </div>
   )

@@ -1,6 +1,37 @@
 @use '../styles/variables' as *;
 @use '../styles/mixins' as *;
 
+@keyframes bgZoom {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes gameLogo {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gameText {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .twitch-nowplaying {
   max-width: 100vw;  
   overflow: hidden;
@@ -14,85 +45,173 @@
     overflow: visible;
   }
 
-  .swiper-slide {
+  .slide-item {
     overflow: hidden;
-    opacity: .5;
-    transition: opacity .35s ease;
+    opacity: 0.1;
+    transition: opacity 0.5s ease;
     max-width: 75vw;
-  }
-  .swiper-slide-active {
-    transform: scale(1);
-    opacity: 1;
 
-    .card-content {
-      .data {
-        & > * {
-          opacity: 1;
-          transform: translateY(0);
-        }
+    &.swiper-slide-active {
+      opacity: 1;
+
+      img.bg {
+        transition: transform 1s ease;
+        transform-origin: center;
+        transform: scale(1);
+      }
+      img.gametitle {
+        opacity: 1;
+        transform: translateY(0);
+        // animation: gameLogo 1s 1;
+      }
+      h3, span, p {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
-  }
-  .swiper-slide-prev,
-  .swiper-slide-next {
-    opacity: .65;
-  }
 
-  .card-content {
-    width: 100%;
-    aspect-ratio: 16/7;
-    background-color: #999;
-    border-radius: 1rem;
-    overflow: hidden;
-    position: relative;
+    .card-content {
+      width: 100%;
+      aspect-ratio: 16/7;
+      background-color: #999;
+      border-radius: 1rem;
+      overflow: hidden;
+      position: relative;
+    }
 
-    img.bg {
+    img {
+      &.bg {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transform: scale(1.5);
+      }
+      &.gametitle {
+        max-width: 20%;
+        transition: opacity 1s ease, 1s ease;
+        transform: translateY(-2rem);
+        opacity: 0;
+        will-change: opacity, transform;
+      }
+    }
+
+    h3, span, p {
+      transition: opacity 1s ease, 1s ease;
+      will-change: opacity, transform;
+      opacity: 0;
+      margin: 0;
+      padding: 0;
+      transform: translateY(2rem);
     }
 
     .data {
       position: absolute;
-      top: 0;
-      bottom: 0;
       width: 100%;
       height: 100%;
       z-index: 2;
       inset: 0;
       display: flex;
       padding-left: 1rem;
+      padding-bottom: 2rem;
       flex-direction: column;
-      justify-content: center;
+      justify-content: end;
       align-items: start;
       gap: 1rem;
-
+      color: #fff;
       background:
         radial-gradient(
           circle at left bottom,
           rgba(0, 0, 0, 0.65) 0%,
-          rgba(0, 0, 0, 0.45) 30%,
-          rgba(0, 0, 0, 0.15) 55%,
+          rgba(0, 0, 0, 0.45) 40%,
+          rgba(0, 0, 0, 0.15) 65%,
           transparent 75%
         );
 
       & > * {
-        opacity: 0;
-        transform: translateY(12px);
-        transition: opacity 0.35s ease, transform 0.35s ease;
-        margin: 0;
-
         @include respond(md) {
+          padding-left: 1.5rem;
           max-width: 70%;
         }
         @include respond(lg) {
+          padding-left: 2rem;
           max-width: 40%;
         }
       }
-      img.gametitle {
-        transform: translateY(-1rem);
-      }
     }
+
+  }
+
+  // .swiper-slide {
+  //   overflow: hidden;
+  //   opacity: .5;
+  //   transition: opacity .35s ease;
+  //   max-width: 75vw;
+
+  //   .card-content {
+  //     width: 100%;
+  //     aspect-ratio: 16/7;
+  //     background-color: #999;
+  //     border-radius: 1rem;
+  //     overflow: hidden;
+  //     position: relative;
+
+  //     img.bg {
+  //       width: 100%;
+  //       height: 100%;
+  //       object-fit: cover;
+  //       transition: scale 1s ease;
+  //       transform-origin: center;
+  //       transform: scale(1.5);
+  //     }
+
+  //     .data {
+  //       position: absolute;
+  //       top: 0;
+  //       bottom: 0;
+  //       width: 100%;
+  //       height: 100%;
+  //       z-index: 2;
+  //       inset: 0;
+  //       display: flex;
+  //       padding-left: 1rem;
+  //       flex-direction: column;
+  //       justify-content: center;
+  //       align-items: start;
+  //       gap: 1rem;
+  //       background:
+  //         radial-gradient(
+  //           circle at left bottom,
+  //           rgba(0, 0, 0, 0.65) 0%,
+  //           rgba(0, 0, 0, 0.45) 40%,
+  //           rgba(0, 0, 0, 0.15) 65%,
+  //           transparent 75%
+  //         );
+
+
+  //       & > * {
+  //         @include respond(md) {
+  //           max-width: 70%;
+  //         }
+  //         @include respond(lg) {
+  //           max-width: 40%;
+  //         }
+  //       }
+
+  //     }
+  //   }
+
+  //   &.swiper-slide-active {
+  //     .card-content {
+  //       img.bg {
+  //         transform: scale(1);
+  //       }
+  //     }
+  //   }
+  // }
+ 
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    opacity: .45;
   }
 
   .np-nav {
