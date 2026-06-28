@@ -4,3 +4,61 @@
 .twitch-struct {
   background-color: var(--deep);
 }
+
+section.clips-mf {
+  .struct {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+
+    @include respond(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include respond(lg) {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    
+  }
+
+  .box {
+    display: grid;
+    @include tile(true);
+    background-color: #999;
+
+    &.vod {
+      background-color: var(--light);
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 1rem;
+
+      h3 {
+        &::before {
+          color: var(--deep);
+        }
+        &::after {
+          background-color: #fff;
+        }
+      }
+
+    }
+
+
+    &.clips {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 1rem;
+
+      h3 {
+        &::after {
+          background-color: var(--light);
+        }
+      } 
+      
+    }
+
+  }
+}

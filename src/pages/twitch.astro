@@ -5,7 +5,11 @@ import SectionHeading from '../components/SectionHeading.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import OnAir from '../react-components/OnAir.tsx';
 import NowPlaying from '../react-components/NowPlaying.tsx';
+import LatestVod from '../react-components/LatestVod.tsx';
+import PopularClipsList from '../react-components/PopularClipsList.tsx';
 import '../styles/twitch.scss';
+
+
 ---
 
 <GlobalLayout
@@ -31,5 +35,19 @@ import '../styles/twitch.scss';
 			Now Playing
 		</SectionHeading>
 		<NowPlaying client:load />
+	</SectionContainer>
+	<SectionContainer className='clips-mf'>
+		<div class="box vod">
+			<SectionHeading isStyled={true} headingType="h3" sectionNumber={4}>
+				Latest VOD
+			</SectionHeading>
+			<LatestVod client:load />
+		</div>
+		<div class="box clips">
+			<SectionHeading isStyled={true} headingType="h3" sectionNumber={5}>
+				Popular Clips
+			</SectionHeading>
+			<PopularClipsList client:load />
+		</div>
 	</SectionContainer>
 </GlobalLayout>

@@ -28,7 +28,7 @@
 
         @include respond(md) {
             grid-template-columns: 3fr 1fr;
-            grid-template-rows: 200px auto;
+            grid-template-rows: 100%;
         }
     }
     .hero-card {
@@ -289,7 +289,7 @@
         @include respond(md) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-row: 2;
+            grid-row: 1;
             grid-column: 2;
             min-height: 10vh;
         }
