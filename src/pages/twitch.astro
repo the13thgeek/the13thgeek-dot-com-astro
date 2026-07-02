@@ -1,4 +1,5 @@
 ---
+import '../styles/twitch.scss';
 import GlobalLayout from '../layouts/GlobalLayout.astro';
 import HeadingCard from '../components/HeadingCard.astro';
 import SectionHeading from '../components/SectionHeading.astro';
@@ -7,7 +8,7 @@ import OnAir from '../react-components/OnAir.tsx';
 import NowPlaying from '../react-components/NowPlaying.tsx';
 import LatestVod from '../react-components/LatestVod.tsx';
 import PopularClipsList from '../react-components/PopularClipsList.tsx';
-import '../styles/twitch.scss';
+import Mainframe from '../react-components/Mainframe.tsx';
 
 
 ---
@@ -31,23 +32,27 @@ import '../styles/twitch.scss';
 		<OnAir client:load />
 	</SectionContainer>
 	<SectionContainer className='twitch-nowplaying'>
-		<SectionHeading isStyled={true} headingType="h2" sectionNumber={3}>
+		<SectionHeading isStyled={true} headingType="h2" sectionNumber={2}>
 			Now Playing
 		</SectionHeading>
 		<NowPlaying client:load />
 	</SectionContainer>
-	<SectionContainer className='clips-mf'>
+	<SectionContainer className='clips' noTopMargin>
 		<div class="box vod">
-			<SectionHeading isStyled={true} headingType="h3" sectionNumber={4}>
+			<SectionHeading isStyled={true} headingType="h2" sectionNumber={3}>
 				Latest VOD
 			</SectionHeading>
 			<LatestVod client:load />
 		</div>
 		<div class="box clips">
-			<SectionHeading isStyled={true} headingType="h3" sectionNumber={5}>
+			<SectionHeading isStyled={true} headingType="h2" sectionNumber={4}>
 				Popular Clips
 			</SectionHeading>
 			<PopularClipsList client:load />
 		</div>
+	</SectionContainer>
+	<SectionContainer className='mainframe' noTopMargin  ctaText='Open the Mainframe' ctaHref='https://mainframe.the13thgeek.com/'>
+		<SectionHeading isStyled={true} headingType="h2" slot="heading" sectionNumber={5}>The Mainframe</SectionHeading>
+		<Mainframe client:load />
 	</SectionContainer>
 </GlobalLayout>
